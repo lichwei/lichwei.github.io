@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>韦阳的博客</title>
+  <title>HELLO WORLD</title>
   
-  <subtitle>算法码上来</subtitle>
+  <subtitle>FPGA</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lichwei.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://lichwei.github.io/</id>
   
   <author>
-    <name>韦阳</name>
+    <name>Hello World</name>
     
   </author>
   
