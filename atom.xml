@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lichwei.github.io/"/>
-  <updated>2020-06-17T11:43:34.067Z</updated>
+  <updated>2020-06-19T01:53:05.703Z</updated>
   <id>https://lichwei.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git编写文章的基本操作</title>
+    <link href="https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/"/>
+    <id>https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/</id>
+    <published>2020-06-19T01:09:04.000Z</published>
+    <updated>2020-06-19T01:53:05.703Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Git编写文章的基本操作&quot;&gt;&lt;a href=&quot;#Git编写文章的基本操作&quot; class=&quot;headerlink&quot; title=&quot;Git编写文章的基本操作&quot;&gt;&lt;/a&gt;Git编写文章的基本操作&lt;/h1&gt;&lt;h3 id=&quot;新建文章&quot;&gt;&lt;a href=&quot;#新建文章&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>基于FPGA的快速测频系统</title>
