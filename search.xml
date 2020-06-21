@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Markdown 基本语法</title>
+      <link href="/2020/06/21/markdown-ji-ben-yu-fa/"/>
+      <url>/2020/06/21/markdown-ji-ben-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、语言介绍"><a href="#一、语言介绍" class="headerlink" title="一、语言介绍"></a>一、语言介绍</h2><p>Markdown, 纯文本格式标记语言，通过简单的标记语法，使普通文本具有一定的格式。</p><h2 id="二、标题语法"><a href="#二、标题语法" class="headerlink" title="二、标题语法"></a>二、标题语法</h2><p>一个 # 是一级标题，两个 # 是二级标题，以此类推，共支持六级标题。</p><p>PS： # 后跟一个英文<strong>空格</strong>再写文字。</p><h2 id="三、字体语法"><a href="#三、字体语法" class="headerlink" title="三、字体语法"></a>三、字体语法</h2><h3 id="1-加粗"><a href="#1-加粗" class="headerlink" title="1. 加粗"></a>1. 加粗</h3><p>加粗的文字部分 <strong>左右</strong>分别用 <strong>两个 * 号</strong> 包围起来。</p><h3 id="2-斜体"><a href="#2-斜体" class="headerlink" title="2. 斜体"></a>2. 斜体</h3><p>需要倾斜的文字 <strong>左右</strong>分别用 <em>*一个 </em> 号 ** 包围起来。</p><h3 id="3-加粗斜体"><a href="#3-加粗斜体" class="headerlink" title="3. 加粗斜体"></a>3. 加粗斜体</h3><p>需要加粗倾斜的文字 <strong>左右</strong>分别用 <em>*三个 </em> 号 ** 包围起来。</p><h3 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4. 删除线"></a>4. 删除线</h3><p>需要删除的文字 <strong>左右</strong> 分别用 <strong>两个~ ~号</strong> 包围起来（两个符号之间没有空格，左边单边则整个右边删除）。</p><h2 id="四、引用语法"><a href="#四、引用语法" class="headerlink" title="四、引用语法"></a>四、引用语法</h2><p>在需要引用的文字前面加 &gt; ,可以使用多个 &gt; 进行嵌套。</p><h2 id="五、华丽分割线语法"><a href="#五、华丽分割线语法" class="headerlink" title="五、华丽分割线语法"></a>五、华丽分割线语法</h2><p>使用三个或者三个以上的 - 或者 * 都可以。</p><h2 id="六、插入图片语法"><a href="#六、插入图片语法" class="headerlink" title="六、插入图片语法"></a>六、插入图片语法</h2><p>！<a href="adress" title="title"> little title</a></p><p>little title : 显示在图片下面的文字；<br>title： 图片的标题，可以不加，当鼠标移动到图片上时显示title。</p><h2 id="七、超链接语法"><a href="#七、超链接语法" class="headerlink" title="七、超链接语法"></a>七、超链接语法</h2><p>[超链接名]( 超链接地址 “超链接title ”)</p><p>直接点也可以实现跳转，超链接名：超链接地址。</p><h2 id="八、列表语法"><a href="#八、列表语法" class="headerlink" title="八、列表语法"></a>八、列表语法</h2><h3 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1. 无序列表"></a>1. 无序列表</h3><p>无序列表使用下面中的任何一种都是可以的：</p><ul><li>列表内容； </li></ul><ul><li>列表内容；</li></ul><ul><li>列表内容；</li></ul><p>PS：- + * 跟内容之间都要有 一个空格。</p><h3 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2. 有序列表"></a>2. 有序列表</h3><p>数字加点，序号和内容之间是有空格的，eg，1. 列表内容 。</p><h3 id="3-列表嵌套"><a href="#3-列表嵌套" class="headerlink" title="3. 列表嵌套"></a>3. 列表嵌套</h3><p>上一级和下一级之间敲三个空格即可。</p><p>参考链接：<a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 博客 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown语法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>使用LeanCloud为hexo搭建的博客添加评论支持</title>
       <link href="/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/"/>
       <url>/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/</url>

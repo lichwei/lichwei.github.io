@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lichwei.github.io/"/>
-  <updated>2020-06-21T09:09:10.380Z</updated>
+  <updated>2020-06-21T11:44:49.079Z</updated>
   <id>https://lichwei.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Markdown 基本语法</title>
+    <link href="https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/"/>
+    <id>https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/</id>
+    <published>2020-06-21T10:58:34.000Z</published>
+    <updated>2020-06-21T11:44:49.079Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;一、语言介绍&quot;&gt;&lt;a href=&quot;#一、语言介绍&quot; class=&quot;headerlink&quot; title=&quot;一、语言介绍&quot;&gt;&lt;/a&gt;一、语言介绍&lt;/h2&gt;&lt;p&gt;Markdown, 纯文本格式标记语言，通过简单的标记语法，使普通文本具有一定的格式。&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="博客" scheme="https://lichwei.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="Markdown语法" scheme="https://lichwei.github.io/tags/Markdown%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>使用LeanCloud为hexo搭建的博客添加评论支持</title>
     <link href="https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/"/>
     <id>https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/</id>
     <published>2020-06-21T08:45:53.000Z</published>
-    <updated>2020-06-21T09:09:10.380Z</updated>
+    <updated>2020-06-21T10:57:38.992Z</updated>
     
     <summary type="html">
     

@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lichwei.github.io/tags/index.html</loc>
+    
+    <lastmod>2020-06-21T11:45:37.989Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/</loc>
+    
+    <lastmod>2020-06-21T11:44:49.079Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/</loc>
     
-    <lastmod>2020-06-21T09:09:10.380Z</lastmod>
+    <lastmod>2020-06-21T10:57:38.992Z</lastmod>
     
   </url>
   
@@ -12,13 +26,6 @@
     <loc>https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/</loc>
     
     <lastmod>2020-06-21T09:08:56.883Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lichwei.github.io/tags/index.html</loc>
-    
-    <lastmod>2020-06-21T09:07:59.005Z</lastmod>
     
   </url>
   
