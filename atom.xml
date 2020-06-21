@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lichwei.github.io/"/>
-  <updated>2020-06-19T01:59:40.596Z</updated>
+  <updated>2020-06-21T09:00:14.744Z</updated>
   <id>https://lichwei.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用LeanCloud为hexo搭建的博客添加评论支持</title>
+    <link href="https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/"/>
+    <id>https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/</id>
+    <published>2020-06-21T08:45:53.000Z</published>
+    <updated>2020-06-21T09:00:14.744Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用-LeanCloud-为hexo-搭建的博客添加评论支持&quot;&gt;&lt;a href=&quot;#使用-LeanCloud-为hexo-搭建的博客添加评论支持&quot; class=&quot;headerlink&quot; title=&quot;使用 LeanCloud 为hexo
+        
+      
+    
+    </summary>
+    
+      <category term="博客" scheme="https://lichwei.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+    
+    
+      <category term="Hexo" scheme="https://lichwei.github.io/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Git编写文章的基本操作</title>

@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/</loc>
+    
+    <lastmod>2020-06-21T09:00:14.744Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/tags/index.html</loc>
+    
+    <lastmod>2020-06-21T08:59:27.256Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-06-21T08:57:42.737Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/</loc>
     
     <lastmod>2020-06-19T01:59:40.596Z</lastmod>
@@ -37,13 +58,6 @@
   </url>
   
   <url>
-    <loc>https://lichwei.github.io/tags/index.html</loc>
-    
-    <lastmod>2020-06-17T04:44:32.700Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lichwei.github.io/404.html</loc>
     
     <lastmod>2020-04-05T02:43:43.000Z</lastmod>
@@ -52,13 +66,6 @@
   
   <url>
     <loc>https://lichwei.github.io/archives/index.html</loc>
-    
-    <lastmod>2020-04-05T02:43:43.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lichwei.github.io/categories/index.html</loc>
     
     <lastmod>2020-04-05T02:43:43.000Z</lastmod>
     
