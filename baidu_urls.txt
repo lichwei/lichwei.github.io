@@ -1,3 +1,2 @@
 https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/
 https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/
-https://lichwei.github.io/2020/06/16/hello-world/

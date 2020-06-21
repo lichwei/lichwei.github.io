@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lichwei.github.io/"/>
-  <updated>2020-06-21T09:00:14.744Z</updated>
+  <updated>2020-06-21T09:09:10.380Z</updated>
   <id>https://lichwei.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/"/>
     <id>https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/</id>
     <published>2020-06-21T08:45:53.000Z</published>
-    <updated>2020-06-21T09:00:14.744Z</updated>
+    <updated>2020-06-21T09:09:10.380Z</updated>
     
     <summary type="html">
     
@@ -47,7 +47,7 @@
     <link href="https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/"/>
     <id>https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/</id>
     <published>2020-06-19T01:09:04.000Z</published>
-    <updated>2020-06-19T01:59:40.596Z</updated>
+    <updated>2020-06-21T09:08:56.883Z</updated>
     
     <summary type="html">
     
@@ -61,28 +61,10 @@
     
     </summary>
     
+      <category term="博客" scheme="https://lichwei.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
     
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://lichwei.github.io/2020/06/16/hello-world/"/>
-    <id>https://lichwei.github.io/2020/06/16/hello-world/</id>
-    <published>2020-06-16T07:39:24.014Z</published>
-    <updated>2020-06-17T10:46:01.790Z</updated>
     
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
+      <category term="Git" scheme="https://lichwei.github.io/tags/Git/"/>
     
   </entry>
   
