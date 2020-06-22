@@ -74,7 +74,7 @@
     <link href="https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/"/>
     <id>https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/</id>
     <published>2020-06-19T01:09:04.000Z</published>
-    <updated>2020-06-21T09:08:56.883Z</updated>
+    <updated>2020-06-22T09:26:29.217Z</updated>
     
     <summary type="html">
     
@@ -82,7 +82,7 @@
       
         
         
-          &lt;h1 id=&quot;Git编写文章的基本操作&quot;&gt;&lt;a href=&quot;#Git编写文章的基本操作&quot; class=&quot;headerlink&quot; title=&quot;Git编写文章的基本操作&quot;&gt;&lt;/a&gt;Git编写文章的基本操作&lt;/h1&gt;&lt;h3 id=&quot;新建文章&quot;&gt;&lt;a href=&quot;#新建文章&quot;
+          &lt;h2 id=&quot;一、新建文章&quot;&gt;&lt;a href=&quot;#一、新建文章&quot; class=&quot;headerlink&quot; title=&quot;一、新建文章&quot;&gt;&lt;/a&gt;一、新建文章&lt;/h2&gt;&lt;p&gt;在博客根目录下运行 “ Git bash here”,__  运行 &lt;strong&gt;hexo new
         
       
     
