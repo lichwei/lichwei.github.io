@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lichwei.github.io/"/>
-  <updated>2020-08-01T11:04:13.265Z</updated>
+  <updated>2020-08-02T08:03:51.871Z</updated>
   <id>https://lichwei.github.io/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于Github快速搭建个人博客</title>
+    <link href="https://lichwei.github.io/2020/08/02/ji-yu-github-kuai-su-da-jian-ge-ren-bo-ke/"/>
+    <id>https://lichwei.github.io/2020/08/02/ji-yu-github-kuai-su-da-jian-ge-ren-bo-ke/</id>
+    <published>2020-08-02T08:03:51.000Z</published>
+    <updated>2020-08-02T08:03:51.871Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>2017年春季学期启明星硬件组个人总结</title>
