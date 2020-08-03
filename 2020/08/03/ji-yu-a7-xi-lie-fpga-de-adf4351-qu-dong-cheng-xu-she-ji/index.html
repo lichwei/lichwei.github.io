@@ -8,12 +8,7 @@
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="附录驱动程序如下：
-// GBK file
-// 对 6个 寄存器 分时 写入值，按照R5---&amp;gt;R0
-// 数据只用写入一次
-`timescale 1ns / 1ps
-////////////////////////////////">
+    <meta name="description" content="ADF4351模块简介高频信号产生模块ADF4351通过SPI协议实现与FPGA通信，FPGA分时对高频信号产生模块的6个寄存器进行数据写入，寄存器写入顺序为R5、R4、R3、R2、R1、R0，每当对模块输出频率进行变更时，须发生两个事件，">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -489,14 +484,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.2k
+                    4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    19 分
+                    22 分
                 </div>
                 
                 
@@ -512,7 +507,14 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><p>驱动程序如下：</p>
+                <h2 id="ADF4351模块简介"><a href="#ADF4351模块简介" class="headerlink" title="ADF4351模块简介"></a>ADF4351模块简介</h2><p>高频信号产生模块ADF4351通过SPI协议实现与FPGA通信，FPGA分时对高频信号产生模块的6个寄存器进行数据写入，寄存器写入顺序为R5、R4、R3、R2、R1、R0，每当对模块输出频率进行变更时，须发生两个事件，一是需要将改变后的INT、FRAC和divider数值写入到对应的寄存器，二是需要对寄存器R0执行一次的新的写入操作，以完成控制字的更新。</p>
+<h2 id="ADF4351控制时序"><a href="#ADF4351控制时序" class="headerlink" title="ADF4351控制时序"></a>ADF4351控制时序</h2><p>FPGA与高频信号产生模块实现SPI通信的时序图如下图所示：<br><img src="SPI.png" alt="SPI通信时序图" title="SPI通信时序图"><br>SPI通信的进程由信号LE的电平变化来控制，LE由高电平变为低电平时标志着SPI通信的开始，DATA数据在每个时钟的上升沿以最高位数据有效的方式（Most Significant Bit, 简称MSB）传输至32位移位寄存器，当LE由低电平状态变为高电平状态时，暂存在移位寄存器中的数据在信号LE高电平持续时间内载入到对应的寄存器。</p>
+<h2 id="ADF4351时序约束"><a href="#ADF4351时序约束" class="headerlink" title="ADF4351时序约束"></a>ADF4351时序约束</h2><p>为了ADF4351模块输出所需的信号，SPI通信在FPGA向高频信号产生模块写入控制字期间需要正常工作。高频信号产生模块与FPGA进行SPI的时序约束图如下图所示：<br><img src="SPI_TIME.png" alt="SPI时序约束图" title="SPI时序约束图"><br>时序约束图中提供了7个关键的时间参数，对其值的大小要求如下表所示：<br><img src="%E6%97%B6%E9%97%B4%E7%BA%A6%E6%9D%9F.png" alt="SPI通信关键时间参数表" title="SPI通信关键时间参数表"></p>
+<h2 id="程序块参数定义及功能说明"><a href="#程序块参数定义及功能说明" class="headerlink" title="程序块参数定义及功能说明"></a>程序块参数定义及功能说明</h2><p>驱动程序中输入参数功能定义如下表所示：<br><img src="%E5%8F%82%E6%95%B0%E5%AE%9A%E4%B9%89%E5%8F%8A%E8%AF%B4%E6%98%8E.png" alt="参数定义及说明" title="参数定义及说明"></p>
+<p>对该模块进行输入配置主要改变锁相环五个参数的值，分别为INT、FRAC、MOD、R和divider。输出信号的频率与输入信号频率关系式如下式：<br><img src="%E9%A2%91%E7%8E%87%E5%85%B3%E7%B3%BB%E5%BC%8F.png" alt="频率关系式" title="频率关系式"></p>
+<p>上式中divider参数表示高频信号产生模块输出的频段范围，由寄存器R4的[DB22:DB20]位设定，选择不同频段范围的输出，R4配置如下表所示：<br><img src="R4%E5%AF%84%E5%AD%98%E5%99%A8%E9%85%8D%E7%BD%AE.png" alt="R4寄存器配置" title="R4寄存器配置"></p>
+<p>以35MHz输出信号为例，输入信号频率为100MHz，设置鉴相频率为0.5MHz，根据得R的值为200，R值存储在寄存器R2的[23:14]位，数据有效范围是[1:1023],即10位移位寄存器的值配置为0b00_1100_1000。由于在单频应用中不需要将输出频率的分辨率设置为鉴相频率的小数倍，因此35MHz输出时采用整数N分频模式，取FRAC = 0，divider = 64，则，INT的数值存储在寄存器R0的[30:15],INT的有效范围是[23:65535]，即16位移位寄存器的值配置为0b0001_0001_1000_0000。<br>在验证FPGA控制高频信号产生模块输出设定频率的波形实验中，输出35MHz的单频信号时的配置如下表所示：<br><img src="35MHZ%E8%BE%93%E5%87%BA%E9%85%8D%E7%BD%AE%E8%A1%A8.png" alt="35MHZ输出配置表" title="35MHZ输出配置表"></p>
+<h2 id="附录"><a href="#附录" class="headerlink" title="附录"></a>附录</h2><p>驱动程序如下：</p>
 <pre><code>// GBK file
 // 对 6个 寄存器 分时 写入值，按照R5---&gt;R0
 // 数据只用写入一次
@@ -1901,12 +1903,7 @@ endmodule
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            附录驱动程序如下：
-// GBK file
-// 对 6个 寄存器 分时 写入值，按照R5---&gt;R0
-// 数据只用写入一次
-`timescale 1ns / 1ps
-////////////////////////////////
+                            ADF4351模块简介高频信号产生模块ADF4351通过SPI协议实现与FPGA通信，FPGA分时对高频信号产生模块的6个寄存器进行数据写入，寄存器写入顺序为R5、R4、R3、R2、R1、R0，每当对模块输出频率进行变更时，须发生两个事件，
                         
                     </div>
                     <div class="publish-info">
@@ -2155,7 +2152,7 @@ endmodule
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">21.1k</span>
+            <span class="white-color">21.8k</span>
             
 
             <br>
