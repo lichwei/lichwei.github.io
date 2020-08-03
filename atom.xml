@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lichwei.github.io/"/>
-  <updated>2020-08-03T07:11:47.140Z</updated>
+  <updated>2020-08-03T07:50:28.905Z</updated>
   <id>https://lichwei.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于A7系列FPGA的ADF4351驱动程序设计</title>
+    <link href="https://lichwei.github.io/2020/08/03/ji-yu-a7-xi-lie-fpga-de-adf4351-qu-dong-cheng-xu-she-ji/"/>
+    <id>https://lichwei.github.io/2020/08/03/ji-yu-a7-xi-lie-fpga-de-adf4351-qu-dong-cheng-xu-she-ji/</id>
+    <published>2020-08-03T07:39:37.000Z</published>
+    <updated>2020-08-03T07:50:28.905Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;附录&quot;&gt;&lt;a href=&quot;#附录&quot; class=&quot;headerlink&quot; title=&quot;附录&quot;&gt;&lt;/a&gt;附录&lt;/h2&gt;&lt;p&gt;驱动程序如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// GBK file
+// 对 6个 寄存器 分时
+        
+      
+    
+    </summary>
+    
+      <category term="FPGA" scheme="https://lichwei.github.io/categories/FPGA/"/>
+    
+    
+      <category term="程序设计" scheme="https://lichwei.github.io/tags/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>基于Github快速搭建个人博客</title>
