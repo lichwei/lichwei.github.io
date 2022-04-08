@@ -2,15 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>HELLO WORLD</title>
   
-  <subtitle>FPGA</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lichwei.github.io/"/>
-  <updated>2020-06-21T11:44:49.079Z</updated>
+  <updated>2020-06-21T11:51:02.420Z</updated>
   <id>https://lichwei.github.io/</id>
   
   <author>
-    <name>Hello World</name>
+    <name>HELLO WORLD</name>
     
   </author>
   
@@ -21,7 +21,7 @@
     <link href="https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/"/>
     <id>https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/</id>
     <published>2020-06-21T10:58:34.000Z</published>
-    <updated>2020-06-21T11:44:49.079Z</updated>
+    <updated>2020-06-21T11:51:02.420Z</updated>
     
     <summary type="html">
     
