@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lichwei.github.io/about/index.html</loc>
+    
+    <lastmod>2022-04-08T11:57:04.459Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lichwei.github.io/tags/index.html</loc>
     
     <lastmod>2022-04-08T03:47:19.295Z</lastmod>
@@ -47,13 +54,6 @@
     <loc>https://lichwei.github.io/2021/11/12/g-chang-yong-ming-ling-ji-gong-neng/</loc>
     
     <lastmod>2021-11-12T03:09:24.770Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lichwei.github.io/about/index.html</loc>
-    
-    <lastmod>2021-10-25T08:46:05.736Z</lastmod>
     
   </url>
   
@@ -205,14 +205,14 @@
   </url>
   
   <url>
-    <loc>https://lichwei.github.io/archives/index.html</loc>
+    <loc>https://lichwei.github.io/404.html</loc>
     
     <lastmod>2020-04-05T02:43:43.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lichwei.github.io/404.html</loc>
+    <loc>https://lichwei.github.io/archives/index.html</loc>
     
     <lastmod>2020-04-05T02:43:43.000Z</lastmod>
     
