@@ -4,16 +4,541 @@
   
     
     <entry>
-      <title>Markdown 基本语法</title>
-      <link href="/2020/06/21/markdown-ji-ben-yu-fa/"/>
-      <url>/2020/06/21/markdown-ji-ben-yu-fa/</url>
+      <title>基于Gitee与TortoiseSVN的代码管理</title>
+      <link href="/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/"/>
+      <url>/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/</url>
       
-        <content type="html"><![CDATA[<h2 id="一、语言介绍"><a href="#一、语言介绍" class="headerlink" title="一、语言介绍"></a>一、语言介绍</h2><p>Markdown, 纯文本格式标记语言，通过简单的标记语法，使普通文本具有一定的格式。</p><h2 id="二、标题语法"><a href="#二、标题语法" class="headerlink" title="二、标题语法"></a>二、标题语法</h2><p>一个 # 是一级标题，两个 # 是二级标题，以此类推，共支持六级标题。</p><p>PS： # 后跟一个英文<strong>空格</strong>再写文字。</p><h2 id="三、字体语法"><a href="#三、字体语法" class="headerlink" title="三、字体语法"></a>三、字体语法</h2><h3 id="1-加粗"><a href="#1-加粗" class="headerlink" title="1. 加粗"></a>1. 加粗</h3><p>加粗的文字部分 <strong>左右</strong>分别用 <strong>两个 * 号</strong> 包围起来。</p><h3 id="2-斜体"><a href="#2-斜体" class="headerlink" title="2. 斜体"></a>2. 斜体</h3><p>需要倾斜的文字 <strong>左右</strong>分别用 <em>*一个 </em> 号 ** 包围起来。</p><h3 id="3-加粗斜体"><a href="#3-加粗斜体" class="headerlink" title="3. 加粗斜体"></a>3. 加粗斜体</h3><p>需要加粗倾斜的文字 <strong>左右</strong>分别用 <em>*三个 </em> 号 ** 包围起来。</p><h3 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4. 删除线"></a>4. 删除线</h3><p>需要删除的文字 <strong>左右</strong> 分别用 <strong>两个~ ~号</strong> 包围起来（两个符号之间没有空格，左边单边则整个右边删除）。</p><h2 id="四、引用语法"><a href="#四、引用语法" class="headerlink" title="四、引用语法"></a>四、引用语法</h2><p>在需要引用的文字前面加 &gt; ,可以使用多个 &gt; 进行嵌套。</p><h2 id="五、华丽分割线语法"><a href="#五、华丽分割线语法" class="headerlink" title="五、华丽分割线语法"></a>五、华丽分割线语法</h2><p>使用三个或者三个以上的 - 或者 * 都可以。</p><h2 id="六、插入图片语法"><a href="#六、插入图片语法" class="headerlink" title="六、插入图片语法"></a>六、插入图片语法</h2><p>！<a href="adress" title="title"> little title</a></p><p>little title : 显示在图片下面的文字；<br>title： 图片的标题，可以不加，当鼠标移动到图片上时显示title。</p><h2 id="七、超链接语法"><a href="#七、超链接语法" class="headerlink" title="七、超链接语法"></a>七、超链接语法</h2><p>[超链接名]( 超链接地址 “超链接title ”)</p><p>直接点也可以实现跳转，超链接名：超链接地址。</p><h2 id="八、列表语法"><a href="#八、列表语法" class="headerlink" title="八、列表语法"></a>八、列表语法</h2><h3 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1. 无序列表"></a>1. 无序列表</h3><p>无序列表使用下面中的任何一种都是可以的：</p><hr><ul><li>列表内容；</li></ul><ul><li>列表内容；</li></ul><ul><li>列表内容；</li></ul><hr><p>PS：- + * 跟内容之间都要有 一个空格。</p><h3 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2. 有序列表"></a>2. 有序列表</h3><p>数字加点，序号和内容之间是有空格的，eg，1. 列表内容 。</p><h3 id="3-列表嵌套"><a href="#3-列表嵌套" class="headerlink" title="3. 列表嵌套"></a>3. 列表嵌套</h3><p>上一级和下一级之间敲三个空格即可。</p><p>参考链接：<a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="基础软件"><a href="#基础软件" class="headerlink" title="基础软件"></a>基础软件</h2><p>使用版本控制客户端软件：TortoiseSVN</p><p>发现git 无法更新内容到github，寻找原因中。</p><p>例如FPGA工程产生的空文件夹，SVN 无法commit, 可以使用批处理工具为空文件夹下添加 .keep文件。<br>批处理文件链接如下：<br><a href="https://gitee.com/lichwei/the_batch_program_for_an_empty_folder.git" target="_blank" rel="noopener">https://gitee.com/lichwei/the_batch_program_for_an_empty_folder.git</a></p>]]></content>
       
       
       <categories>
           
-          <category> 博客 </category>
+          <category> 技术支持 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TortoiseSVN </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>EndNote使用指南</title>
+      <link href="/2021/11/17/endnote-shi-yong-zhi-nan/"/>
+      <url>/2021/11/17/endnote-shi-yong-zhi-nan/</url>
+      
+        <content type="html"><![CDATA[<p>参考博客链接：<a href="https://zhuanlan.zhihu.com/p/87749797" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/87749797</a></p><p>再次对博主的分享表示感谢！</p><p>提供两个下载链接：<br>[1] <a href="https://endnote.com/style_download/chinese-standard-gb-t7114-author-year/" target="_blank" rel="noopener">https://endnote.com/style_download/chinese-standard-gb-t7114-author-year/</a><br>[2] <a href="https://endnote.com/downloads/styles/?wpv_post_search=7714&amp;wpv_aux_current_post_id=12829&amp;wpv_view_count=12764-TCPID12829&amp;wpv-citation_style=author-year-cited-pages&amp;wpv-wpcf-publisher=Standards+Office-Peoples+Republic+of+China" target="_blank" rel="noopener">https://endnote.com/downloads/styles/?wpv_post_search=7714&amp;wpv_aux_current_post_id=12829&amp;wpv_view_count=12764-TCPID12829&amp;wpv-citation_style=author-year-cited-pages&amp;wpv-wpcf-publisher=Standards+Office-Peoples+Republic+of+China</a></p><p>EndNote文献插入和格式修改<br>参考博客链接：<br><a href="https://zhuanlan.zhihu.com/p/125652934" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/125652934</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术支持 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> EndNote </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>g++常用命令及功能</title>
+      <link href="/2021/11/12/g-chang-yong-ming-ling-ji-gong-neng/"/>
+      <url>/2021/11/12/g-chang-yong-ming-ling-ji-gong-neng/</url>
+      
+        <content type="html"><![CDATA[<p>在Ubuntu下默认没有安装 g++ 编译器， sudo apt-get install build-essential，然后g++ -version检查版本信息。</p><p>参考链接： <a href="https://blog.csdn.net/weixin_40959890/article/details/113585326" target="_blank" rel="noopener">https://blog.csdn.net/weixin_40959890/article/details/113585326</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术支持 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vi/vim的使用</title>
+      <link href="/2021/09/21/vi-vim-de-shi-yong/"/>
+      <url>/2021/09/21/vi-vim-de-shi-yong/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是vim"><a href="#什么是vim" class="headerlink" title="什么是vim"></a>什么是vim</h2><p>vim是从vi发展而来的一个文本编辑器。具有代码补完、编译及错误跳转等方便编程的功能。vim的官方网站：<a href="https://www.vim.org/" target="_blank" rel="noopener">https://www.vim.org/</a></p><h2 id="vi-vim的三种模式"><a href="#vi-vim的三种模式" class="headerlink" title="vi/vim的三种模式"></a>vi/vim的三种模式</h2><p>分别为命令行模式、输入模式及底线命令模式。</p><h3 id="命令模式"><a href="#命令模式" class="headerlink" title="命令模式"></a>命令模式</h3><p>用户刚启动vi/vim时便进入到命令模式，在此状态下敲击键盘动作会被vim识别为命令，而非是字符。常见的几个命令如下：<br>☆ i 切换到输入模式，课输入字符；<br>☆ x 删除当前光标所在处的字符；<br>☆ : 切换到底线命令模式，以在最低一行输入命令。</p><h3 id="输入模式"><a href="#输入模式" class="headerlink" title="输入模式"></a>输入模式</h3><p>在命令模式下，按下 i 进入到输入模式。<br>在输入模式下常用命令如下：<br>☆ 字符按键以及Shift组合，输入字符；<br>☆ ENTER，回车键，换行；<br>☆ BACK SPACE，退格键，删除光标前一个字符；<br>☆ DEL，删除键，删除光标后一个字符；<br>☆ 方向键，在文本中移动光标；<br>☆ HOME/END，移动光标到行首/行尾；<br>☆ Page Up/Page Down，上/下翻页；<br>☆ Insert，切换光标为输入/替换模式，光标将变成竖线/下划线；<br>☆ ESC，退出输入模式，切换到命令模式；</p><h3 id="底线命令模式"><a href="#底线命令模式" class="headerlink" title="底线命令模式"></a>底线命令模式</h3><p>在命令模式下按下:（英文冒号）就进入了底线命令模式。<br>底线命令模式可以输入单个或多个字符的命令，可用的命令非常多。</p><p>在底线命令模式中，基本的命令有（已经省略了冒号）：<br>q 退出程序<br>w 保存文件<br>按ESC键可随时退出底线命令模式。</p><h2 id="vi-vim工作模式切换图"><a href="#vi-vim工作模式切换图" class="headerlink" title="vi/vim工作模式切换图"></a>vi/vim工作模式切换图</h2><p><img src="vim.png" alt="vi/vim工作模式"></p><h2 id="vi-vim按键说明"><a href="#vi-vim按键说明" class="headerlink" title="vi/vim按键说明"></a>vi/vim按键说明</h2><h3 id="一般模式-可用的光标移动、复制粘贴及搜索替换等"><a href="#一般模式-可用的光标移动、复制粘贴及搜索替换等" class="headerlink" title="一般模式 可用的光标移动、复制粘贴及搜索替换等"></a>一般模式 可用的光标移动、复制粘贴及搜索替换等</h3><p>移动光标的方法：<br>h 或 向左箭头键(←)        光标向左移动一个字符<br>j 或 向下箭头键(↓)           光标向下移动一个字符<br>k 或 向上箭头键(↑)          光标向上移动一个字符<br>l 或 向右箭头键(→)         光标向右移动一个字符</p><hr><p>如果想要进行多次移动的话，例如向下移动 30 行，可以使用 “30j” 或 “30↓” 的组合按键， 亦即加上想要进行的次数(数字)后，按下动作即可！<br>[Ctrl] + [f]                        屏幕『向下』移动一页，相当于 [Page Down]按键 (常用)<br>[Ctrl] + [b]                       屏幕『向上』移动一页，相当于 [Page Up] 按键 (常用)<br>[Ctrl] + [d]                       屏幕『向下』移动半页<br>[Ctrl] + [u]                       屏幕『向上』移动半页<br>n<space>                      如 20<space> 则光标会向后面移动 20 个字符距离。<br>0 或功能键[Home]          这是数字『 0 』：移动到这一行的最前面字符处 (常用)<br>$ 或功能键[End]             移动到这一行的最后面字符处(常用)<br>H                                    光标移动到这个屏幕的最上方那一行的第一个字符<br>M                                    光标移动到这个屏幕的中央那一行的第一个字符<br>L                                     光标移动到这个屏幕的最下方那一行的第一个字符<br>G                                    移动到这个档案的最后一行(常用)<br>nG                                  n 为数字。移动到这个档案的第 n 行。<br>gg                                   移动到这个档案的第一行，相当于 1G 啊！ (常用)<br>n<enter>                      n 为数字。光标向下移动 n 行(常用)</enter></space></space></p><hr><p>搜索替换<br>/word                            向光标之下寻找一个名称为 word 的字符串。<br>?word                           向光标之上寻找一个字符串名称为 word 的字符串。<br>n                                   这个 n 是英文按键。代表重复前一个搜寻的动作。<br>N                                  这个 N 是英文按键。与 n 刚好相反。</p><hr><p>常用删除、复制与粘贴<br>x, X                             在一行字当中，x 为向后删除一个字符 (相当于 [del] 按键)， X 向前<br>nx                                n 为数字，连续向后删除 n 个字符。举例来说，我要连续删除 10 个字符， 『10x』。<br>dd                                删除游标所在的那一整行(常用)<br>ndd                              n 为数字。删除光标所在的向下 n 行，例如 20dd 则是删除 20 行 (常用)<br>d1G                             删除光标所在到第一行的所有数据<br>dG                               删除光标所在到最后一行的所有数据<br>d$                                删除游标所在处，到该行的最后一个字符<br>d0                                那个是数字的 0 ，删除游标所在处，到该行的最前面一个字符<br>yy                                复制游标所在的那一行(常用)<br>nyy                              n 为数字。复制光标所在的向下 n 行，例如 20yy 则是复制 20 行(常用)<br>y1G                             复制游标所在行到第一行的所有数据<br>yG                               复制游标所在行到最后一行的所有数据<br>y0                                复制光标所在的那个字符到该行行首的所有数据<br>y$                                复制光标所在的那个字符到该行行尾的所有数据<br>p, P                              p 为将已复制的数据在光标下一行贴上，P 则为贴在游标上一行！ 举例来说，我目前光标在第 20 行，且已经复制了 10 行数据。则按下 p                                     后， 那 10 行数据会贴在原本的 20 行之后，亦即由 21 行开始贴。但如果是按下 P 呢？ 那么原本的第 20 行会被推到变成 30 行。 (常用)<br>J                                  将光标所在行与下一行的数据结合成同一行<br>c                                  重复删除多个数据，例如向下删除 10 行，[ 10cj ]<br>u                                  复原前一个动作。(常用)<br>[Ctrl]+r                         重做上一个动作。(常用)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术支持 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编辑器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>开源仓库汇总</title>
+      <link href="/2021/09/16/kai-yuan-cang-ku-hui-zong/"/>
+      <url>/2021/09/16/kai-yuan-cang-ku-hui-zong/</url>
+      
+        <content type="html"><![CDATA[<h2 id="开源网站"><a href="#开源网站" class="headerlink" title="开源网站"></a>开源网站</h2><p>☆赛灵思官方开源仓库：  <a href="https://github.com/xilinx" target="_blank" rel="noopener">https://github.com/xilinx</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术支持 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 开源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>AD21中常用快捷键汇总</title>
+      <link href="/2021/09/14/ad21-zhong-chang-yong-kuai-jie-jian-hui-zong/"/>
+      <url>/2021/09/14/ad21-zhong-chang-yong-kuai-jie-jian-hui-zong/</url>
+      
+        <content type="html"><![CDATA[<h3 id="汇总如下（更新中）："><a href="#汇总如下（更新中）：" class="headerlink" title="汇总如下（更新中）："></a>汇总如下（更新中）：</h3><p>☆ V + B         板子翻转<br>☆ L                打开层设置开关选项（在元件移动状态下，按下 L 键换层）<br>☆<br>☆<br>☆<br>☆<br>☆<br>☆<br>☆<br>☆<br>☆<br>☆<br>☆</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术支持 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电路设计 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ISE14.7中ILA+ICON+VIO使用建议</title>
+      <link href="/2021/08/26/ise14-7-zhong-ila-icon-vio-shi-yong-jian-yi/"/>
+      <url>/2021/08/26/ise14-7-zhong-ila-icon-vio-shi-yong-jian-yi/</url>
+      
+        <content type="html"><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>ISE14.7使用信号分析的 ILA 工具，除了需要配合 ICON 核一起使用，最最最不人性化的地方就是被观察的信号均不显示变量名，并且一不小心加的 ILA 过多，还会综合很长的时间。<br><img src="%22ISE%E7%BB%BC%E5%90%88.png%22" alt="添加ILA后IDE综合"></p><h3 id="使用建议"><a href="#使用建议" class="headerlink" title="使用建议"></a>使用建议</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术支持 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FPGA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>常用网址汇总</title>
+      <link href="/2021/08/22/chang-yong-wang-zhi-hui-zong/"/>
+      <url>/2021/08/22/chang-yong-wang-zhi-hui-zong/</url>
+      
+        <content type="html"><![CDATA[<p>清华大学开源软件镜像站：<a href="https://mirrors.tuna.tsinghua.edu.cn/#" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/#</a></p><p>爱荷华大学美式音标口腔剖面在线学习: <a href="https://soundsofspeech.uiowa.edu/english/english.html" target="_blank" rel="noopener">https://soundsofspeech.uiowa.edu/english/english.html</a></p><p>Zlibrary（丰富的可下载高清电子书资源）: <a href="https://1lib.limited/?signAll=1&amp;ts=1227" target="_blank" rel="noopener">https://1lib.limited/?signAll=1&amp;ts=1227</a></p><p>Latex 公式编辑器（图片公式亦可识别）： <a href="https://www.latexlive.com/##" target="_blank" rel="noopener">https://www.latexlive.com/##</a></p><p>帮助用户将网络托管在 IPFS 网络上 的服务：<a href="https://fleek.co/" target="_blank" rel="noopener">https://fleek.co/</a></p><p><a href="https://denigma.app/" target="_blank" rel="noopener">Denigma</a></p><p><a href="https://denigma.app/extension" target="_blank" rel="noopener">https://denigma.app/extension</a> 一个实验性的在线工具，你贴入一段代码，它自动生成这段代码的文字描述，不过是英文的。它还有 VS Code 插件版。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术支持 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 常用网址 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Python开发环境搭建</title>
+      <link href="/2021/08/22/python-kai-fa-huan-jing-da-jian/"/>
+      <url>/2021/08/22/python-kai-fa-huan-jing-da-jian/</url>
+      
+        <content type="html"><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>记录国内源下载安装配置Anacondo 及 pycharm 的安装</p><h3 id="安装-Python-3-开发环境"><a href="#安装-Python-3-开发环境" class="headerlink" title="安装 Python 3 开发环境"></a>安装 Python 3 开发环境</h3><p>Python 是面对对象的解释型编程语言，是一个免费的开源项目。Python 语法相比于 C、C++和Java等语言更加简洁，代码不需要编译，由 Python 解释器直接执行。此外，Python 内置了丰富的工具库和大量的外部第三方库，扩展性强。Python 在众多领域得到了广泛的应用，如数据分析、机器学习、人工智能、大数据、网络爬虫及网站开发等领域。<br>首先安装配置 Python 开发环境，参见如下地址：<br>Python 官方网站地址：<a href="https://www.python.org/" target="_blank" rel="noopener">https://www.python.org/</a><br>Python 官方下载地址：<a href="https://www.python.org/downloads/" target="_blank" rel="noopener">https://www.python.org/downloads/</a></p><h3 id="Anaconda-下载安装"><a href="#Anaconda-下载安装" class="headerlink" title="Anaconda 下载安装"></a>Anaconda 下载安装</h3><p>清华大学TUNA协会：<a href="https://tuna.moe/" target="_blank" rel="noopener">https://tuna.moe/</a><br>清华大学开源软件镜像站：<a href="https://mirrors.tuna.tsinghua.edu.cn/#" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/#</a><br>PS：Anaconda主要为科学计算提供运行环境，在其内部集成了Python，因此可以直接安装Anaconda，不需要再单独Python。</p><h3 id="Pycharm-下载安装"><a href="#Pycharm-下载安装" class="headerlink" title="Pycharm 下载安装"></a>Pycharm 下载安装</h3><p>官方下载地址：<a href="https://www.jetbrains.com/pycharm/download/#section=windows" target="_blank" rel="noopener">https://www.jetbrains.com/pycharm/download/#section=windows</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术支持 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> python </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WORD中常用排版技巧</title>
+      <link href="/2021/08/21/word-zhong-chang-yong-pai-ban-ji-qiao/"/>
+      <url>/2021/08/21/word-zhong-chang-yong-pai-ban-ji-qiao/</url>
+      
+        <content type="html"><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>针对长文档有一些实用的小技巧，可以为后期文档的整合提供很大的方便。</p><h4 id="使用样式"><a href="#使用样式" class="headerlink" title="使用样式"></a>使用样式</h4><p><img src="%E4%BD%BF%E7%94%A8%E6%A0%B7%E5%BC%8F.png" alt="使用样式" title="图1 使用样式"><br>保留文档写作时需要的样式，当然也可以创建样式，可以修改样式的参数，包括字体，段落格式等等，可以导出样式的模板，多人写作时使用同一个模板，避免后期文档汇总时调格式。</p><h4 id="使用分页符"><a href="#使用分页符" class="headerlink" title="使用分页符"></a>使用分页符</h4><p>不同章节之间一定记得使用分页符，及时上一章节只有一行文字也得占用一页。</p><h4 id="插入带标号的公式"><a href="#插入带标号的公式" class="headerlink" title="插入带标号的公式"></a>插入带标号的公式</h4><p>往往需要公式居中，而公式的标号居右。这时创建一个 1行3列 的表格，表格选择无框线，分别将公式和编号放入 第二列 和 第三列，这样不同的列可以单独设置格式。</p><h4 id="WORD文档中插入可编辑的Visio图"><a href="#WORD文档中插入可编辑的Visio图" class="headerlink" title="WORD文档中插入可编辑的Visio图"></a>WORD文档中插入可编辑的Visio图</h4><p>以 文件形式插入避免出错或者不能修改<br><img src="%E6%8F%92%E5%85%A5visio%E5%9B%BE.png" alt="插入visio图" title="图2 插入visio图"></p><h4 id="批注与修订"><a href="#批注与修订" class="headerlink" title="批注与修订"></a>批注与修订</h4><p>修改文档 和 添加文档修改意见时，使用 批注和修订，提示明显。</p><h4 id="插入公式"><a href="#插入公式" class="headerlink" title="插入公式"></a>插入公式</h4><p>使用关联的 MathType插入公式，如果需要批量识别的图片公式，可以网上找在线的公式识别器。</p><h4 id="图片布局"><a href="#图片布局" class="headerlink" title="图片布局"></a>图片布局</h4><p>文档中仿真结果，对于单栏的文档，一般并排放两个，双栏的文档一般放一个。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 知识快充站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> word </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WORD中插入题注及交叉引用说明</title>
+      <link href="/2021/08/20/word-zhong-cha-ru-ti-zhu-ji-jiao-cha-yin-yong-shuo-ming/"/>
+      <url>/2021/08/20/word-zhong-cha-ru-ti-zhu-ji-jiao-cha-yin-yong-shuo-ming/</url>
+      
+        <content type="html"><![CDATA[<h3 id="插入题注与交叉引用的优势"><a href="#插入题注与交叉引用的优势" class="headerlink" title="插入题注与交叉引用的优势"></a>插入题注与交叉引用的优势</h3><p>长文档如果手动去输入插入和引用的图、表及公式标号，在局部调整时编号无法自动更新，全部得重新手动输入，甚是麻烦，因此所有文档统一使用域代码可以有效地提高文档编辑效率。</p><h3 id="适用插入题注及交叉引用的场合"><a href="#适用插入题注及交叉引用的场合" class="headerlink" title="适用插入题注及交叉引用的场合"></a>适用插入题注及交叉引用的场合</h3><p>在 插入题注 的界面有下拉框，包含的子项目都可以添加交叉引用。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 知识快充站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> word </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WORD中设置多级列表自动更新</title>
+      <link href="/2021/08/19/word-zhong-she-zhi-duo-ji-lie-biao-zi-dong-geng-xin/"/>
+      <url>/2021/08/19/word-zhong-she-zhi-duo-ji-lie-biao-zi-dong-geng-xin/</url>
+      
+        <content type="html"><![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>在需要局部调整章节的长文档中，使用自动更新的多级列表是十分必要的，各级标题的页边距等都可统一设置。</p><h3 id="多级列表自动更新的设置方法"><a href="#多级列表自动更新的设置方法" class="headerlink" title="多级列表自动更新的设置方法"></a>多级列表自动更新的设置方法</h3><p>开始 –》多级列表–》定义新的多级列表<br><img src="1.png" alt="定义多级列表" title="图1 定义新的多级列表"></p><p>单击 选中 要修改的级别–》<br>选择 将级别链接到的样式 –》<br>修改 要在库中显示的级别（即大纲视图中的显示级别）–》<br>注意修改 起始编号为1 –》<br>勾选 正规形式编号（G）–》<br>位置设置 –》<br>单击 确定<br><img src="%E5%85%B7%E4%BD%93%E5%8F%82%E6%95%B0%E8%AE%BE%E7%BD%AE.png" alt="具体参数设置" title="图2 具体参数设置"></p><p>有效地完成上面的操作，多级列表便可实现自动更新。</p><p>参考链接：<a href="https://jingyan.baidu.com/article/e8cdb32bfa6a2f37052bad26.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/e8cdb32bfa6a2f37052bad26.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 知识快充站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> word </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>WORD中图文编号自动更新设置方法</title>
+      <link href="/2021/08/18/word-zhong-tu-wen-bian-hao-zi-dong-geng-xin-she-zhi-fang-fa/"/>
+      <url>/2021/08/18/word-zhong-tu-wen-bian-hao-zi-dong-geng-xin-she-zhi-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<p>如下图，word中有四张图片，并且正文中有与之对应的引用</p><p> 第一步：选中第一张图片，点击【引用】【插入题注】【新建标签】【确定】，此时第一张图片的编号格式已经插入可以自动更新的图号。<br> <img src="%E6%8F%92%E5%85%A5%E9%A2%98%E6%B3%A8.png" alt=" 插入题注" title="图1 插入题注"></p><p> 第二步：选中其他图片，按F4，此时，其他图片的编号也是我们想要的格式了，并且序号也是递增的。</p><p>第三步：选中正文处图片的引用，点击【引用】【交叉引用】，引用类型中选中我们上图建立的图片编号格式，并且在下面的框中选中我们要和图几建立交叉引用，点击【插入】<br><img src="%E4%BA%A4%E5%8F%89%E5%BC%95%E7%94%A8.png" alt=" 交叉引用" title="图2 交叉引用"></p><p> 第四步：如果我们想要插入或者删除一张图片，让其他图片及正文的序号自动增长或减小，只需要在删除或插入图片之后，选中全文，右键鼠标，点击【更新域】<br><img src="%E6%9B%B4%E6%96%B0%E5%9F%9F.png" alt=" 更新域" title="图3 更新域"></p><hr><p>参考链接:<a href="https://www.cnblogs.com/gouq/p/14222877.html" target="_blank" rel="noopener">https://www.cnblogs.com/gouq/p/14222877.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 知识快充站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> word </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>解决Win10系统下ISE闪退问题</title>
+      <link href="/2021/08/18/post-jie-jue-win10-xi-tong-xia-ise-shan-tui-wen-ti/"/>
+      <url>/2021/08/18/post-jie-jue-win10-xi-tong-xia-ise-shan-tui-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<p>在 Win10 系统下安装 ISE 开发工具，会出现闪退问题，例如 添加许可证文件……</p><p>解决方法如下：</p><p>找到程序安装路径下的这两个文件夹： </p><p>X:\Xilinx\14.6\ISE_DS\ISE\lib\nt64 </p><p>X:\Xilinx\14.6\ISE_DS\common\lib\nt64</p><p>首先在第一个文件夹中，重命名libPortability.dll为libPortability.dll.orig， </p><p>然后复制 libPortabilityNOSH.dll 的一个副本并重命名为libPortability.dll， </p><p>这样你就又有一个libPortability.dll文件了。</p><p>然后在第二个文件夹，将之前得到的新的libPortability.dll覆盖到这个文件夹中。</p><p>参考链接：<a href="http://www.lotpc.com/dngz/9027.html" target="_blank" rel="noopener">http://www.lotpc.com/dngz/9027.html</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> FPGA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 开发工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>使用Git将本地代码上传到Github服务器</title>
+      <link href="/2021/08/12/shi-yong-git-jiang-ben-di-dai-ma-shang-chuan-dao-github-fu-wu-qi/"/>
+      <url>/2021/08/12/shi-yong-git-jiang-ben-di-dai-ma-shang-chuan-dao-github-fu-wu-qi/</url>
+      
+        <content type="html"><![CDATA[<p>已经很久没有将代码托管在Github服务器上了，之前一直使用的是本地的 TortoiseSVN ,今天花了些时间回顾下将本地项目 通过Git 更新到 Github 服务器（和博客上传使用的同一个Git）</p><p>最核心的内容是：本地文件夹需要和 Github服务器 关联！关键点提要：</p><p>1、登录Github并新建仓库，一般按照如下勾选：<br><img src="repositories.png" alt=" 新建仓库" title="新建仓库"><br>2、建好仓库后，复制仓库链接；<br>3、本地新建存放项目的文件夹，右键打开”git bash here”, “git clone 仓库链接” 命令直接将仓库克隆到本地；<br>4、在本地编辑好，需要上传到github服务器时使用下面的命令：<br>  ① git add .<br>  ② git commit -m “版本信息等”<br>  ③ git push</p><p>5、git push 后输入github账户的用户名及密码，便可以成功上传</p><hr><p>PS：在追求每次git push 后不想输入密码，整了好久却没整好，但是可以少输入一次密码，链接如下：<br><a href="https://blog.csdn.net/iamzhangyouzhi/article/details/25727611" target="_blank" rel="noopener">https://blog.csdn.net/iamzhangyouzhi/article/details/25727611</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术支持 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>win10下ISE14.4无法打开planAhead解决方案</title>
+      <link href="/2021/08/12/postwin10-xia-ise14-4-wu-fa-da-kai-planahead-jie-jue-fang-an/"/>
+      <url>/2021/08/12/postwin10-xia-ise14-4-wu-fa-da-kai-planahead-jie-jue-fang-an/</url>
+      
+        <content type="html"><![CDATA[<p>在 win10 系统下安装 ISE14.7, 目前进行代码编译、综合、实现、生成编程文件都没有问题，但是无法为芯片分配引脚，如图所示：</p><p>`<img src="PlanAhead.png" alt=" 无法打开planAhead界面"><br>需要对 rdiArgs.bat 进行替换，具体步骤是：<br>① 打开 ISE14.4 安装目录，……\14.4\ISE_DS\PlanAhead\bin, 将  rdiArgs.bat  文件重命名 为  rdiArgs.bat.orig;<br>② 通过下述链接下载  rdiArgs.bat 文件；<br>③ 将下载后的 rdiArgs.bat 文件CV到 ……\14.4\ISE_DS\PlanAhead\bin， 重启ISE14.4即可。</p><p>PlanAhead替代文件rdiArgs.bat的下载链接如下：</p><p><a href="http://www.eevblog.com/forum/microcontrollers/guide-getting-xilinx-ise-to-work-with-windows-8-64-bit/?action=dlattach;attach=102040" target="_blank" rel="noopener">http://www.eevblog.com/forum/microcontrollers/guide-getting-xilinx-ise-to-work-with-windows-8-64-bit/?action=dlattach;attach=102040</a></p><p>rdiArgs.bat文件下载链接（备用）：<br><a href="https://github.com/lichwei/ISE14.4" target="_blank" rel="noopener">https://github.com/lichwei/ISE14.4</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> FPGA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 开发工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MATLAB自定义函数的五种方法回顾</title>
+      <link href="/2021/08/05/matlab-zi-ding-yi-han-shu-de-wu-chong-fang-fa-hui-gu/"/>
+      <url>/2021/08/05/matlab-zi-ding-yi-han-shu-de-wu-chong-fang-fa-hui-gu/</url>
+      
+        <content type="html"><![CDATA[<p>MATLAB 使用很久了，作为仿真的数学工具，因为容易上手因而没有系统地去学习，接下来陆陆续续更新几篇文章对 MATLAB 的基本用法进行回顾总结。今天回顾 MATLAB 的几种常用的自定义函数的方法。<br>MATLAB 程序在第一次运行时由于逐句解释运行程序，因此速度比 编译型 的慢，但是 M文件 一经运行就将编译代码放在内存中，再次运行的速度就大大加快了。<br>M文件 有两种形式：M脚本文件 和 M函数文件，M函数文件 是程序设计的主流，MATLAB本身一系列的工具箱内的各种内部函数是M函数文件，我们可以为实现某有个功能去编写一组 MATLAB函数文件 以组成 工具箱。</p><hr><center> 1 函数文件+调用函数文件</center>使用 function 自定义功能函数，保存为.m文件，可以同时定义多个功能函数。注意的地方是保存的函数文件名与调用的函数名称一致。<pre class="line-numbers language-MATLAB"><code class="language-MATLAB">% 定义功能函数function    y = myfunction(x,y,z)% 与function之后定义的赋值变量名一致y = 2*x+y+z;       end% 在主程序中调用定义的函数clc,clear all,close all;x = 1; y = 2; z = 3;hl = myfunction(x,y,z);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><center> 2 函数文件+(多个)子函数</center>可以将一个主函数和这个主函数使用到的多个函数 定义在同一个M文件中，文件名是主函数名。该文件必须是以 function 打头的函数文件，不能前面是函数，后面跟一串函数，前面是命令，后面加函数也是不行的，必须前面也是函数！若前面无参数输入的是一段命令，直接将这些命令定义为一个无参数的函数就可以了。非嵌套调用举例如下：<pre class="line-numbers language-MATLAB"><code class="language-MATLAB">function usemyfunArray( )        %主函数必须位于最上方%子函数举例max1=find_max(1,20,3)max2=find_max(7,3,9)function max=find_max(a,b,c)    %子函数if (a>=b)&(a>=c)    max=a;elseif (b>=a)&(b>=c)    max=b;else    max=c;end<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>嵌套调用举例如下：</p><pre class="line-numbers language-MATLAB"><code class="language-MATLAB">function mymainfunction( )a = myfunction1();function myfunction1()...endend<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><center> 3 使用内联函数直接定义</center><p>使用 inline 命令来定义一个内联函数，举例如下：</p><pre class="line-numbers language-MATLAB"><code class="language-MATLAB">mytest = inline('x^2+y','x','y');z = mytest(2,3)ans = 7<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>参考链接：<a href="https://blog.csdn.net/cclethe/article/details/77675658" target="_blank" rel="noopener">https://blog.csdn.net/cclethe/article/details/77675658</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 知识快充站 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MATLAB总结 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>论研究生与导师的关系</title>
+      <link href="/2021/07/20/lun-yan-jiu-sheng-yu-dao-shi-de-guan-xi/"/>
+      <url>/2021/07/20/lun-yan-jiu-sheng-yu-dao-shi-de-guan-xi/</url>
+      
+        <content type="html"><![CDATA[<div align="center"><font size="70">01</font><p>经过一年的相处，浅谈我与XXXX大学团队导师的微妙关系。读研究生前，我幻想中的导师是博学多识、谈吐优雅、乐于指导学生的。入学以后整体感觉是大差不差的，但还是太年轻，随着相处的时间变长，与导师的关系已经不是亦师亦友，至少我们团队不是，俨然成了“战友”或者“上下级”的关系。“战友”是因为科研讨论以及项目讨论时，一起冲锋陷阵，共患难都谈不上，有问题得自己扛着，“上下级”被群里那句“严格执行XXXXX的上班时间”体现的淋漓尽致，那请问我们的“上班工资”？？当然团队导师总的来说心地还是比较善良的，也有好的一面，今天是在没什么心情写，先到这里。</p><hr><div align="center"><font size="70">02</font></div></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 如初见 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>快速恢复基于Github搭建的个人博客</title>
+      <link href="/2021/04/10/ji-yu-github-kuai-su-da-jian-ge-ren-bo-ke/"/>
+      <url>/2021/04/10/ji-yu-github-kuai-su-da-jian-ge-ren-bo-ke/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><p>笔者使用的是博客模板，首先对开源此模板代码的前辈表示真挚的感谢！博客系统是基于Github搭建的，笔者定期对博客进行云端备份，在更换电脑，或者对博客搬迁时，可以快速搭建起写作环境。</p><h2 id="恢复过程主要包括下面的步骤："><a href="#恢复过程主要包括下面的步骤：" class="headerlink" title="恢复过程主要包括下面的步骤："></a>恢复过程主要包括下面的步骤：</h2><h3 id="①安装Node-js"><a href="#①安装Node-js" class="headerlink" title="①安装Node.js"></a>①安装Node.js</h3><p>默认选项安装。</p><h3 id="②安装Git"><a href="#②安装Git" class="headerlink" title="②安装Git"></a>②安装Git</h3><p>默认安装，如果是旧版本，在最后一步添加路径时选择Use Git from the Windows Command Prompt，这样就可以直接在命令提示符里打开Git，新版本没有此选项可以直接忽略。</p><h3 id="③安装Hexo"><a href="#③安装Hexo" class="headerlink" title="③安装Hexo"></a>③安装Hexo</h3><p>笔者建立了专门的文件夹用来存放本地博客，例如博客文件都存放在E:\blog目录下。在博客目录下右键点击Git Bash Here，打开Git的控制台窗口，以后我们所有的操作都在Git控制台进行。打开控制台后，输入下面的命令进行安装。<br><code>npm i hexo-cli -g</code></p><h3 id="④完成GitHub与本地写作环境的连接"><a href="#④完成GitHub与本地写作环境的连接" class="headerlink" title="④完成GitHub与本地写作环境的连接"></a>④完成GitHub与本地写作环境的连接</h3><p>在博客目录下，首先右键打开git bash，然后输入下面命令：<br><code>git config --global user.name &quot;UserName&quot;</code><br><code>git config --global user.email &quot;MailAddress&quot;</code><br>用户名根据Github中的信息自行修改。然后使用下面的命令生成密钥SSH key：<br><code>ssh-keygen -t rsa -C &quot;MailAddress&quot;</code><br>打开github，在头像下面点击settings，再点击SSH and GPG keys，新建一个SSH，名字随便。<br>在Git bash中使用下面的命令查询生成的SSH key<br><code>cat ~/.ssh/id_rsa.pub</code><br>将输出的内容复制到框中，点击确定保存。<br>然后再Git bash命令框中输入<code>ssh -T git@github.com</code>，出现用户名，就说明连接成功了。</p><h3 id="⑤写文章、发布文章"><a href="#⑤写文章、发布文章" class="headerlink" title="⑤写文章、发布文章"></a>⑤写文章、发布文章</h3><p>常用的命令包括：<br><code>hexo new post &quot;article title&quot;</code>  新建一篇文章<br><code>hexo g</code> 生成静态页面<br><code>hexo d</code>上传生成的静态页面到云端</p><p>超详细的步骤参考下面这篇博客，特别感谢在搭建博客初期作者文章对笔者的指导。<br>链接: <a href="https://godweiyang.com/2018/04/13/hexo-blog/" target="_blank" rel="noopener">https://godweiyang.com/2018/04/13/hexo-blog/</a>  作者: 韦阳</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术支持 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 搭建博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>大学阶段总结</title>
+      <link href="/2020/07/16/post-da-xue-jie-duan-zong-jie/"/>
+      <url>/2020/07/16/post-da-xue-jie-duan-zong-jie/</url>
+      
+        <content type="html"><![CDATA[<p>疫情这段时间在家总是感觉到莫名的烦躁！一方面给自己安排了学习计划，却总是因为计划的执行效果而苦恼。另一方面总是觉得时间不够用，却每天总会花许多的时间在游戏和短视频上！同时毕业季总会因为身边同龄朋友的动态使得自己的心态不断地发生变化！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 忆青春 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>毕业季留给你的保研指南一份</title>
+      <link href="/2020/06/22/bi-ye-ji-liu-gei-ni-de-bao-yan-zhi-nan-yi-fen/"/>
+      <url>/2020/06/22/bi-ye-ji-liu-gei-ni-de-bao-yan-zhi-nan-yi-fen/</url>
+      
+        <content type="html"><![CDATA[<h2 id="何谓保研"><a href="#何谓保研" class="headerlink" title="何谓保研"></a>何谓保研</h2><p>保研是由本科学校通过一定的选拔制度，推举到国家研究生录取系统的一种研究生招生方式。保研是读研究生的方式之一，相对于考研来说，笔者认为保研具有下面的优势：</p><ol><li>不用参加研究生考试，这样意味着可以省去大量的考研的备考时间，同时也没有考研时的巨大心理压力，当然，保研的过程中也有很大的心理压力，但是前三年的努力基本上已经尘埃落定；</li><li>考研的时间一般在毕业前一年的12月份考试，其实笔者身边有许多同学，因为实习和考研冲突的原因而选择在毕业之后专心去准备考研，但是笔者并不是很赞同。笔者认为毕业后全心投入考研和二战都需要慎重的选择。一方面考虑时间成本，以本科四年的学制为例，如果大四上学期全心准备考研（一般情况下大四同学们可以自己出去实习或者考研，课程一般很少），大四下学期出去参加研究生面试，顺便准备毕业的的相关事情，时间安排紧凑而又合理。另一方面是考虑自我抗压能力，毕业后身边的同学无非下面四种出路：<br>① 第一年顺利考到心仪大学的研究生，本科毕业后安排一场毕业旅行；<br>② 大四上学期实习后签约了心仪的offer，毕业后基本会安排入职，开始赚钱；<br>③ 第一年考研落榜，按时决心读研的同学，毕业后立刻投入了二战；<br>④ 第一年考研落榜，但是考研不是其唯一的选择，立刻参加学校的春招，也找到了一份自己认为可以的工作。<br>此时，你是第一年考研，可想而知心理压力非常的大，这就是为什么绝大多数同学都选择毕业前的12月份考研！</li></ol><hr><h2 id="保研如何准备"><a href="#保研如何准备" class="headerlink" title="保研如何准备"></a>保研如何准备</h2><p>考研的准备是有时间性的，首先是前几年的准备，主要包括学业成绩、比赛和综合素质。保研成绩是根据综合成绩来计算的，以笔者所在学校的为例，保研成绩由下面几部分组成：学业成绩70%，比赛成绩10%，学院认证的专利论文等10%，学院评委老师打分10%。上面的各项实际的分数并不是你最终的成绩，每一项的得分都是与各项成绩的第一名进行折算后得到的成绩，由上面的百分比可以知道，学业成绩所占的比重最大，其次是参加比赛获奖后得到的加分。其中最具变化性的是学院评委老师打分。笔者在保研的时候一直对学院面试分很有担心，一方面学院对保送本院本专业的同学提出了优惠政策，二是笔者想争取保送外校，争取到更高的平台。因此，一直担心在面试分数这一项会和争取保送校内的同学拉开很大的差距。</p><p>如果进入大学就有保研的想法，那么从大一开始，认真学习每一门课程，不能够等到考前突击，每门课程都要争取高分。虽然很多学校有重考的制度，但是不要抱太大的希望于重考时将成绩刷高，一方面耗费时间且自身压力大，另一方面是计算排名时也可能将重考的成绩按照新的科目计算在内。如果重考的科目低于你所有科目的平均分，那么将得不尝失。</p><p>在比赛成绩这一栏中，包含了各种证书。大学常见的证书比如英语四六级、计算机等级考试、软考等等，不同类型的证书加分也不同。关于比赛，省奖和国奖加分比较多，但是这类比赛如果想要获得比较好的名次，自身实力是一方面，另一方面也需要有好的资源，比如指导老师和实验室资源。以笔者所在的学校为例，学校的许多比赛是没有官网通知的，挂在学院的官网上，也不是每位同学都能够保证每天到不同的学院去查看公告。每个学院一般都有自己的工作室，而工作室只招收学院的部分同学。学院老师在遇到比赛信息时，一般都会先找本学校工作室的同学，毕竟对这些同学的实力都有一定的了解，因此对于工作室之外的同学想要获得有价值的比赛信息其实是非常的困难的。</p><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日志 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 保研 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown 基本语法</title>
+      <link href="/2020/06/21/markdown-ji-ben-yu-fa/"/>
+      <url>/2020/06/21/markdown-ji-ben-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<h2 id="一、语言介绍"><a href="#一、语言介绍" class="headerlink" title="一、语言介绍"></a>一、语言介绍</h2><p>Markdown, 纯文本格式标记语言，通过简单的标记语法，使普通文本具有一定的格式。</p><h2 id="二、标题语法"><a href="#二、标题语法" class="headerlink" title="二、标题语法"></a>二、标题语法</h2><p>一个 # 是一级标题，两个 # 是二级标题，以此类推，共支持六级标题。</p><p>PS： # 后跟一个英文<strong>空格</strong>再写文字。</p><h2 id="三、字体语法"><a href="#三、字体语法" class="headerlink" title="三、字体语法"></a>三、字体语法</h2><h3 id="1-加粗"><a href="#1-加粗" class="headerlink" title="1. 加粗"></a>1. 加粗</h3><p>加粗的文字部分 <strong>左右</strong>分别用 <strong>两个 * 号</strong> 包围起来。</p><h3 id="2-斜体"><a href="#2-斜体" class="headerlink" title="2. 斜体"></a>2. 斜体</h3><p>需要倾斜的文字 <strong>左右</strong>分别用 <em>*一个 </em> 号 ** 包围起来。</p><h3 id="3-加粗斜体"><a href="#3-加粗斜体" class="headerlink" title="3. 加粗斜体"></a>3. 加粗斜体</h3><p>需要加粗倾斜的文字 <strong>左右</strong>分别用 <em>*三个 </em> 号 ** 包围起来。</p><h3 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4. 删除线"></a>4. 删除线</h3><p>需要删除的文字 <strong>左右</strong> 分别用 <strong>两个~ ~号</strong> 包围起来（两个符号之间没有空格，左边单边则整个右边添加删除线）。</p><h2 id="四、引用语法"><a href="#四、引用语法" class="headerlink" title="四、引用语法"></a>四、引用语法</h2><p>在需要引用的文字前面加 &gt; ,可以使用多个 &gt; 进行嵌套。</p><h2 id="五、华丽分割线语法"><a href="#五、华丽分割线语法" class="headerlink" title="五、华丽分割线语法"></a>五、华丽分割线语法</h2><p>使用三个或者三个以上的 - 或者 * 都可以。</p><hr><hr><h2 id="六、插入图片语法"><a href="#六、插入图片语法" class="headerlink" title="六、插入图片语法"></a>六、插入图片语法</h2><p><code>![ little title]( adress &quot;title&quot;)</code></p><p>little title : 显示在图片下面的文字；<br>title： 图片的标题，可以不加，当鼠标移动到图片上时显示title。</p><h2 id="七、超链接语法"><a href="#七、超链接语法" class="headerlink" title="七、超链接语法"></a>七、超链接语法</h2><p><code>[超链接名]( 超链接地址 “超链接title ”)</code></p><p>直接点也可以实现跳转，超链接名：超链接地址。</p><h2 id="八、列表语法"><a href="#八、列表语法" class="headerlink" title="八、列表语法"></a>八、列表语法</h2><h3 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1. 无序列表"></a>1. 无序列表</h3><p>无序列表使用下面中的任何一种都是可以的：</p><pre><code>    -  列表内容；    +  列表内容；    *  列表内容；</code></pre><p>PS：- + * 跟内容之间都要有 一个空格。</p><h3 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2. 有序列表"></a>2. 有序列表</h3><p>数字加点，序号和内容之间是有空格的，eg，1. 列表内容 。</p><h3 id="3-列表嵌套"><a href="#3-列表嵌套" class="headerlink" title="3. 列表嵌套"></a>3. 列表嵌套</h3><p>上一级和下一级之间敲三个空格即可。</p><h2 id="九、表格语法"><a href="#九、表格语法" class="headerlink" title="九、表格语法"></a>九、表格语法</h2><p>语法展示：</p><pre><code>|表头|表头|表头||---|:———:|———:||内容|内容|内容||内容|内容|内容|</code></pre><p>语法解释：</p><pre><code>第二行分割表头和内容两边加: 表示文字居中左边加: 表示文字居左右边加: 表示文字居右PS：表格内容默认居左，原生的语法两边都需要加 | 包围起来，但是可以省略两边的|</code></pre><p>语法举例：</p><pre><code>姓名|技能|排行--|:--:|--:刘备|哭|大哥关羽|打|二哥张飞|骂|三弟</code></pre><p><img src="%E8%A1%A8%E6%A0%BC.png" alt=" 表格结果展示" title="表格结果展示"></p><h2 id="十、插入代码语法"><a href="#十、插入代码语法" class="headerlink" title="十、插入代码语法"></a>十、插入代码语法</h2><h3 id="1-插入单行代码"><a href="#1-插入单行代码" class="headerlink" title="1. 插入单行代码"></a>1. 插入单行代码</h3><p>单行代码左右分别用一个 反引号（`） 包围起来。</p><pre><code>`hello world`</code></pre><h3 id="2-插入代码块"><a href="#2-插入代码块" class="headerlink" title="2. 插入代码块"></a>2. 插入代码块</h3><p>代码块之间分别使用三个 反引号（```）</p><pre><code>(```)   code 1   code 2   code 3(```)</code></pre><p>PS: 为了防止转译，代码块中的三个 反引号 加了小括号，实际上是没有的。</p><h2 id="十一、插入流程图语法"><a href="#十一、插入流程图语法" class="headerlink" title="十一、插入流程图语法"></a>十一、插入流程图语法</h2><p>Typora支持的常用的Markdown流程图</p><pre><code>(```) flowst=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op(```)</code></pre><p>PS: 代码中的小括号（）为防止转译儿添加，实际中是没有的。</p><p><img src="liucheng.png" alt=" 流程图示例" title="流程图示例"></p><p>参考链接：<a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 知识快充站 </category>
           
       </categories>
       
@@ -38,14 +563,14 @@
       
       <categories>
           
-          <category> 博客 </category>
+          <category> 技术支持 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Hexo </tag>
+            <tag> 搭建博客 </tag>
             
         </tags>
       
@@ -58,12 +583,12 @@
       <link href="/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/"/>
       <url>/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/</url>
       
-        <content type="html"><![CDATA[<h1 id="Git编写文章的基本操作"><a href="#Git编写文章的基本操作" class="headerlink" title="Git编写文章的基本操作"></a>Git编写文章的基本操作</h1><h3 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h3><ul><li><strong>在博客根目录下运行 “ Git bash here”,</strong>  运行 <strong>hexo new post “article title” __ 命令 ，在</strong>blog\source_post__ 目录下生成  <strong>“article title”</strong> 文件夹，用于存放文章的数据及图片，此外生成一个 <strong>“article title”.md</strong> 文件，即为文章文件。</li></ul><h3 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h3><ul><li>推荐使用markdown 编辑器 编写 文章文件，运行<strong>hexo g __ 生成静态网页，静态网页的效果可以运行 __hexo s</strong> 命令，在浏览器中查看静态网页的表达效果。</li></ul><h3 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h3><ul><li>查看静态网页，修改到一个满意的版本后，运行 <strong>hexo d</strong> 命令，将发布内容上传到github上，这时访问 <strong>github.io</strong>  主页就可以查看发布的内容。</li></ul><h4 id="PS"><a href="#PS" class="headerlink" title="PS"></a>PS</h4><p>安利一款下载方便、简洁好用的 <strong>markdown 编辑器：Typora</strong> ，<a href="https://www.typora.io" target="_blank" rel="noopener">官网下载地址：</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="一、新建文章"><a href="#一、新建文章" class="headerlink" title="一、新建文章"></a>一、新建文章</h2><p>在博客根目录下运行 “ Git bash here”,__  运行 <strong>hexo new post “article title” __ 命令 ，在</strong>blog\source_post__ 目录下生成  <strong>“article title”</strong> 文件夹，用于存放文章的数据及图片，此外生成一个 <strong>“article title”.md</strong> 文件，即为文章文件。</p><h2 id="二、生成静态页面"><a href="#二、生成静态页面" class="headerlink" title="二、生成静态页面"></a>二、生成静态页面</h2><p>推荐使用markdown 编辑器 编写 文章文件，运行<strong>hexo g __ 生成静态网页，静态网页的效果可以运行 __hexo s</strong> 命令，在浏览器中查看静态网页的表达效果。</p><h2 id="三、-发布文章"><a href="#三、-发布文章" class="headerlink" title="三、 发布文章"></a>三、 发布文章</h2><p>查看静态网页，修改到一个满意的版本后，运行 <strong>hexo d</strong> 命令，将发布内容上传到github上，这时访问 <strong>github.io</strong>  主页就可以查看发布的内容。</p><p>PS: 安利一款下载方便、简洁好用的 <strong>markdown 编辑器：Typora</strong> 。</p>]]></content>
       
       
       <categories>
           
-          <category> 博客 </category>
+          <category> 技术支持 </category>
           
       </categories>
       

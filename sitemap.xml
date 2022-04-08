@@ -2,58 +2,205 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/</loc>
-    
-    <lastmod>2020-06-21T11:51:02.420Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lichwei.github.io/tags/index.html</loc>
     
-    <lastmod>2020-06-21T11:45:37.989Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/</loc>
-    
-    <lastmod>2020-06-21T10:57:38.992Z</lastmod>
+    <lastmod>2022-04-08T03:47:19.295Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/</loc>
     
-    <lastmod>2020-06-21T09:08:56.883Z</lastmod>
+    <lastmod>2022-04-07T12:18:12.593Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lichwei.github.io/categories/index.html</loc>
+    <loc>https://lichwei.github.io/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/</loc>
     
-    <lastmod>2020-06-21T09:07:08.510Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lichwei.github.io/about/index.html</loc>
-    
-    <lastmod>2020-06-17T05:14:03.276Z</lastmod>
+    <lastmod>2022-01-07T06:58:48.098Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lichwei.github.io/contact/index.html</loc>
+    <loc>https://lichwei.github.io/2021/08/22/chang-yong-wang-zhi-hui-zong/</loc>
     
-    <lastmod>2020-06-17T04:47:41.685Z</lastmod>
+    <lastmod>2021-12-18T13:26:18.514Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lichwei.github.io/friends/index.html</loc>
     
-    <lastmod>2020-06-17T04:45:53.525Z</lastmod>
+    <lastmod>2021-11-18T02:08:22.285Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/11/17/endnote-shi-yong-zhi-nan/</loc>
+    
+    <lastmod>2021-11-17T07:41:23.115Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/11/12/g-chang-yong-ming-ling-ji-gong-neng/</loc>
+    
+    <lastmod>2021-11-12T03:09:24.770Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/about/index.html</loc>
+    
+    <lastmod>2021-10-25T08:46:05.736Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/categories/index.html</loc>
+    
+    <lastmod>2021-09-23T07:13:37.377Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/09/16/kai-yuan-cang-ku-hui-zong/</loc>
+    
+    <lastmod>2021-09-22T03:05:27.041Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/09/21/vi-vim-de-shi-yong/</loc>
+    
+    <lastmod>2021-09-22T00:41:06.052Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/09/14/ad21-zhong-chang-yong-kuai-jie-jian-hui-zong/</loc>
+    
+    <lastmod>2021-09-16T13:12:59.886Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/08/26/ise14-7-zhong-ila-icon-vio-shi-yong-jian-yi/</loc>
+    
+    <lastmod>2021-08-26T07:23:54.961Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/08/22/python-kai-fa-huan-jing-da-jian/</loc>
+    
+    <lastmod>2021-08-22T06:56:39.195Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/08/18/word-zhong-tu-wen-bian-hao-zi-dong-geng-xin-she-zhi-fang-fa/</loc>
+    
+    <lastmod>2021-08-21T09:20:35.796Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/08/19/word-zhong-she-zhi-duo-ji-lie-biao-zi-dong-geng-xin/</loc>
+    
+    <lastmod>2021-08-21T09:20:25.008Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/08/20/word-zhong-cha-ru-ti-zhu-ji-jiao-cha-yin-yong-shuo-ming/</loc>
+    
+    <lastmod>2021-08-21T09:20:14.535Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/08/21/word-zhong-chang-yong-pai-ban-ji-qiao/</loc>
+    
+    <lastmod>2021-08-21T03:24:19.008Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/08/18/post-jie-jue-win10-xi-tong-xia-ise-shan-tui-wen-ti/</loc>
+    
+    <lastmod>2021-08-18T01:12:31.548Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/08/12/shi-yong-git-jiang-ben-di-dai-ma-shang-chuan-dao-github-fu-wu-qi/</loc>
+    
+    <lastmod>2021-08-12T13:42:55.108Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/08/12/postwin10-xia-ise14-4-wu-fa-da-kai-planahead-jie-jue-fang-an/</loc>
+    
+    <lastmod>2021-08-12T13:09:29.971Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/</loc>
+    
+    <lastmod>2021-08-12T07:47:24.430Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/08/05/matlab-zi-ding-yi-han-shu-de-wu-chong-fang-fa-hui-gu/</loc>
+    
+    <lastmod>2021-08-05T13:47:29.073Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/07/20/lun-yan-jiu-sheng-yu-dao-shi-de-guan-xi/</loc>
+    
+    <lastmod>2021-08-05T04:54:03.938Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/</loc>
+    
+    <lastmod>2021-08-05T04:52:51.113Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/04/10/ji-yu-github-kuai-su-da-jian-ge-ren-bo-ke/</loc>
+    
+    <lastmod>2021-08-05T04:52:37.166Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2020/07/16/post-da-xue-jie-duan-zong-jie/</loc>
+    
+    <lastmod>2021-08-05T04:51:53.174Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2020/06/22/bi-ye-ji-liu-gei-ni-de-bao-yan-zhi-nan-yi-fen/</loc>
+    
+    <lastmod>2021-08-05T04:47:51.544Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/contact/index.html</loc>
+    
+    <lastmod>2021-07-10T11:29:51.644Z</lastmod>
     
   </url>
   

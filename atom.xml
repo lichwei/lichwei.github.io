@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lichwei.github.io/"/>
-  <updated>2020-06-21T11:51:02.420Z</updated>
+  <updated>2022-01-07T06:58:48.098Z</updated>
   <id>https://lichwei.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Markdown 基本语法</title>
-    <link href="https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/"/>
-    <id>https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/</id>
-    <published>2020-06-21T10:58:34.000Z</published>
-    <updated>2020-06-21T11:51:02.420Z</updated>
+    <title>基于Gitee与TortoiseSVN的代码管理</title>
+    <link href="https://lichwei.github.io/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/"/>
+    <id>https://lichwei.github.io/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/</id>
+    <published>2022-01-06T06:54:52.000Z</published>
+    <updated>2022-01-07T06:58:48.098Z</updated>
     
     <summary type="html">
     
@@ -29,26 +29,26 @@
       
         
         
-          &lt;h2 id=&quot;一、语言介绍&quot;&gt;&lt;a href=&quot;#一、语言介绍&quot; class=&quot;headerlink&quot; title=&quot;一、语言介绍&quot;&gt;&lt;/a&gt;一、语言介绍&lt;/h2&gt;&lt;p&gt;Markdown, 纯文本格式标记语言，通过简单的标记语法，使普通文本具有一定的格式。&lt;/p&gt;
-&lt;h2
+          &lt;h2 id=&quot;基础软件&quot;&gt;&lt;a href=&quot;#基础软件&quot; class=&quot;headerlink&quot; title=&quot;基础软件&quot;&gt;&lt;/a&gt;基础软件&lt;/h2&gt;&lt;p&gt;使用版本控制客户端软件：TortoiseSVN&lt;/p&gt;
+&lt;p&gt;发现git
         
       
     
     </summary>
     
-      <category term="博客" scheme="https://lichwei.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
     
     
-      <category term="Markdown语法" scheme="https://lichwei.github.io/tags/Markdown%E8%AF%AD%E6%B3%95/"/>
+      <category term="TortoiseSVN" scheme="https://lichwei.github.io/tags/TortoiseSVN/"/>
     
   </entry>
   
   <entry>
-    <title>使用LeanCloud为hexo搭建的博客添加评论支持</title>
-    <link href="https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/"/>
-    <id>https://lichwei.github.io/2020/06/21/shi-yong-leancloud-wei-hexo-da-jian-de-bo-ke-tian-jia-ping-lun-zhi-chi/</id>
-    <published>2020-06-21T08:45:53.000Z</published>
-    <updated>2020-06-21T10:57:38.992Z</updated>
+    <title>EndNote使用指南</title>
+    <link href="https://lichwei.github.io/2021/11/17/endnote-shi-yong-zhi-nan/"/>
+    <id>https://lichwei.github.io/2021/11/17/endnote-shi-yong-zhi-nan/</id>
+    <published>2021-11-17T01:26:52.000Z</published>
+    <updated>2021-11-17T07:41:23.115Z</updated>
     
     <summary type="html">
     
@@ -56,25 +56,25 @@
       
         
         
-          &lt;h1 id=&quot;使用-LeanCloud-为hexo-搭建的博客添加评论支持&quot;&gt;&lt;a href=&quot;#使用-LeanCloud-为hexo-搭建的博客添加评论支持&quot; class=&quot;headerlink&quot; title=&quot;使用 LeanCloud 为hexo
+          &lt;p&gt;参考博客链接：&lt;a href=&quot;https://zhuanlan.zhihu.com/p/87749797&quot; target=&quot;_blank&quot;
         
       
     
     </summary>
     
-      <category term="博客" scheme="https://lichwei.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
     
     
-      <category term="Hexo" scheme="https://lichwei.github.io/tags/Hexo/"/>
+      <category term="EndNote" scheme="https://lichwei.github.io/tags/EndNote/"/>
     
   </entry>
   
   <entry>
-    <title>Git编写文章的基本操作</title>
-    <link href="https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/"/>
-    <id>https://lichwei.github.io/2020/06/19/git-bian-xie-wen-zhang-de-ji-ben-cao-zuo/</id>
-    <published>2020-06-19T01:09:04.000Z</published>
-    <updated>2020-06-21T09:08:56.883Z</updated>
+    <title>g++常用命令及功能</title>
+    <link href="https://lichwei.github.io/2021/11/12/g-chang-yong-ming-ling-ji-gong-neng/"/>
+    <id>https://lichwei.github.io/2021/11/12/g-chang-yong-ming-ling-ji-gong-neng/</id>
+    <published>2021-11-12T03:04:40.000Z</published>
+    <updated>2021-11-12T03:09:24.770Z</updated>
     
     <summary type="html">
     
@@ -82,16 +82,469 @@
       
         
         
-          &lt;h1 id=&quot;Git编写文章的基本操作&quot;&gt;&lt;a href=&quot;#Git编写文章的基本操作&quot; class=&quot;headerlink&quot; title=&quot;Git编写文章的基本操作&quot;&gt;&lt;/a&gt;Git编写文章的基本操作&lt;/h1&gt;&lt;h3 id=&quot;新建文章&quot;&gt;&lt;a href=&quot;#新建文章&quot;
+          &lt;p&gt;在Ubuntu下默认没有安装 g++ 编译器， sudo apt-get install build-essential，然后g++ -version检查版本信息。&lt;/p&gt;
+&lt;p&gt;参考链接： &lt;a
         
       
     
     </summary>
     
-      <category term="博客" scheme="https://lichwei.github.io/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
     
     
-      <category term="Git" scheme="https://lichwei.github.io/tags/Git/"/>
+      <category term="Linux" scheme="https://lichwei.github.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vi/vim的使用</title>
+    <link href="https://lichwei.github.io/2021/09/21/vi-vim-de-shi-yong/"/>
+    <id>https://lichwei.github.io/2021/09/21/vi-vim-de-shi-yong/</id>
+    <published>2021-09-21T02:56:13.000Z</published>
+    <updated>2021-09-22T00:41:06.052Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;什么是vim&quot;&gt;&lt;a href=&quot;#什么是vim&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    
+    
+      <category term="编辑器" scheme="https://lichwei.github.io/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开源仓库汇总</title>
+    <link href="https://lichwei.github.io/2021/09/16/kai-yuan-cang-ku-hui-zong/"/>
+    <id>https://lichwei.github.io/2021/09/16/kai-yuan-cang-ku-hui-zong/</id>
+    <published>2021-09-16T12:40:56.000Z</published>
+    <updated>2021-09-22T03:05:27.041Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;开源网站&quot;&gt;&lt;a href=&quot;#开源网站&quot; class=&quot;headerlink&quot; title=&quot;开源网站&quot;&gt;&lt;/a&gt;开源网站&lt;/h2&gt;&lt;p&gt;☆赛灵思官方开源仓库：  &lt;a href=&quot;https://github.com/xilinx&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    
+    
+      <category term="开源" scheme="https://lichwei.github.io/tags/%E5%BC%80%E6%BA%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>AD21中常用快捷键汇总</title>
+    <link href="https://lichwei.github.io/2021/09/14/ad21-zhong-chang-yong-kuai-jie-jian-hui-zong/"/>
+    <id>https://lichwei.github.io/2021/09/14/ad21-zhong-chang-yong-kuai-jie-jian-hui-zong/</id>
+    <published>2021-09-14T08:26:02.000Z</published>
+    <updated>2021-09-16T13:12:59.886Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;汇总如下（更新中）：&quot;&gt;&lt;a href=&quot;#汇总如下（更新中）：&quot; class=&quot;headerlink&quot; title=&quot;汇总如下（更新中）：&quot;&gt;&lt;/a&gt;汇总如下（更新中）：&lt;/h3&gt;&lt;p&gt;☆ V + B         板子翻转&lt;br&gt;☆ L          
+        
+      
+    
+    </summary>
+    
+      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    
+    
+      <category term="电路设计" scheme="https://lichwei.github.io/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ISE14.7中ILA+ICON+VIO使用建议</title>
+    <link href="https://lichwei.github.io/2021/08/26/ise14-7-zhong-ila-icon-vio-shi-yong-jian-yi/"/>
+    <id>https://lichwei.github.io/2021/08/26/ise14-7-zhong-ila-icon-vio-shi-yong-jian-yi/</id>
+    <published>2021-08-26T07:14:06.000Z</published>
+    <updated>2021-08-26T07:23:54.961Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h3&gt;&lt;p&gt;ISE14.7使用信号分析的 ILA 工具，除了需要配合 ICON
+        
+      
+    
+    </summary>
+    
+      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    
+    
+      <category term="FPGA" scheme="https://lichwei.github.io/tags/FPGA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>常用网址汇总</title>
+    <link href="https://lichwei.github.io/2021/08/22/chang-yong-wang-zhi-hui-zong/"/>
+    <id>https://lichwei.github.io/2021/08/22/chang-yong-wang-zhi-hui-zong/</id>
+    <published>2021-08-22T08:12:13.000Z</published>
+    <updated>2021-12-18T13:26:18.514Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;清华大学开源软件镜像站：&lt;a href=&quot;https://mirrors.tuna.tsinghua.edu.cn/#&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    
+    
+      <category term="常用网址" scheme="https://lichwei.github.io/tags/%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python开发环境搭建</title>
+    <link href="https://lichwei.github.io/2021/08/22/python-kai-fa-huan-jing-da-jian/"/>
+    <id>https://lichwei.github.io/2021/08/22/python-kai-fa-huan-jing-da-jian/</id>
+    <published>2021-08-22T03:10:06.000Z</published>
+    <updated>2021-08-22T06:56:39.195Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h3&gt;&lt;p&gt;记录国内源下载安装配置Anacondo 及 pycharm 的安装&lt;/p&gt;
+&lt;h3 id=&quot;安装-Python-3-开发环境&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    
+    
+      <category term="python" scheme="https://lichwei.github.io/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WORD中常用排版技巧</title>
+    <link href="https://lichwei.github.io/2021/08/21/word-zhong-chang-yong-pai-ban-ji-qiao/"/>
+    <id>https://lichwei.github.io/2021/08/21/word-zhong-chang-yong-pai-ban-ji-qiao/</id>
+    <published>2021-08-21T01:17:11.000Z</published>
+    <updated>2021-08-21T03:24:19.008Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h3&gt;&lt;p&gt;针对长文档有一些实用的小技巧，可以为后期文档的整合提供很大的方便。&lt;/p&gt;
+&lt;h4 id=&quot;使用样式&quot;&gt;&lt;a href=&quot;#使用样式&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
+    
+    
+      <category term="word" scheme="https://lichwei.github.io/tags/word/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WORD中插入题注及交叉引用说明</title>
+    <link href="https://lichwei.github.io/2021/08/20/word-zhong-cha-ru-ti-zhu-ji-jiao-cha-yin-yong-shuo-ming/"/>
+    <id>https://lichwei.github.io/2021/08/20/word-zhong-cha-ru-ti-zhu-ji-jiao-cha-yin-yong-shuo-ming/</id>
+    <published>2021-08-20T01:16:25.000Z</published>
+    <updated>2021-08-21T09:20:14.535Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;插入题注与交叉引用的优势&quot;&gt;&lt;a href=&quot;#插入题注与交叉引用的优势&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
+    
+    
+      <category term="word" scheme="https://lichwei.github.io/tags/word/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WORD中设置多级列表自动更新</title>
+    <link href="https://lichwei.github.io/2021/08/19/word-zhong-she-zhi-duo-ji-lie-biao-zi-dong-geng-xin/"/>
+    <id>https://lichwei.github.io/2021/08/19/word-zhong-she-zhi-duo-ji-lie-biao-zi-dong-geng-xin/</id>
+    <published>2021-08-19T01:15:08.000Z</published>
+    <updated>2021-08-21T09:20:25.008Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h3&gt;&lt;p&gt;在需要局部调整章节的长文档中，使用自动更新的多级列表是十分必要的，各级标题的页边距等都可统一设置。&lt;/p&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
+    
+    
+      <category term="word" scheme="https://lichwei.github.io/tags/word/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WORD中图文编号自动更新设置方法</title>
+    <link href="https://lichwei.github.io/2021/08/18/word-zhong-tu-wen-bian-hao-zi-dong-geng-xin-she-zhi-fang-fa/"/>
+    <id>https://lichwei.github.io/2021/08/18/word-zhong-tu-wen-bian-hao-zi-dong-geng-xin-she-zhi-fang-fa/</id>
+    <published>2021-08-18T06:56:29.000Z</published>
+    <updated>2021-08-21T09:20:35.796Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;如下图，word中有四张图片，并且正文中有与之对应的引用&lt;/p&gt;
+&lt;p&gt; 第一步：选中第一张图片，点击【引用】【插入题注】【新建标签】【确定】，此时第一张图片的编号格式已经插入可以自动更新的图号。&lt;br&gt; &lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
+    
+    
+      <category term="word" scheme="https://lichwei.github.io/tags/word/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>解决Win10系统下ISE闪退问题</title>
+    <link href="https://lichwei.github.io/2021/08/18/post-jie-jue-win10-xi-tong-xia-ise-shan-tui-wen-ti/"/>
+    <id>https://lichwei.github.io/2021/08/18/post-jie-jue-win10-xi-tong-xia-ise-shan-tui-wen-ti/</id>
+    <published>2021-08-18T01:09:15.000Z</published>
+    <updated>2021-08-18T01:12:31.548Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在 Win10 系统下安装 ISE 开发工具，会出现闪退问题，例如 添加许可证文件……&lt;/p&gt;
+&lt;p&gt;解决方法如下：&lt;/p&gt;
+&lt;p&gt;找到程序安装路径下的这两个文件夹： &lt;/p&gt;
+&lt;p&gt;X:\Xilinx\14.6\ISE_DS\ISE\lib\nt64
+        
+      
+    
+    </summary>
+    
+      <category term="FPGA" scheme="https://lichwei.github.io/categories/FPGA/"/>
+    
+    
+      <category term="开发工具" scheme="https://lichwei.github.io/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>使用Git将本地代码上传到Github服务器</title>
+    <link href="https://lichwei.github.io/2021/08/12/shi-yong-git-jiang-ben-di-dai-ma-shang-chuan-dao-github-fu-wu-qi/"/>
+    <id>https://lichwei.github.io/2021/08/12/shi-yong-git-jiang-ben-di-dai-ma-shang-chuan-dao-github-fu-wu-qi/</id>
+    <published>2021-08-12T13:10:50.000Z</published>
+    <updated>2021-08-12T13:42:55.108Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;已经很久没有将代码托管在Github服务器上了，之前一直使用的是本地的 TortoiseSVN ,今天花了些时间回顾下将本地项目 通过Git 更新到 Github 服务器（和博客上传使用的同一个Git）&lt;/p&gt;
+&lt;p&gt;最核心的内容是：本地文件夹需要和 Github服务器
+        
+      
+    
+    </summary>
+    
+      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    
+    
+      <category term="Github" scheme="https://lichwei.github.io/tags/Github/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>win10下ISE14.4无法打开planAhead解决方案</title>
+    <link href="https://lichwei.github.io/2021/08/12/postwin10-xia-ise14-4-wu-fa-da-kai-planahead-jie-jue-fang-an/"/>
+    <id>https://lichwei.github.io/2021/08/12/postwin10-xia-ise14-4-wu-fa-da-kai-planahead-jie-jue-fang-an/</id>
+    <published>2021-08-12T02:54:19.000Z</published>
+    <updated>2021-08-12T13:09:29.971Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在 win10 系统下安装 ISE14.7, 目前进行代码编译、综合、实现、生成编程文件都没有问题，但是无法为芯片分配引脚，如图所示：&lt;/p&gt;
+&lt;p&gt;`&lt;img src=&quot;PlanAhead.png&quot; alt=&quot; 无法打开planAhead界面&quot;&gt;&lt;br&gt;需要对
+        
+      
+    
+    </summary>
+    
+      <category term="FPGA" scheme="https://lichwei.github.io/categories/FPGA/"/>
+    
+    
+      <category term="开发工具" scheme="https://lichwei.github.io/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MATLAB自定义函数的五种方法回顾</title>
+    <link href="https://lichwei.github.io/2021/08/05/matlab-zi-ding-yi-han-shu-de-wu-chong-fang-fa-hui-gu/"/>
+    <id>https://lichwei.github.io/2021/08/05/matlab-zi-ding-yi-han-shu-de-wu-chong-fang-fa-hui-gu/</id>
+    <published>2021-08-05T01:16:52.000Z</published>
+    <updated>2021-08-05T13:47:29.073Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;MATLAB 使用很久了，作为仿真的数学工具，因为容易上手因而没有系统地去学习，接下来陆陆续续更新几篇文章对 MATLAB 的基本用法进行回顾总结。今天回顾 MATLAB 的几种常用的自定义函数的方法。&lt;br&gt;MATLAB
+        
+      
+    
+    </summary>
+    
+      <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
+    
+    
+      <category term="MATLAB总结" scheme="https://lichwei.github.io/tags/MATLAB%E6%80%BB%E7%BB%93/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>论研究生与导师的关系</title>
+    <link href="https://lichwei.github.io/2021/07/20/lun-yan-jiu-sheng-yu-dao-shi-de-guan-xi/"/>
+    <id>https://lichwei.github.io/2021/07/20/lun-yan-jiu-sheng-yu-dao-shi-de-guan-xi/</id>
+    <published>2021-07-20T00:41:58.000Z</published>
+    <updated>2021-08-05T04:54:03.938Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;div align=&quot;center&quot;&gt;&lt;font
+        
+      
+    
+    </summary>
+    
+      <category term="日志" scheme="https://lichwei.github.io/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="如初见" scheme="https://lichwei.github.io/tags/%E5%A6%82%E5%88%9D%E8%A7%81/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>快速恢复基于Github搭建的个人博客</title>
+    <link href="https://lichwei.github.io/2021/04/10/ji-yu-github-kuai-su-da-jian-ge-ren-bo-ke/"/>
+    <id>https://lichwei.github.io/2021/04/10/ji-yu-github-kuai-su-da-jian-ge-ren-bo-ke/</id>
+    <published>2021-04-10T08:03:51.000Z</published>
+    <updated>2021-08-05T04:52:37.166Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;前期准备&quot;&gt;&lt;a href=&quot;#前期准备&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    
+    
+      <category term="搭建博客" scheme="https://lichwei.github.io/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大学阶段总结</title>
+    <link href="https://lichwei.github.io/2020/07/16/post-da-xue-jie-duan-zong-jie/"/>
+    <id>https://lichwei.github.io/2020/07/16/post-da-xue-jie-duan-zong-jie/</id>
+    <published>2020-07-16T10:27:59.000Z</published>
+    <updated>2021-08-05T04:51:53.174Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;疫情这段时间在家总是感觉到莫名的烦躁！一方面给自己安排了学习计划，却总是因为计划的执行效果而苦恼。另一方面总是觉得时间不够用，却每天总会花许多的时间在游戏和短视频上！同时毕业季总会因为身边同龄朋友的动态使得自己的心态不断地发生变化！&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="日志" scheme="https://lichwei.github.io/categories/%E6%97%A5%E5%BF%97/"/>
+    
+    
+      <category term="忆青春" scheme="https://lichwei.github.io/tags/%E5%BF%86%E9%9D%92%E6%98%A5/"/>
     
   </entry>
   
