@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lichwei.github.io/"/>
-  <updated>2022-01-07T06:58:48.098Z</updated>
+  <updated>2022-07-14T12:17:48.553Z</updated>
   <id>https://lichwei.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>verilog设计--if...else与case区别比较</title>
+    <link href="https://lichwei.github.io/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/"/>
+    <id>https://lichwei.github.io/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/</id>
+    <published>2022-07-14T09:22:11.000Z</published>
+    <updated>2022-07-14T12:17:48.553Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Verilog中if-…-else嵌套与case分支的区别比较&quot;&gt;&lt;a href=&quot;#Verilog中if-…-else嵌套与case分支的区别比较&quot; class=&quot;headerlink&quot; title=&quot;Verilog中if …
+        
+      
+    
+    </summary>
+    
+      <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
+    
+    
+      <category term="verilogHDL" scheme="https://lichwei.github.io/tags/verilogHDL/"/>
+    
+  </entry>
   
   <entry>
     <title>基于Gitee与TortoiseSVN的代码管理</title>
@@ -518,33 +544,6 @@
     
     
       <category term="搭建博客" scheme="https://lichwei.github.io/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>大学阶段总结</title>
-    <link href="https://lichwei.github.io/2020/07/16/post-da-xue-jie-duan-zong-jie/"/>
-    <id>https://lichwei.github.io/2020/07/16/post-da-xue-jie-duan-zong-jie/</id>
-    <published>2020-07-16T10:27:59.000Z</published>
-    <updated>2021-08-05T04:51:53.174Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;疫情这段时间在家总是感觉到莫名的烦躁！一方面给自己安排了学习计划，却总是因为计划的执行效果而苦恼。另一方面总是觉得时间不够用，却每天总会花许多的时间在游戏和短视频上！同时毕业季总会因为身边同龄朋友的动态使得自己的心态不断地发生变化！&lt;/p&gt;
-
-        
-      
-    
-    </summary>
-    
-      <category term="日志" scheme="https://lichwei.github.io/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-      <category term="忆青春" scheme="https://lichwei.github.io/tags/%E5%BF%86%E9%9D%92%E6%98%A5/"/>
     
   </entry>
   

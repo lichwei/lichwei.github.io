@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>verilog设计--if...else与case区别比较</title>
+      <link href="/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/"/>
+      <url>/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Verilog中if-…-else嵌套与case分支的区别比较"><a href="#Verilog中if-…-else嵌套与case分支的区别比较" class="headerlink" title="Verilog中if … else嵌套与case分支的区别比较"></a>Verilog中if … else嵌套与case分支的区别比较</h2><p>在VerilogHDL电路设计中，if语句指定另一个具有<strong>优先级的编码逻辑</strong>，而case语句生成的逻辑语句是并行的，<strong>不具有优先级</strong>。</p><p>通常情况下，if … else结构速度比较慢，但是占用面积较小；case 结构速度较快，但占用面积较大。</p><p>如果嵌套的if … else 语句使用不当，就会导致设计的更大延时，为了避免较大的路径延时，不能使用特别长的嵌套 if …else 结构。如果需要利用if … else语句实现那些对延时要求苛刻的路径，应该将最高优先级给最迟到达的关键信号。</p><p><img src="if_else_case.png" alt="两种分支结构区别比较"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数字IC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> verilogHDL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于Gitee与TortoiseSVN的代码管理</title>
       <link href="/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/"/>
       <url>/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/</url>

@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lichwei.github.io/about/index.html</loc>
+    <loc>https://lichwei.github.io/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/</loc>
     
-    <lastmod>2022-06-15T06:59:32.883Z</lastmod>
+    <lastmod>2022-07-14T12:17:48.553Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lichwei.github.io/tags/index.html</loc>
     
-    <lastmod>2022-04-08T03:47:19.295Z</lastmod>
+    <lastmod>2022-07-14T09:27:57.714Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/categories/index.html</loc>
+    
+    <lastmod>2022-07-14T09:26:52.656Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/about/index.html</loc>
+    
+    <lastmod>2022-06-15T06:59:32.883Z</lastmod>
     
   </url>
   
@@ -54,13 +68,6 @@
     <loc>https://lichwei.github.io/2021/11/12/g-chang-yong-ming-ling-ji-gong-neng/</loc>
     
     <lastmod>2021-11-12T03:09:24.770Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lichwei.github.io/categories/index.html</loc>
-    
-    <lastmod>2021-09-23T07:13:37.377Z</lastmod>
     
   </url>
   
