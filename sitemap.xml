@@ -2,16 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lichwei.github.io/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/</loc>
+    <loc>https://lichwei.github.io/2022/03/23/vivado-zhong-kuai-su-zhao-dao-zong-he-hou-schematic-zhong-object/</loc>
     
-    <lastmod>2022-07-14T12:17:48.553Z</lastmod>
+    <lastmod>2022-08-26T08:13:27.620Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2022/02/26/fpga-she-ji-liang-duan-yu-san-duan-zhuang-tai-ji-fen-xi/</loc>
+    
+    <lastmod>2022-08-26T08:12:39.882Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/</loc>
+    
+    <lastmod>2022-08-22T03:02:33.264Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2021/08/22/chang-yong-wang-zhi-hui-zong/</loc>
+    
+    <lastmod>2022-08-15T01:40:09.865Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/</loc>
+    
+    <lastmod>2022-08-06T08:32:09.107Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://lichwei.github.io/tags/index.html</loc>
     
-    <lastmod>2022-07-14T09:27:57.714Z</lastmod>
+    <lastmod>2022-08-05T10:51:22.060Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/</loc>
+    
+    <lastmod>2022-07-14T12:45:31.405Z</lastmod>
     
   </url>
   
@@ -40,13 +75,6 @@
     <loc>https://lichwei.github.io/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/</loc>
     
     <lastmod>2022-01-07T06:58:48.098Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lichwei.github.io/2021/08/22/chang-yong-wang-zhi-hui-zong/</loc>
-    
-    <lastmod>2021-12-18T13:26:18.514Z</lastmod>
     
   </url>
   
@@ -152,13 +180,6 @@
     <loc>https://lichwei.github.io/2021/08/12/postwin10-xia-ise14-4-wu-fa-da-kai-planahead-jie-jue-fang-an/</loc>
     
     <lastmod>2021-08-12T13:09:29.971Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/</loc>
-    
-    <lastmod>2021-08-12T07:47:24.430Z</lastmod>
     
   </url>
   

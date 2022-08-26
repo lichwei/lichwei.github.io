@@ -330,7 +330,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -485,7 +485,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    185
+                    331
                 </div>
                 
 
@@ -512,6 +512,7 @@
 <p>通常情况下，if … else结构速度比较慢，但是占用面积较小；case 结构速度较快，但占用面积较大。</p>
 <p>如果嵌套的if … else 语句使用不当，就会导致设计的更大延时，为了避免较大的路径延时，不能使用特别长的嵌套 if …else 结构。如果需要利用if … else语句实现那些对延时要求苛刻的路径，应该将最高优先级给最迟到达的关键信号。</p>
 <p><img src="if_else_case.png" alt="两种分支结构区别比较"></p>
+<p>需要注意的是，不完整的if … else 在时序电路中没有什么影响，可是在组合电路中会生成latch! case分支结构没有列举出所有的情况时，必须使用default，否则会产生latch,使用default使得覆盖率无法达到100%。<br>case分支结构共有三种形式，case(),casez(),casex()，其中case()判断0,1,x,z四种情况下的等价；casez()判断0,1,x三种情况下的等价，对z判断为真；casex()判断0,1两种情况下的等价，对x,z判断为真。</p>
 
             </div>
             <hr />
@@ -731,49 +732,47 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/">
+                <a href="/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="verilog设计--if...else与case区别比较">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="基于FPGA实现多相滤波">
                         
-                        <span class="card-title">verilog设计--if...else与case区别比较</span>
+                        <span class="card-title">基于FPGA实现多相滤波</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Verilog中if … else嵌套与case分支的区别比较在VerilogHDL电路设计中，if语句指定另一个具有优先级的编码逻辑，而case语句生成的逻辑语句是并行的，不具有优先级。
-通常情况下，if … else结构速度比较慢，但是
+                            使用ADC083000，量化位数是8bits， 最高采样率3.4GSPS（即3.4GHz），ADC083000配置为 DDR mode，随路时钟为  1/4 采样时钟。采用带通采样，带通采样定理 
+$$f_{S}=\frac{4 f_{0}
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-07-14
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-08-05
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/数字IC/" class="post-category" target="_blank">
-                                    数字IC
+                            <a href="/categories/FPGA/" class="post-category" target="_blank">
+                                    FPGA
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/verilogHDL/" target="_blank">
-                        <span class="chip bg-color">verilogHDL</span>
+                    <a href="/tags/FPGA/" target="_blank">
+                        <span class="chip bg-color">FPGA</span>
                     </a>
                     
                 </div>
@@ -787,33 +786,36 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/">
+                <a href="/2022/03/23/vivado-zhong-kuai-su-zhao-dao-zong-he-hou-schematic-zhong-object/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="基于Gitee与TortoiseSVN的代码管理">
+                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="vivado中快速找到综合后schematic中object">
                         
-                        <span class="card-title">基于Gitee与TortoiseSVN的代码管理</span>
+                        <span class="card-title">vivado中快速找到综合后schematic中object</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            基础软件使用版本控制客户端软件：TortoiseSVN
-发现git 无法更新内容到github，寻找原因中。
-例如FPGA工程产生的空文件夹，SVN 无法commit, 可以使用批处理工具为空文件夹下添加 .keep文件。批处理文件链接如下
+                            在vivado中对设计的RTL代码进行综合后，查看schematic可以更清楚各个模块之间的连线关系。如下图所示：
+
+
+打开RTL ANALYSIS 即可查看到模块级联的关系图。
+
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-01-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-03-23
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/技术支持/" class="post-category" target="_blank">
-                                    技术支持
+                            <a href="/categories/数字IC/" class="post-category" target="_blank">
+                                    数字IC
                                 </a>
                             
                             
@@ -823,8 +825,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/TortoiseSVN/" target="_blank">
-                        <span class="chip bg-color">TortoiseSVN</span>
+                    <a href="/tags/编辑器/" target="_blank">
+                        <span class="chip bg-color">编辑器</span>
                     </a>
                     
                 </div>

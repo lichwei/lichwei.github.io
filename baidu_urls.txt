@@ -1,4 +1,7 @@
+https://lichwei.github.io/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/
 https://lichwei.github.io/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/
+https://lichwei.github.io/2022/03/23/vivado-zhong-kuai-su-zhao-dao-zong-he-hou-schematic-zhong-object/
+https://lichwei.github.io/2022/02/26/fpga-she-ji-liang-duan-yu-san-duan-zhuang-tai-ji-fen-xi/
 https://lichwei.github.io/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/
 https://lichwei.github.io/2021/11/17/endnote-shi-yong-zhi-nan/
 https://lichwei.github.io/2021/11/12/g-chang-yong-ming-ling-ji-gong-neng/

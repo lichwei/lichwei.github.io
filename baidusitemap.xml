@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lichwei.github.io/2022/03/23/vivado-zhong-kuai-su-zhao-dao-zong-he-hou-schematic-zhong-object/</loc>
+    <lastmod>2022-08-26</lastmod>
+  </url>  <url>
+    <loc>https://lichwei.github.io/2022/02/26/fpga-she-ji-liang-duan-yu-san-duan-zhuang-tai-ji-fen-xi/</loc>
+    <lastmod>2022-08-26</lastmod>
+  </url>  <url>
+    <loc>https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/</loc>
+    <lastmod>2022-08-22</lastmod>
+  </url>  <url>
+    <loc>https://lichwei.github.io/2021/08/22/chang-yong-wang-zhi-hui-zong/</loc>
+    <lastmod>2022-08-15</lastmod>
+  </url>  <url>
+    <loc>https://lichwei.github.io/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/</loc>
+    <lastmod>2022-08-06</lastmod>
+  </url>  <url>
     <loc>https://lichwei.github.io/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/</loc>
     <lastmod>2022-07-14</lastmod>
   </url>  <url>
@@ -9,9 +24,6 @@
   </url>  <url>
     <loc>https://lichwei.github.io/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/</loc>
     <lastmod>2022-01-07</lastmod>
-  </url>  <url>
-    <loc>https://lichwei.github.io/2021/08/22/chang-yong-wang-zhi-hui-zong/</loc>
-    <lastmod>2021-12-18</lastmod>
   </url>  <url>
     <loc>https://lichwei.github.io/2021/11/17/endnote-shi-yong-zhi-nan/</loc>
     <lastmod>2021-11-17</lastmod>
@@ -53,9 +65,6 @@
     <lastmod>2021-08-12</lastmod>
   </url>  <url>
     <loc>https://lichwei.github.io/2021/08/12/postwin10-xia-ise14-4-wu-fa-da-kai-planahead-jie-jue-fang-an/</loc>
-    <lastmod>2021-08-12</lastmod>
-  </url>  <url>
-    <loc>https://lichwei.github.io/2020/06/21/markdown-ji-ben-yu-fa/</loc>
     <lastmod>2021-08-12</lastmod>
   </url>  <url>
     <loc>https://lichwei.github.io/2021/08/05/matlab-zi-ding-yi-han-shu-de-wu-chong-fang-fa-hui-gu/</loc>

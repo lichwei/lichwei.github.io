@@ -4,11 +4,36 @@
   
     
     <entry>
+      <title>基于FPGA实现多相滤波</title>
+      <link href="/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/"/>
+      <url>/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/</url>
+      
+        <content type="html"><![CDATA[<p>使用ADC083000，量化位数是8bits， 最高采样率3.4GSPS（即3.4GHz），ADC083000配置为 DDR mode，随路时钟为  1/4 采样时钟。采用带通采样，带通采样定理 </p><p>$$<br>f_{S}=\frac{4 f_{0}}{2 M+1}<br>$$<br>其中M取能够满足$ f_{s}&gt;=2B $ 的正整数，则用$f_{s}$等间隔采样得到的信号采样值能准确地确定原信号。<br>将输入信号带宽加入保护带宽之后变换为1.35~2.7GHz，采样率取为2.7GHz，</p><p>抽取相当于对 原始信号 进行重新采样，如果原始信号序列的采样率为fs，那么它的无模糊带宽为fs/2，因此经过 D倍 抽取后得到新序列的采样率为 fs/D，新信号序列的无模糊带宽为 fs / ( 2D )。因此在抽取前，原始信号序列中不能含有带宽超过 fs / ( 2D ) 的信号。否则，新的信号序列将会出现频谱混叠，很难通过新的信号序列完美的恢复出原始信号序列。</p><p>且抽取倍数大，需要的信道数就多。</p><hr><p>Q&amp;A</p><p>1、xilinx 的 时钟管理 IP</p><p>– 时钟向导（ clocking Wizard ），最多可以配置两个时钟输入，选择单端时钟输入，或者选择差分时钟输入，对时钟进行分频，倍频，时钟相位调整。</p><p>2、ISERDESE2 串并转换器</p><p>ISERDESE2 是专用的 串并抓换器，无需过多复杂的时序操作，并且有sdr 与 ddr 两种模式，适合应用到高速源同步应用中。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> FPGA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FPGA </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>verilog设计--if...else与case区别比较</title>
       <link href="/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/"/>
       <url>/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/</url>
       
-        <content type="html"><![CDATA[<h2 id="Verilog中if-…-else嵌套与case分支的区别比较"><a href="#Verilog中if-…-else嵌套与case分支的区别比较" class="headerlink" title="Verilog中if … else嵌套与case分支的区别比较"></a>Verilog中if … else嵌套与case分支的区别比较</h2><p>在VerilogHDL电路设计中，if语句指定另一个具有<strong>优先级的编码逻辑</strong>，而case语句生成的逻辑语句是并行的，<strong>不具有优先级</strong>。</p><p>通常情况下，if … else结构速度比较慢，但是占用面积较小；case 结构速度较快，但占用面积较大。</p><p>如果嵌套的if … else 语句使用不当，就会导致设计的更大延时，为了避免较大的路径延时，不能使用特别长的嵌套 if …else 结构。如果需要利用if … else语句实现那些对延时要求苛刻的路径，应该将最高优先级给最迟到达的关键信号。</p><p><img src="if_else_case.png" alt="两种分支结构区别比较"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Verilog中if-…-else嵌套与case分支的区别比较"><a href="#Verilog中if-…-else嵌套与case分支的区别比较" class="headerlink" title="Verilog中if … else嵌套与case分支的区别比较"></a>Verilog中if … else嵌套与case分支的区别比较</h2><p>在VerilogHDL电路设计中，if语句指定另一个具有<strong>优先级的编码逻辑</strong>，而case语句生成的逻辑语句是并行的，<strong>不具有优先级</strong>。</p><p>通常情况下，if … else结构速度比较慢，但是占用面积较小；case 结构速度较快，但占用面积较大。</p><p>如果嵌套的if … else 语句使用不当，就会导致设计的更大延时，为了避免较大的路径延时，不能使用特别长的嵌套 if …else 结构。如果需要利用if … else语句实现那些对延时要求苛刻的路径，应该将最高优先级给最迟到达的关键信号。</p><p><img src="if_else_case.png" alt="两种分支结构区别比较"></p><p>需要注意的是，不完整的if … else 在时序电路中没有什么影响，可是在组合电路中会生成latch! case分支结构没有列举出所有的情况时，必须使用default，否则会产生latch,使用default使得覆盖率无法达到100%。<br>case分支结构共有三种形式，case(),casez(),casex()，其中case()判断0,1,x,z四种情况下的等价；casez()判断0,1,x三种情况下的等价，对z判断为真；casex()判断0,1两种情况下的等价，对x,z判断为真。</p>]]></content>
       
       
       <categories>
@@ -21,6 +46,56 @@
         <tags>
             
             <tag> verilogHDL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vivado中快速找到综合后schematic中object</title>
+      <link href="/2022/03/23/vivado-zhong-kuai-su-zhao-dao-zong-he-hou-schematic-zhong-object/"/>
+      <url>/2022/03/23/vivado-zhong-kuai-su-zhao-dao-zong-he-hou-schematic-zhong-object/</url>
+      
+        <content type="html"><![CDATA[<p>在vivado中对设计的RTL代码进行综合后，查看schematic可以更清楚各个模块之间的连线关系。如下图所示：</p><img src="vivado中快速找到综合后schematic中object.assets/image-20220826100622805.png" alt="image-20220826100622805" style="zoom:50%;"><p>打开RTL ANALYSIS 即可查看到模块级联的关系图。</p><p><img src="vivado%E4%B8%AD%E5%BF%AB%E9%80%9F%E6%89%BE%E5%88%B0%E7%BB%BC%E5%90%88%E5%90%8Eschematic%E4%B8%ADobject.assets/image-20220826100836091.png" alt="image-20220826100836091"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数字IC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 编辑器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>FPGA设计两段与三段状态机分析</title>
+      <link href="/2022/02/26/fpga-she-ji-liang-duan-yu-san-duan-zhuang-tai-ji-fen-xi/"/>
+      <url>/2022/02/26/fpga-she-ji-liang-duan-yu-san-duan-zhuang-tai-ji-fen-xi/</url>
+      
+        <content type="html"><![CDATA[<h3 id="状态机的基本概念"><a href="#状态机的基本概念" class="headerlink" title="状态机的基本概念"></a>状态机的基本概念</h3><p>1) 摩尔型 和 米莉型状态机都是有限状态机( FSM );<br>2) 摩尔型状态机：时序电路的输出只取决于当前状态；<br>3) 米莉型状态机：时序电路的输出不但取决于状态还取决于输入；<br>4) 对于FPGA设计实现的有限状态机，建议使用独热码，<strong>因为虽然独热编码多用了连个触发器，但是所使用的的组合电路省一些，但是所使用的组合电路可省一些，因而使得电路速度和可靠性显著高，而总的单元数并无显著增加</strong>。采用独热编码后有了很多多余的状态，因此<strong>在case语句的最后一定要添加default分支项。</strong>可以使用默认项表示该项，<strong>也可以使用确定项表示该项，确保回到Idle状态</strong>。一般综合器都可以通过综合指令的控制合理地处理默认项。<br>5) 一般使用<strong>同步置位与复位</strong>状态机，always块的执行只由时钟跳边沿触发，是否置位 或者 复位，应该在always块中首先检查set 和 reset 信号的电平。<strong>所以set和reset饿电平维持时间必须大于时钟沿的间隔时间，否则set和reset不能每次都能有效的完成置位和复位的工作</strong>。</p><h3 id="一段式状态机"><a href="#一段式状态机" class="headerlink" title="一段式状态机"></a>一段式状态机</h3><p>整个电路用一个always块（即一段）描述，包含<strong>状态转移条件判断、状态输出和状态寄存器转移</strong>，如下图。</p><img src="FPGA设计两段与三段状态机分析.assets/image-20220826110500321.png" alt="image-20220826110500321" style="zoom:80%;"><p><strong>特点</strong>：<br>一段式建模必须考虑现在何种状态转移条件下会进入哪些次态，然后在每个现态的case分支下分别描述每个次态的输出。<br><strong>缺点：</strong><br>1）不利于修改和维护代码；<br>2）不符合时序逻辑与组合逻辑分开描述的代码描述风格；<br>3）不利于附加约束；<br>4）不利于综合器 和 布局布线器对设计的优化；<br>5）代码冗长。</p><h3 id="两段式状态机"><a href="#两段式状态机" class="headerlink" title="两段式状态机"></a>两段式状态机</h3><img src="FPGA设计两段与三段状态机分析.assets/image-20220826154814558.png" alt="image-20220826154814558" style="zoom:80%;"><p>第一个进程（同步时序always模块），格式化描述次态到现态的转移；第二个进程（纯组合逻辑always模块），一般情况下是组合逻辑输出，<strong>如果时序允许，尽量寄存器输出</strong>。</p><p><strong>缺点:</strong> 使用两段式,其输出一般使用组合逻辑描述,而组合逻辑易产生毛刺等不稳定因素。</p><h3 id="三段式状态机"><a href="#三段式状态机" class="headerlink" title="三段式状态机"></a>三段式状态机</h3><img src="FPGA设计两段与三段状态机分析.assets/image-20220826155917275.png" alt="image-20220826155917275" style="zoom:80%;"><p><strong>特点</strong>：<br>只需要指定case敏感列表次态寄存器，然后在每个次态case分支中描述该状态的输出即可（根本不用考虑状态转移条件）。</p><p><strong>三段式优点</strong>：</p><p>1）FSM做到了同步寄存器输出；</p><p>2）消除了组合逻辑输出的不稳定与毛刺的隐患；</p><p>3）更利于时序路径分组；</p><p>4）在FPGA/CPLD等可编程逻辑器件上的综合与布局布线效果更佳。</p><h3 id="代码设计举例"><a href="#代码设计举例" class="headerlink" title="代码设计举例"></a>代码设计举例</h3><p><img src="FPGA%E8%AE%BE%E8%AE%A1%E4%B8%A4%E6%AE%B5%E4%B8%8E%E4%B8%89%E6%AE%B5%E7%8A%B6%E6%80%81%E6%9C%BA%E5%88%86%E6%9E%90.assets/image-20220826160931766.png" alt="image-20220826160931766"></p><p>针对上述状态转移图，设计状态机代码如下。</p><p>一段式状态机设计。</p><pre><code>`timescale  1ns / 1psmodule  module_name(// Defines the input signal// Defines the output signal as reg --To reduce the probability of Matastable Stateinput                       sys_clk,input                       areset,input                       in,output  reg                 out);parameter   A = 1&#39;b0;parameter   B = 1&#39;b1;// Define intermediate signal as reg --To reduce the probability of Matastable Statereg           state;always @(posedge clk or posedge areset) begin    if (areset) begin        state &lt;= B;        out &lt;= 1&#39;b1;    end    else begin        case( state )            B:begin                if( in == 1&#39;b1 ) begin                    state &lt;= B;                    out &lt;= 1&#39;b1;                end                else begin                    state &lt;= A;                    out &lt;= 1&#39;b0;                end            end            A:begin                if( in &lt;= 1&#39;b1 ) begin                   state &lt;= A;                   out &lt;= 1&#39;b0;                 end            end            default:begin                state &lt;= B;                out &lt;= 1&#39;b1;            end        endcase     endendendmodule</code></pre><p>二段式状态机设计</p><pre><code>`timescale  1ns / 1psmodule  module_name(// Defines the input signal// Defines the output signal as reg --To reduce the probability of Matastable Stateinput                       sys_clk,input                       areset,input                       in,output  reg                 out);parameter   A = 1&#39;b0;parameter   B = 1&#39;b1;// Define intermediate signal as reg --To reduce the probability of Matastable State// reg           state;reg     current_state;reg     next_state;always @(posedge clk or posedge areset) begin    if (areset) begin        current_state &lt;= B;    end    else begin        current_state &lt;= next_state;    endendalways @ (*)    begin    case( current_state )        B:begin            if( in == 1&#39;b1 )    begin                next_state = B;            end            else begin                next_state = A;            end            out = 1&#39;b1;        end        A:begin            out = 1&#39;b0;            if( in == 1&#39;b1 )    begin                next_state = A;            end            else begin                next_state = B;            end            out = 1&#39;b0;        end    endcaseendendmodule</code></pre><p>三段式状态机</p><pre><code>`timescale  1ns / 1psmodule  module_name(// Defines the input signal// Defines the output signal as reg --To reduce the probability of Matastable Stateinput                       sys_clk,input                       areset,input                       in,output  reg                 out);parameter   A = 1&#39;b0;parameter   B = 1&#39;b1;// Define intermediate signal as reg --To reduce the probability of Matastable State// reg           state;reg     current_state;reg     next_state;always @(posedge sys_clk or posedge areset) begin    if (areset) begin        current_state &lt;= B;    end    else begin        current_state &lt;= next_state;    endendalways @ (*)    begin    case( current_state )        B:begin            if( in == 1&#39;b1 )    begin                next_state = B;            end            else begin                next_state = A;            end            // out = 1&#39;b1;        end        A:begin            out = 1&#39;b0;            if( in == 1&#39;b1 )    begin                next_state = A;            end            else begin                next_state = B;            end            // out = 1&#39;b0;        end    endcaseendalways @( posedge sys_clk or negedge areset )    begin    if ( areset )   begin        out &lt;= 1&#39;b1;    end    else if( next_state == B ) begin        out &lt;= 1&#39;b1;    end    else begin        out &lt;= 1&#39;b0;    endendendmodule</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数字IC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> FPGA </tag>
             
         </tags>
       
@@ -208,7 +283,7 @@
       <link href="/2021/08/22/chang-yong-wang-zhi-hui-zong/"/>
       <url>/2021/08/22/chang-yong-wang-zhi-hui-zong/</url>
       
-        <content type="html"><![CDATA[<p>清华大学开源软件镜像站：<a href="https://mirrors.tuna.tsinghua.edu.cn/#" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/#</a></p><p>爱荷华大学美式音标口腔剖面在线学习: <a href="https://soundsofspeech.uiowa.edu/english/english.html" target="_blank" rel="noopener">https://soundsofspeech.uiowa.edu/english/english.html</a></p><p>Zlibrary（丰富的可下载高清电子书资源）: <a href="https://1lib.limited/?signAll=1&amp;ts=1227" target="_blank" rel="noopener">https://1lib.limited/?signAll=1&amp;ts=1227</a></p><p>Latex 公式编辑器（图片公式亦可识别）： <a href="https://www.latexlive.com/##" target="_blank" rel="noopener">https://www.latexlive.com/##</a></p><p>帮助用户将网络托管在 IPFS 网络上 的服务：<a href="https://fleek.co/" target="_blank" rel="noopener">https://fleek.co/</a></p><p><a href="https://denigma.app/" target="_blank" rel="noopener">Denigma</a></p><p><a href="https://denigma.app/extension" target="_blank" rel="noopener">https://denigma.app/extension</a> 一个实验性的在线工具，你贴入一段代码，它自动生成这段代码的文字描述，不过是英文的。它还有 VS Code 插件版。</p>]]></content>
+        <content type="html"><![CDATA[<p>清华大学开源软件镜像站：<a href="https://mirrors.tuna.tsinghua.edu.cn/#" target="_blank" rel="noopener">https://mirrors.tuna.tsinghua.edu.cn/#</a></p><p>爱荷华大学美式音标口腔剖面在线学习: <a href="https://soundsofspeech.uiowa.edu/english/english.html" target="_blank" rel="noopener">https://soundsofspeech.uiowa.edu/english/english.html</a></p><p>Zlibrary（丰富的可下载高清电子书资源）: <a href="https://1lib.limited/?signAll=1&amp;ts=1227" target="_blank" rel="noopener">https://1lib.limited/?signAll=1&amp;ts=1227</a></p><p>Latex 公式编辑器（图片公式亦可识别）： <a href="https://www.latexlive.com/##" target="_blank" rel="noopener">https://www.latexlive.com/##</a></p><p>帮助用户将网络托管在 IPFS 网络上 的服务：<a href="https://fleek.co/" target="_blank" rel="noopener">https://fleek.co/</a></p><p>基于github的简洁博客模板: <a href="https://github.com/lichwei/vdoing-template" target="_blank" rel="noopener">https://github.com/lichwei/vdoing-template</a></p><p>管理音乐云盘中的文件： <a href="https://github.com/foamzou/melody" target="_blank" rel="noopener">https://github.com/foamzou/melody</a></p><p><a href="https://denigma.app/" target="_blank" rel="noopener">Denigma</a></p><p><a href="https://denigma.app/extension" target="_blank" rel="noopener">https://denigma.app/extension</a> 一个实验性的在线工具，你贴入一段代码，它自动生成这段代码的文字描述，不过是英文的。它还有 VS Code 插件版。</p>]]></content>
       
       
       <categories>
@@ -558,7 +633,7 @@
       <link href="/2020/06/21/markdown-ji-ben-yu-fa/"/>
       <url>/2020/06/21/markdown-ji-ben-yu-fa/</url>
       
-        <content type="html"><![CDATA[<h2 id="一、语言介绍"><a href="#一、语言介绍" class="headerlink" title="一、语言介绍"></a>一、语言介绍</h2><p>Markdown, 纯文本格式标记语言，通过简单的标记语法，使普通文本具有一定的格式。</p><h2 id="二、标题语法"><a href="#二、标题语法" class="headerlink" title="二、标题语法"></a>二、标题语法</h2><p>一个 # 是一级标题，两个 # 是二级标题，以此类推，共支持六级标题。</p><p>PS： # 后跟一个英文<strong>空格</strong>再写文字。</p><h2 id="三、字体语法"><a href="#三、字体语法" class="headerlink" title="三、字体语法"></a>三、字体语法</h2><h3 id="1-加粗"><a href="#1-加粗" class="headerlink" title="1. 加粗"></a>1. 加粗</h3><p>加粗的文字部分 <strong>左右</strong>分别用 <strong>两个 * 号</strong> 包围起来。</p><h3 id="2-斜体"><a href="#2-斜体" class="headerlink" title="2. 斜体"></a>2. 斜体</h3><p>需要倾斜的文字 <strong>左右</strong>分别用 <em>*一个 </em> 号 ** 包围起来。</p><h3 id="3-加粗斜体"><a href="#3-加粗斜体" class="headerlink" title="3. 加粗斜体"></a>3. 加粗斜体</h3><p>需要加粗倾斜的文字 <strong>左右</strong>分别用 <em>*三个 </em> 号 ** 包围起来。</p><h3 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4. 删除线"></a>4. 删除线</h3><p>需要删除的文字 <strong>左右</strong> 分别用 <strong>两个~ ~号</strong> 包围起来（两个符号之间没有空格，左边单边则整个右边添加删除线）。</p><h2 id="四、引用语法"><a href="#四、引用语法" class="headerlink" title="四、引用语法"></a>四、引用语法</h2><p>在需要引用的文字前面加 &gt; ,可以使用多个 &gt; 进行嵌套。</p><h2 id="五、华丽分割线语法"><a href="#五、华丽分割线语法" class="headerlink" title="五、华丽分割线语法"></a>五、华丽分割线语法</h2><p>使用三个或者三个以上的 - 或者 * 都可以。</p><hr><hr><h2 id="六、插入图片语法"><a href="#六、插入图片语法" class="headerlink" title="六、插入图片语法"></a>六、插入图片语法</h2><p><code>![ little title]( adress &quot;title&quot;)</code></p><p>little title : 显示在图片下面的文字；<br>title： 图片的标题，可以不加，当鼠标移动到图片上时显示title。</p><h2 id="七、超链接语法"><a href="#七、超链接语法" class="headerlink" title="七、超链接语法"></a>七、超链接语法</h2><p><code>[超链接名]( 超链接地址 “超链接title ”)</code></p><p>直接点也可以实现跳转，超链接名：超链接地址。</p><h2 id="八、列表语法"><a href="#八、列表语法" class="headerlink" title="八、列表语法"></a>八、列表语法</h2><h3 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1. 无序列表"></a>1. 无序列表</h3><p>无序列表使用下面中的任何一种都是可以的：</p><pre><code>    -  列表内容；    +  列表内容；    *  列表内容；</code></pre><p>PS：- + * 跟内容之间都要有 一个空格。</p><h3 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2. 有序列表"></a>2. 有序列表</h3><p>数字加点，序号和内容之间是有空格的，eg，1. 列表内容 。</p><h3 id="3-列表嵌套"><a href="#3-列表嵌套" class="headerlink" title="3. 列表嵌套"></a>3. 列表嵌套</h3><p>上一级和下一级之间敲三个空格即可。</p><h2 id="九、表格语法"><a href="#九、表格语法" class="headerlink" title="九、表格语法"></a>九、表格语法</h2><p>语法展示：</p><pre><code>|表头|表头|表头||---|:———:|———:||内容|内容|内容||内容|内容|内容|</code></pre><p>语法解释：</p><pre><code>第二行分割表头和内容两边加: 表示文字居中左边加: 表示文字居左右边加: 表示文字居右PS：表格内容默认居左，原生的语法两边都需要加 | 包围起来，但是可以省略两边的|</code></pre><p>语法举例：</p><pre><code>姓名|技能|排行--|:--:|--:刘备|哭|大哥关羽|打|二哥张飞|骂|三弟</code></pre><p><img src="%E8%A1%A8%E6%A0%BC.png" alt=" 表格结果展示" title="表格结果展示"></p><h2 id="十、插入代码语法"><a href="#十、插入代码语法" class="headerlink" title="十、插入代码语法"></a>十、插入代码语法</h2><h3 id="1-插入单行代码"><a href="#1-插入单行代码" class="headerlink" title="1. 插入单行代码"></a>1. 插入单行代码</h3><p>单行代码左右分别用一个 反引号（`） 包围起来。</p><pre><code>`hello world`</code></pre><h3 id="2-插入代码块"><a href="#2-插入代码块" class="headerlink" title="2. 插入代码块"></a>2. 插入代码块</h3><p>代码块之间分别使用三个 反引号（```）</p><pre><code>(```)   code 1   code 2   code 3(```)</code></pre><p>PS: 为了防止转译，代码块中的三个 反引号 加了小括号，实际上是没有的。</p><h2 id="十一、插入流程图语法"><a href="#十一、插入流程图语法" class="headerlink" title="十一、插入流程图语法"></a>十一、插入流程图语法</h2><p>Typora支持的常用的Markdown流程图</p><pre><code>(```) flowst=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op(```)</code></pre><p>PS: 代码中的小括号（）为防止转译儿添加，实际中是没有的。</p><p><img src="liucheng.png" alt=" 流程图示例" title="流程图示例"></p><p>参考链接：<a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="一、语言介绍"><a href="#一、语言介绍" class="headerlink" title="一、语言介绍"></a>一、语言介绍</h2><p>Markdown, 纯文本格式标记语言，通过简单的标记语法，使普通文本具有一定的格式。</p><h2 id="二、标题语法"><a href="#二、标题语法" class="headerlink" title="二、标题语法"></a>二、标题语法</h2><p>一个 # 是一级标题，两个 # 是二级标题，以此类推，共支持六级标题。</p><p>PS： # 后跟一个英文<strong>空格</strong>再写文字。</p><h2 id="三、字体语法"><a href="#三、字体语法" class="headerlink" title="三、字体语法"></a>三、字体语法</h2><h3 id="1-加粗"><a href="#1-加粗" class="headerlink" title="1. 加粗"></a>1. 加粗</h3><p>加粗的文字部分 <strong>左右</strong>分别用 <strong>两个 * 号</strong> 包围起来。</p><h3 id="2-斜体"><a href="#2-斜体" class="headerlink" title="2. 斜体"></a>2. 斜体</h3><p>需要倾斜的文字 <strong>左右</strong>分别用 <em>*一个 </em> 号 ** 包围起来。</p><h3 id="3-加粗斜体"><a href="#3-加粗斜体" class="headerlink" title="3. 加粗斜体"></a>3. 加粗斜体</h3><p>需要加粗倾斜的文字 <strong>左右</strong>分别用 <em>*三个 </em> 号 ** 包围起来。</p><h3 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4. 删除线"></a>4. 删除线</h3><p>需要删除的文字 <strong>左右</strong> 分别用 <strong>两个~ ~号</strong> 包围起来（两个符号之间没有空格，左边单边则整个右边添加删除线）。</p><h2 id="四、引用语法"><a href="#四、引用语法" class="headerlink" title="四、引用语法"></a>四、引用语法</h2><p>在需要引用的文字前面加 &gt; ,可以使用多个 &gt; 进行嵌套。</p><h2 id="五、华丽分割线语法"><a href="#五、华丽分割线语法" class="headerlink" title="五、华丽分割线语法"></a>五、华丽分割线语法</h2><p>使用三个或者三个以上的 - 或者 * 都可以。</p><hr><hr><h2 id="六、插入图片语法"><a href="#六、插入图片语法" class="headerlink" title="六、插入图片语法"></a>六、插入图片语法</h2><p><code>![ little title]( adress &quot;title&quot;)</code><br>调整图片大小语法：<br><code>&lt;img src=&quot;MIPS结构的说明.assets/image-20220822105732775.png&quot; style=&quot;zoom:40%;&quot; /&gt;</code></p><p>little title : 显示在图片下面的文字；<br>title： 图片的标题，可以不加，当鼠标移动到图片上时显示title。</p><h2 id="七、超链接语法"><a href="#七、超链接语法" class="headerlink" title="七、超链接语法"></a>七、超链接语法</h2><p><code>[超链接名]( 超链接地址 “超链接title ”)</code></p><p>直接点也可以实现跳转，超链接名：超链接地址。</p><h2 id="八、列表语法"><a href="#八、列表语法" class="headerlink" title="八、列表语法"></a>八、列表语法</h2><h3 id="1-无序列表"><a href="#1-无序列表" class="headerlink" title="1. 无序列表"></a>1. 无序列表</h3><p>无序列表使用下面中的任何一种都是可以的：</p><pre><code>    -  列表内容；    +  列表内容；    *  列表内容；</code></pre><p>PS：- + * 跟内容之间都要有 一个空格。</p><h3 id="2-有序列表"><a href="#2-有序列表" class="headerlink" title="2. 有序列表"></a>2. 有序列表</h3><p>数字加点，序号和内容之间是有空格的，eg，1. 列表内容 。</p><h3 id="3-列表嵌套"><a href="#3-列表嵌套" class="headerlink" title="3. 列表嵌套"></a>3. 列表嵌套</h3><p>上一级和下一级之间敲三个空格即可。</p><h2 id="九、表格语法"><a href="#九、表格语法" class="headerlink" title="九、表格语法"></a>九、表格语法</h2><p>语法展示：</p><pre><code>|表头|表头|表头||---|:———:|———:||内容|内容|内容||内容|内容|内容|</code></pre><p>语法解释：</p><pre><code>第二行分割表头和内容两边加: 表示文字居中左边加: 表示文字居左右边加: 表示文字居右PS：表格内容默认居左，原生的语法两边都需要加 | 包围起来，但是可以省略两边的|</code></pre><p>语法举例：</p><pre><code>姓名|技能|排行--|:--:|--:刘备|哭|大哥关羽|打|二哥张飞|骂|三弟</code></pre><p><img src="%E8%A1%A8%E6%A0%BC.png" alt=" 表格结果展示" title="表格结果展示"></p><h2 id="十、插入代码语法"><a href="#十、插入代码语法" class="headerlink" title="十、插入代码语法"></a>十、插入代码语法</h2><h3 id="1-插入单行代码"><a href="#1-插入单行代码" class="headerlink" title="1. 插入单行代码"></a>1. 插入单行代码</h3><p>单行代码左右分别用一个 反引号（`） 包围起来。</p><pre><code>`hello world`</code></pre><h3 id="2-插入代码块"><a href="#2-插入代码块" class="headerlink" title="2. 插入代码块"></a>2. 插入代码块</h3><p>代码块之间分别使用三个 反引号（```）</p><pre><code>(```)   code 1   code 2   code 3(```)</code></pre><p>PS: 为了防止转译，代码块中的三个 反引号 加了小括号，实际上是没有的。</p><h2 id="十一、插入流程图语法"><a href="#十一、插入流程图语法" class="headerlink" title="十一、插入流程图语法"></a>十一、插入流程图语法</h2><p>Typora支持的常用的Markdown流程图</p><pre><code>(```) flowst=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op(```)</code></pre><p>PS: 代码中的小括号（）为防止转译儿添加，实际中是没有的。</p><p><img src="liucheng.png" alt=" 流程图示例" title="流程图示例"></p><p>参考链接：<a href="https://www.jianshu.com/p/191d1e21f7ed" target="_blank" rel="noopener">https://www.jianshu.com/p/191d1e21f7ed</a></p>]]></content>
       
       
       <categories>

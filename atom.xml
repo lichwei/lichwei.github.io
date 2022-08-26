@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lichwei.github.io/"/>
-  <updated>2022-07-14T12:17:48.553Z</updated>
+  <updated>2022-08-06T08:32:09.107Z</updated>
   <id>https://lichwei.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>基于FPGA实现多相滤波</title>
+    <link href="https://lichwei.github.io/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/"/>
+    <id>https://lichwei.github.io/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/</id>
+    <published>2022-08-05T10:44:47.000Z</published>
+    <updated>2022-08-06T08:32:09.107Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;使用ADC083000，量化位数是8bits， 最高采样率3.4GSPS（即3.4GHz），ADC083000配置为 DDR mode，随路时钟为  1/4 采样时钟。采用带通采样，带通采样定理 &lt;/p&gt;
+&lt;p&gt;$$&lt;br&gt;f_{S}=\frac{4 f_{0}}{2
+        
+      
+    
+    </summary>
+    
+      <category term="FPGA" scheme="https://lichwei.github.io/categories/FPGA/"/>
+    
+    
+      <category term="FPGA" scheme="https://lichwei.github.io/tags/FPGA/"/>
+    
+  </entry>
+  
+  <entry>
     <title>verilog设计--if...else与case区别比较</title>
     <link href="https://lichwei.github.io/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/"/>
     <id>https://lichwei.github.io/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/</id>
     <published>2022-07-14T09:22:11.000Z</published>
-    <updated>2022-07-14T12:17:48.553Z</updated>
+    <updated>2022-07-14T12:45:31.405Z</updated>
     
     <summary type="html">
     
@@ -39,6 +66,59 @@
     
     
       <category term="verilogHDL" scheme="https://lichwei.github.io/tags/verilogHDL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vivado中快速找到综合后schematic中object</title>
+    <link href="https://lichwei.github.io/2022/03/23/vivado-zhong-kuai-su-zhao-dao-zong-he-hou-schematic-zhong-object/"/>
+    <id>https://lichwei.github.io/2022/03/23/vivado-zhong-kuai-su-zhao-dao-zong-he-hou-schematic-zhong-object/</id>
+    <published>2022-03-23T09:13:12.000Z</published>
+    <updated>2022-08-26T08:13:27.620Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在vivado中对设计的RTL代码进行综合后，查看schematic可以更清楚各个模块之间的连线关系。如下图所示：&lt;/p&gt;
+&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
+    
+    
+      <category term="编辑器" scheme="https://lichwei.github.io/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>FPGA设计两段与三段状态机分析</title>
+    <link href="https://lichwei.github.io/2022/02/26/fpga-she-ji-liang-duan-yu-san-duan-zhuang-tai-ji-fen-xi/"/>
+    <id>https://lichwei.github.io/2022/02/26/fpga-she-ji-liang-duan-yu-san-duan-zhuang-tai-ji-fen-xi/</id>
+    <published>2022-02-26T02:10:28.000Z</published>
+    <updated>2022-08-26T08:12:39.882Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;状态机的基本概念&quot;&gt;&lt;a href=&quot;#状态机的基本概念&quot; class=&quot;headerlink&quot; title=&quot;状态机的基本概念&quot;&gt;&lt;/a&gt;状态机的基本概念&lt;/h3&gt;&lt;p&gt;1) 摩尔型 和 米莉型状态机都是有限状态机( FSM );&lt;br&gt;2)
+        
+      
+    
+    </summary>
+    
+      <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
+    
+    
+      <category term="FPGA" scheme="https://lichwei.github.io/tags/FPGA/"/>
     
   </entry>
   
@@ -231,7 +311,7 @@
     <link href="https://lichwei.github.io/2021/08/22/chang-yong-wang-zhi-hui-zong/"/>
     <id>https://lichwei.github.io/2021/08/22/chang-yong-wang-zhi-hui-zong/</id>
     <published>2021-08-22T08:12:13.000Z</published>
-    <updated>2021-12-18T13:26:18.514Z</updated>
+    <updated>2022-08-15T01:40:09.865Z</updated>
     
     <summary type="html">
     
@@ -466,84 +546,6 @@
     
     
       <category term="开发工具" scheme="https://lichwei.github.io/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MATLAB自定义函数的五种方法回顾</title>
-    <link href="https://lichwei.github.io/2021/08/05/matlab-zi-ding-yi-han-shu-de-wu-chong-fang-fa-hui-gu/"/>
-    <id>https://lichwei.github.io/2021/08/05/matlab-zi-ding-yi-han-shu-de-wu-chong-fang-fa-hui-gu/</id>
-    <published>2021-08-05T01:16:52.000Z</published>
-    <updated>2021-08-05T13:47:29.073Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;MATLAB 使用很久了，作为仿真的数学工具，因为容易上手因而没有系统地去学习，接下来陆陆续续更新几篇文章对 MATLAB 的基本用法进行回顾总结。今天回顾 MATLAB 的几种常用的自定义函数的方法。&lt;br&gt;MATLAB
-        
-      
-    
-    </summary>
-    
-      <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
-    
-    
-      <category term="MATLAB总结" scheme="https://lichwei.github.io/tags/MATLAB%E6%80%BB%E7%BB%93/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>论研究生与导师的关系</title>
-    <link href="https://lichwei.github.io/2021/07/20/lun-yan-jiu-sheng-yu-dao-shi-de-guan-xi/"/>
-    <id>https://lichwei.github.io/2021/07/20/lun-yan-jiu-sheng-yu-dao-shi-de-guan-xi/</id>
-    <published>2021-07-20T00:41:58.000Z</published>
-    <updated>2021-08-05T04:54:03.938Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;div align=&quot;center&quot;&gt;&lt;font
-        
-      
-    
-    </summary>
-    
-      <category term="日志" scheme="https://lichwei.github.io/categories/%E6%97%A5%E5%BF%97/"/>
-    
-    
-      <category term="如初见" scheme="https://lichwei.github.io/tags/%E5%A6%82%E5%88%9D%E8%A7%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>快速恢复基于Github搭建的个人博客</title>
-    <link href="https://lichwei.github.io/2021/04/10/ji-yu-github-kuai-su-da-jian-ge-ren-bo-ke/"/>
-    <id>https://lichwei.github.io/2021/04/10/ji-yu-github-kuai-su-da-jian-ge-ren-bo-ke/</id>
-    <published>2021-04-10T08:03:51.000Z</published>
-    <updated>2021-08-05T04:52:37.166Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;前期准备&quot;&gt;&lt;a href=&quot;#前期准备&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
-    
-    
-      <category term="搭建博客" scheme="https://lichwei.github.io/tags/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
