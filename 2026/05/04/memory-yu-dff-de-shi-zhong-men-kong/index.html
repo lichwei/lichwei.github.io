@@ -515,7 +515,7 @@ clock gating的原理">
 <p><img src="./assets/image-20260330222948571.png" alt="image-20260330222948571"></p>
 <p>如果 clock gating 的 enable 信号来自另一个时钟域，直接使用会导致严重问题。首先，由于 enable 是异步信号，可能在时钟高电平期间变化，从而在 gated clock 上产生 glitch，相当于产生额外的时钟边沿；其次，enable 在跨域时可能引入亚稳态，进一步污染 gated clock。<br>正确做法是先将 enable 信号通过双级同步器同步到目标时钟域，再送入 clock gating 单元进行门控控制。latch 只用于避免 gating 过程中的 glitch，但不能替代 CDC 同步。</p>
 <h2 id="为什么memory做clock-gating-不省功耗"><a href="#为什么memory做clock-gating-不省功耗" class="headerlink" title="为什么memory做clock gating 不省功耗"></a>为什么memory做clock gating 不省功耗</h2><p>对同步SRAM来说，动态功耗主要来自内部读写操作（bitline/wordline的切换），而不是clock网络。<br>因此降低 memory 功耗通常需要从减少访问次数、banking 或 power gating 等角度入手。</p>
-<h3 id="SRAM-的-bitline-设计成-precharge-differential"><a href="#SRAM-的-bitline-设计成-precharge-differential" class="headerlink" title="SRAM 的 bitline 设计成 precharge + differential"></a>SRAM 的 bitline 设计成 precharge + differential</h3><h3 id="SRAM的bitline和wordline"><a href="#SRAM的bitline和wordline" class="headerlink" title="SRAM的bitline和wordline"></a>SRAM的bitline和wordline</h3><p><img src="bitline.png" alt=" "></p>
+<h3 id="SRAM-的-bitline-设计成-precharge-differential"><a href="#SRAM-的-bitline-设计成-precharge-differential" class="headerlink" title="SRAM 的 bitline 设计成 precharge + differential"></a>SRAM 的 bitline 设计成 precharge + differential</h3><h3 id="SRAM的bitline和wordline"><a href="#SRAM的bitline和wordline" class="headerlink" title="SRAM的bitline和wordline"></a>SRAM的bitline和wordline</h3><p><img src="bitline.png" alt=""></p>
 <p>更准确的，bitline具有差分结构。</p>
 <p><img src="./assets/image-20260330225031022.png" alt="image-20260330225031022"></p>
 
