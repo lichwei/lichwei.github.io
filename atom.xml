@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>HELLO WORLD</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://lichwei.github.io/</id>
+  <link href="https://lichwei.github.io/" rel="alternate"/>
+  <link href="https://lichwei.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, HELLO WORLD</rights>
+  <subtitle>Learn like a dog and play like a gentlement</subtitle>
+  <title>HELLO WORLD</title>
+  <updated>2022-08-06T08:32:09.107Z</updated>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="FPGA" scheme="https://lichwei.github.io/categories/FPGA/"/>
+    <category term="FPGA" scheme="https://lichwei.github.io/tags/FPGA/"/>
+    <id>https://lichwei.github.io/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/</id>
+    <link href="https://lichwei.github.io/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/"/>
+    <published>2022-08-05T10:44:47.000Z</published>
+    <summary>
+      <![CDATA[<p>使用ADC083000，量化位数是8bits， 最高采样率3.4GSPS（即3.4GHz），ADC083000配置为 DDR mode，随路时钟为  1/4 采样时钟。采用带通采样，带通采样定理 </p>
+<p>$$<br>f_{S}=\frac{4 f_{0}}{2]]>
+    </summary>
+    <title>基于FPGA实现多相滤波</title>
+    <updated>2022-08-06T08:32:09.107Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
+    <category term="verilogHDL" scheme="https://lichwei.github.io/tags/verilogHDL/"/>
+    <id>https://lichwei.github.io/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/</id>
+    <link href="https://lichwei.github.io/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/"/>
+    <published>2022-07-14T09:22:11.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="Verilog中if-…-else嵌套与case分支的区别比较"><a href="#Verilog中if-…-else嵌套与case分支的区别比较" class="headerlink" title="Verilog中if …]]>
+    </summary>
+    <title>verilog设计--if...else与case区别比较</title>
+    <updated>2022-07-14T12:45:31.405Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
+    <category term="编辑器" scheme="https://lichwei.github.io/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    <id>https://lichwei.github.io/2022/03/23/vivado-zhong-kuai-su-zhao-dao-zong-he-hou-schematic-zhong-object/</id>
+    <link href="https://lichwei.github.io/2022/03/23/vivado-zhong-kuai-su-zhao-dao-zong-he-hou-schematic-zhong-object/"/>
+    <published>2022-03-23T09:13:12.000Z</published>
+    <summary>
+      <![CDATA[<p>在vivado中对设计的RTL代码进行综合后，查看schematic可以更清楚各个模块之间的连线关系。如下图所示：</p>
+<img]]>
+    </summary>
+    <title>vivado中快速找到综合后schematic中object</title>
+    <updated>2022-08-26T08:13:27.620Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
+    <category term="FPGA" scheme="https://lichwei.github.io/tags/FPGA/"/>
+    <id>https://lichwei.github.io/2022/02/26/fpga-she-ji-liang-duan-yu-san-duan-zhuang-tai-ji-fen-xi/</id>
+    <link href="https://lichwei.github.io/2022/02/26/fpga-she-ji-liang-duan-yu-san-duan-zhuang-tai-ji-fen-xi/"/>
+    <published>2022-02-26T02:10:28.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="状态机的基本概念"><a href="#状态机的基本概念" class="headerlink" title="状态机的基本概念"></a>状态机的基本概念</h3><p>1) 摩尔型 和 米莉型状态机都是有限状态机( FSM );<br>2)]]>
+    </summary>
+    <title>FPGA设计两段与三段状态机分析</title>
+    <updated>2022-08-26T08:12:39.882Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    <category term="TortoiseSVN" scheme="https://lichwei.github.io/tags/TortoiseSVN/"/>
+    <id>https://lichwei.github.io/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/</id>
+    <link href="https://lichwei.github.io/2022/01/06/ji-yu-gitee-yu-tortoisesvn-de-dai-ma-guan-li/"/>
+    <published>2022-01-06T06:54:52.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="基础软件"><a href="#基础软件" class="headerlink" title="基础软件"></a>基础软件</h2><p>使用版本控制客户端软件：TortoiseSVN</p>
+<p>发现git]]>
+    </summary>
+    <title>基于Gitee与TortoiseSVN的代码管理</title>
+    <updated>2022-01-07T06:58:48.098Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    <category term="EndNote" scheme="https://lichwei.github.io/tags/EndNote/"/>
+    <id>https://lichwei.github.io/2021/11/17/endnote-shi-yong-zhi-nan/</id>
+    <link href="https://lichwei.github.io/2021/11/17/endnote-shi-yong-zhi-nan/"/>
+    <published>2021-11-17T01:26:52.000Z</published>
+    <summary>
+      <![CDATA[<p>参考博客链接：<a]]>
+    </summary>
+    <title>EndNote使用指南</title>
+    <updated>2021-11-17T07:41:23.115Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    <category term="Linux" scheme="https://lichwei.github.io/tags/Linux/"/>
+    <id>https://lichwei.github.io/2021/11/12/g-chang-yong-ming-ling-ji-gong-neng/</id>
+    <link href="https://lichwei.github.io/2021/11/12/g-chang-yong-ming-ling-ji-gong-neng/"/>
+    <published>2021-11-12T03:04:40.000Z</published>
+    <summary>
+      <![CDATA[<p>在Ubuntu下默认没有安装 g++ 编译器， sudo apt-get install build-essential，然后g++ -version检查版本信息。</p>
+<p>参考链接： <a]]>
+    </summary>
+    <title>g++常用命令及功能</title>
+    <updated>2021-11-12T03:09:24.770Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    <category term="编辑器" scheme="https://lichwei.github.io/tags/%E7%BC%96%E8%BE%91%E5%99%A8/"/>
+    <id>https://lichwei.github.io/2021/09/21/vi-vim-de-shi-yong/</id>
+    <link href="https://lichwei.github.io/2021/09/21/vi-vim-de-shi-yong/"/>
+    <published>2021-09-21T02:56:13.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="什么是vim"><a href="#什么是vim" class="headerlink"]]>
+    </summary>
+    <title>vi/vim的使用</title>
+    <updated>2021-09-22T00:41:06.052Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    <category term="开源" scheme="https://lichwei.github.io/tags/%E5%BC%80%E6%BA%90/"/>
+    <id>https://lichwei.github.io/2021/09/16/kai-yuan-cang-ku-hui-zong/</id>
+    <link href="https://lichwei.github.io/2021/09/16/kai-yuan-cang-ku-hui-zong/"/>
+    <published>2021-09-16T12:40:56.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="开源网站"><a href="#开源网站" class="headerlink" title="开源网站"></a>开源网站</h2><p>☆赛灵思官方开源仓库：  <a]]>
+    </summary>
+    <title>开源仓库汇总</title>
+    <updated>2021-09-22T03:05:27.041Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    <category term="电路设计" scheme="https://lichwei.github.io/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
+    <id>https://lichwei.github.io/2021/09/14/ad21-zhong-chang-yong-kuai-jie-jian-hui-zong/</id>
+    <link href="https://lichwei.github.io/2021/09/14/ad21-zhong-chang-yong-kuai-jie-jian-hui-zong/"/>
+    <published>2021-09-14T08:26:02.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="汇总如下（更新中）："><a href="#汇总如下（更新中）：" class="headerlink" title="汇总如下（更新中）："></a>汇总如下（更新中）：</h3><p>☆ V + B         板子翻转<br>☆ L]]>
+    </summary>
+    <title>AD21中常用快捷键汇总</title>
+    <updated>2026-05-04T10:06:07.042Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    <category term="FPGA" scheme="https://lichwei.github.io/tags/FPGA/"/>
+    <id>https://lichwei.github.io/2021/08/26/ise14-7-zhong-ila-icon-vio-shi-yong-jian-yi/</id>
+    <link href="https://lichwei.github.io/2021/08/26/ise14-7-zhong-ila-icon-vio-shi-yong-jian-yi/"/>
+    <published>2021-08-26T07:14:06.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>ISE14.7使用信号分析的 ILA 工具，除了需要配合 ICON]]>
+    </summary>
+    <title>ISE14.7中ILA+ICON+VIO使用建议</title>
+    <updated>2021-08-26T07:23:54.961Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    <category term="常用网址" scheme="https://lichwei.github.io/tags/%E5%B8%B8%E7%94%A8%E7%BD%91%E5%9D%80/"/>
+    <id>https://lichwei.github.io/2021/08/22/chang-yong-wang-zhi-hui-zong/</id>
+    <link href="https://lichwei.github.io/2021/08/22/chang-yong-wang-zhi-hui-zong/"/>
+    <published>2021-08-22T08:12:13.000Z</published>
+    <summary>
+      <![CDATA[<p>清华大学开源软件镜像站：<a href="https://mirrors.tuna.tsinghua.edu.cn/#">https://mirrors.tuna.tsinghua.edu.cn/#</a></p>
+<p>爱荷华大学美式音标口腔剖面在线学习: <a]]>
+    </summary>
+    <title>常用网址汇总</title>
+    <updated>2022-08-15T01:40:09.865Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    <category term="python" scheme="https://lichwei.github.io/tags/python/"/>
+    <id>https://lichwei.github.io/2021/08/22/python-kai-fa-huan-jing-da-jian/</id>
+    <link href="https://lichwei.github.io/2021/08/22/python-kai-fa-huan-jing-da-jian/"/>
+    <published>2021-08-22T03:10:06.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>记录国内源下载安装配置Anacondo 及 pycharm 的安装</p>
+<h3 id="安装-Python-3-开发环境"><a]]>
+    </summary>
+    <title>Python开发环境搭建</title>
+    <updated>2021-08-22T06:56:39.195Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
+    <category term="word" scheme="https://lichwei.github.io/tags/word/"/>
+    <id>https://lichwei.github.io/2021/08/21/word-zhong-chang-yong-pai-ban-ji-qiao/</id>
+    <link href="https://lichwei.github.io/2021/08/21/word-zhong-chang-yong-pai-ban-ji-qiao/"/>
+    <published>2021-08-21T01:17:11.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>针对长文档有一些实用的小技巧，可以为后期文档的整合提供很大的方便。</p>
+<h4 id="使用样式"><a href="#使用样式"]]>
+    </summary>
+    <title>WORD中常用排版技巧</title>
+    <updated>2021-08-21T03:24:19.008Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
+    <category term="word" scheme="https://lichwei.github.io/tags/word/"/>
+    <id>https://lichwei.github.io/2021/08/20/word-zhong-cha-ru-ti-zhu-ji-jiao-cha-yin-yong-shuo-ming/</id>
+    <link href="https://lichwei.github.io/2021/08/20/word-zhong-cha-ru-ti-zhu-ji-jiao-cha-yin-yong-shuo-ming/"/>
+    <published>2021-08-20T01:16:25.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="插入题注与交叉引用的优势"><a href="#插入题注与交叉引用的优势" class="headerlink"]]>
+    </summary>
+    <title>WORD中插入题注及交叉引用说明</title>
+    <updated>2021-08-21T09:20:14.535Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
+    <category term="word" scheme="https://lichwei.github.io/tags/word/"/>
+    <id>https://lichwei.github.io/2021/08/19/word-zhong-she-zhi-duo-ji-lie-biao-zi-dong-geng-xin/</id>
+    <link href="https://lichwei.github.io/2021/08/19/word-zhong-she-zhi-duo-ji-lie-biao-zi-dong-geng-xin/"/>
+    <published>2021-08-19T01:15:08.000Z</published>
+    <summary>
+      <![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>在需要局部调整章节的长文档中，使用自动更新的多级列表是十分必要的，各级标题的页边距等都可统一设置。</p>
+<h3]]>
+    </summary>
+    <title>WORD中设置多级列表自动更新</title>
+    <updated>2021-08-21T09:20:25.008Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
+    <category term="word" scheme="https://lichwei.github.io/tags/word/"/>
+    <id>https://lichwei.github.io/2021/08/18/word-zhong-tu-wen-bian-hao-zi-dong-geng-xin-she-zhi-fang-fa/</id>
+    <link href="https://lichwei.github.io/2021/08/18/word-zhong-tu-wen-bian-hao-zi-dong-geng-xin-she-zhi-fang-fa/"/>
+    <published>2021-08-18T06:56:29.000Z</published>
+    <summary>
+      <![CDATA[<p>如下图，word中有四张图片，并且正文中有与之对应的引用</p>
+<p> 第一步：选中第一张图片，点击【引用】【插入题注】【新建标签】【确定】，此时第一张图片的编号格式已经插入可以自动更新的图号。<br> <img]]>
+    </summary>
+    <title>WORD中图文编号自动更新设置方法</title>
+    <updated>2021-08-21T09:20:35.796Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="FPGA" scheme="https://lichwei.github.io/categories/FPGA/"/>
+    <category term="开发工具" scheme="https://lichwei.github.io/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    <id>https://lichwei.github.io/2021/08/18/post-jie-jue-win10-xi-tong-xia-ise-shan-tui-wen-ti/</id>
+    <link href="https://lichwei.github.io/2021/08/18/post-jie-jue-win10-xi-tong-xia-ise-shan-tui-wen-ti/"/>
+    <published>2021-08-18T01:09:15.000Z</published>
+    <summary>
+      <![CDATA[<p>在 Win10 系统下安装 ISE 开发工具，会出现闪退问题，例如 添加许可证文件……</p>
+<p>解决方法如下：</p>
+<p>找到程序安装路径下的这两个文件夹： </p>
+<p>X:\Xilinx\14.6\ISE_DS\ISE\lib\nt64]]>
+    </summary>
+    <title>解决Win10系统下ISE闪退问题</title>
+    <updated>2021-08-18T01:12:31.548Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
+    <category term="Github" scheme="https://lichwei.github.io/tags/Github/"/>
+    <id>https://lichwei.github.io/2021/08/12/shi-yong-git-jiang-ben-di-dai-ma-shang-chuan-dao-github-fu-wu-qi/</id>
+    <link href="https://lichwei.github.io/2021/08/12/shi-yong-git-jiang-ben-di-dai-ma-shang-chuan-dao-github-fu-wu-qi/"/>
+    <published>2021-08-12T13:10:50.000Z</published>
+    <summary>
+      <![CDATA[<p>已经很久没有将代码托管在Github服务器上了，之前一直使用的是本地的 TortoiseSVN ,今天花了些时间回顾下将本地项目 通过Git 更新到 Github 服务器（和博客上传使用的同一个Git）</p>
+<p>最核心的内容是：本地文件夹需要和 Github服务器]]>
+    </summary>
+    <title>使用Git将本地代码上传到Github服务器</title>
+    <updated>2021-08-12T13:42:55.108Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="FPGA" scheme="https://lichwei.github.io/categories/FPGA/"/>
+    <category term="开发工具" scheme="https://lichwei.github.io/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    <id>https://lichwei.github.io/2021/08/12/postwin10-xia-ise14-4-wu-fa-da-kai-planahead-jie-jue-fang-an/</id>
+    <link href="https://lichwei.github.io/2021/08/12/postwin10-xia-ise14-4-wu-fa-da-kai-planahead-jie-jue-fang-an/"/>
+    <published>2021-08-12T02:54:19.000Z</published>
+    <summary>
+      <![CDATA[<p>在 win10 系统下安装 ISE14.7, 目前进行代码编译、综合、实现、生成编程文件都没有问题，但是无法为芯片分配引脚，如图所示：</p>
+<p>`<img src="PlanAhead.png" alt=" 无法打开planAhead界面"><br>需要对]]>
+    </summary>
+    <title>win10下ISE14.4无法打开planAhead解决方案</title>
+    <updated>2021-08-12T13:09:29.971Z</updated>
+  </entry>
+</feed>
