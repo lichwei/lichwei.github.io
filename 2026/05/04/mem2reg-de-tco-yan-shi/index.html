@@ -4,12 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="基于FPGA实现多相滤波, ECNU NLP DeepLearning AntNLP HELLO WORLD HELLO WORLD  FPGA">
+    <meta name="keywords" content="mem2reg的Tco延时, ECNU NLP DeepLearning AntNLP HELLO WORLD HELLO WORLD  FPGA">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="使用ADC083000，量化位数是8bits， 最高采样率3.4GSPS（即3.4GHz），ADC083000配置为 DDR mode，随路时钟为  1/4 采样时钟。采用带通采样，带通采样定理 
-$$f_{S}=\frac{4 f_{0}">
+    <meta name="description" content="mem2reg的Tco延时SRAM的Taa， Tco与DFF的Tcq有什么区别？Taa（Access Time）是异步SRAM的地址到数据的延迟(PSRAM)，Tco(Clock to Output)是同步SRAM的时钟到数据的延迟。本质上">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +16,7 @@ $$f_{S}=\frac{4 f_{0}">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>基于FPGA实现多相滤波 | HELLO WORLD</title>
+    <title>mem2reg的Tco延时 | HELLO WORLD</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -331,13 +330,13 @@ $$f_{S}=\frac{4 f_{0}">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        基于FPGA实现多相滤波
+                        mem2reg的Tco延时
                     </div>
                 </div>
             </div>
@@ -448,8 +447,8 @@ $$f_{S}=\frac{4 f_{0}">
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/FPGA/" target="_blank">
-                            <span class="chip bg-color">FPGA</span>
+                        <a href="/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/" target="_blank">
+                            <span class="chip bg-color">电路设计</span>
                         </a>
                         
                     </div>
@@ -460,8 +459,8 @@ $$f_{S}=\frac{4 f_{0}">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/FPGA/" class="post-category" target="_blank">
-                            FPGA
+                        <a href="/categories/%E6%95%B0%E5%AD%97IC/" class="post-category" target="_blank">
+                            数字IC
                         </a>
                         
                     </div>
@@ -472,7 +471,7 @@ $$f_{S}=\frac{4 f_{0}">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-05
+                    2026-05-04
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -486,7 +485,7 @@ $$f_{S}=\frac{4 f_{0}">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    396
+                    217
                 </div>
                 
 
@@ -509,16 +508,10 @@ $$f_{S}=\frac{4 f_{0}">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>使用ADC083000，量化位数是8bits， 最高采样率3.4GSPS（即3.4GHz），ADC083000配置为 DDR mode，随路时钟为  1/4 采样时钟。采用带通采样，带通采样定理 </p>
-<p>$$<br>f_{S}=\frac{4 f_{0}}{2 M+1}<br>$$<br>其中M取能够满足$ f_{s}&gt;=2B $ 的正整数，则用$f_{s}$等间隔采样得到的信号采样值能准确地确定原信号。<br>将输入信号带宽加入保护带宽之后变换为1.35~2.7GHz，采样率取为2.7GHz，</p>
-<p>抽取相当于对 原始信号 进行重新采样，如果原始信号序列的采样率为fs，那么它的无模糊带宽为fs/2，因此经过 D倍 抽取后得到新序列的采样率为 fs/D，新信号序列的无模糊带宽为 fs / ( 2D )。因此在抽取前，原始信号序列中不能含有带宽超过 fs / ( 2D ) 的信号。否则，新的信号序列将会出现频谱混叠，很难通过新的信号序列完美的恢复出原始信号序列。</p>
-<p>且抽取倍数大，需要的信道数就多。</p>
-<hr>
-<p>Q&amp;A</p>
-<p>1、xilinx 的 时钟管理 IP</p>
-<p>– 时钟向导（ clocking Wizard ），最多可以配置两个时钟输入，选择单端时钟输入，或者选择差分时钟输入，对时钟进行分频，倍频，时钟相位调整。</p>
-<p>2、ISERDESE2 串并转换器</p>
-<p>ISERDESE2 是专用的 串并抓换器，无需过多复杂的时序操作，并且有sdr 与 ddr 两种模式，适合应用到高速源同步应用中。</p>
+                <h2 id="mem2reg的Tco延时"><a href="#mem2reg的Tco延时" class="headerlink" title="mem2reg的Tco延时"></a>mem2reg的Tco延时</h2><h3 id="SRAM的Taa，-Tco与DFF的Tcq有什么区别？"><a href="#SRAM的Taa，-Tco与DFF的Tcq有什么区别？" class="headerlink" title="SRAM的Taa， Tco与DFF的Tcq有什么区别？"></a>SRAM的Taa， Tco与DFF的Tcq有什么区别？</h3><p>Taa（Access Time）是异步SRAM的地址到数据的延迟(PSRAM)，Tco(Clock to Output)是同步SRAM的时钟到数据的延迟。本质上，Tco更类似于DFF的Tcq，而Taa更像组合逻辑延迟。</p>
+<h3 id="SRAM建模"><a href="#SRAM建模" class="headerlink" title="SRAM建模"></a>SRAM建模</h3><p>Tclk ≥ Tcq + tCO + Tsetup 与 Tclk ≥ Tcq + memory_delay + Tsetup的差异<br>前者memory被当做DFF进行建模，即SRAM内部是有寄存器的，rdata是被clock推出来的。后者memory被当做组合逻辑进行建模，基于addr的查找表，考虑的是addr到data的组合延迟。<br>PS：实际项目中，即使是同步SRAM，很多时候STA也会将其简化为组合延迟来分析，这样更保守，也更容易做timing closure。</p>
+<p>为什么SRAM Tco=1.8ns, Tclk=2ns（500MHz），仍然可能timing fail?<br>– 因为mem2reg的timing 预算不仅包括SRAM的Tco，还包括launch端DFF的Tcq, SRAM的access</p>
+<p><img src="./assets/image-20260326221653186.png" alt="image-20260326221653186"></p>
 
             </div>
             <hr />
@@ -677,9 +670,9 @@ $$f_{S}=\frac{4 f_{0}">
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《基于FPGA实现多相滤波》
+                    《mem2reg的Tco延时》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2026/05/04/mem2reg-de-tco-yan-shi/" property="cc:attributionName"
                rel="cc:attributionURL">
                 HELLO WORLD
             </a> 采用
@@ -742,20 +735,19 @@ $$f_{S}=\frac{4 f_{0}">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2026/05/04/slice-pipeline-da-pai/">
+                <a href="/2026/05/04/csi-isp-axi-memory-lian-lu-fen-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="slice_pipeline_打拍">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="CSI_ISP_AXI_Memory链路分析">
                         
-                        <span class="card-title">slice_pipeline_打拍</span>
+                        <span class="card-title">CSI_ISP_AXI_Memory链路分析</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            AXI register slice从Master –&gt; Slaveforward path: data/validbackward path: ready
-light 模式当下游ready时，允许把上游数据打一拍出去；当下游数据不r
+                            ISP → AXI → DDR → encoder出现偶发丢帧，如何分析？出错的环节判断upstream source：ISP输出节拍异常，行场同步异常；carry link: AXI burst 组织不好，反压异常，仲裁抖动等；store
                         
                     </div>
                     <div class="publish-info">
@@ -792,25 +784,25 @@ light 模式当下游ready时，允许把上游数据打一拍出去；当下游
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/">
+                <a href="/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="verilog设计--if...else与case区别比较">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="memory与DFF的时钟门控">
                         
-                        <span class="card-title">verilog设计--if...else与case区别比较</span>
+                        <span class="card-title">memory与DFF的时钟门控</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Verilog中if … else嵌套与case分支的区别比较在VerilogHDL电路设计中，if语句指定另一个具有优先级的编码逻辑，而case语句生成的逻辑语句是并行的，不具有优先级。
-通常情况下，if … else结构速度比较慢，但是
+                            门控对DFF降低功耗的原理门控（clock gating）降低 DFF 功耗的本质，是减少无效翻转，从而降低动态功耗。P = α · C · V² · f其中，α：翻转率（关键！）；C：负载电容；f：时钟频率
+clock gating的原理
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-07-14
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2026-05-04
                             </span>
                         <span class="publish-author">
                             
@@ -827,8 +819,8 @@ light 模式当下游ready时，允许把上游数据打一拍出去；当下游
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/verilogHDL/" target="_blank">
-                        <span class="chip bg-color">verilogHDL</span>
+                    <a href="/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/" target="_blank">
+                        <span class="chip bg-color">电路设计</span>
                     </a>
                     
                 </div>

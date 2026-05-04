@@ -10,7 +10,67 @@
   <rights>All rights reserved 2026, HELLO WORLD</rights>
   <subtitle>Learn like a dog and play like a gentlement</subtitle>
   <title>HELLO WORLD</title>
-  <updated>2022-08-06T08:32:09.107Z</updated>
+  <updated>2026-05-04T14:25:35.462Z</updated>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
+    <category term="电路设计" scheme="https://lichwei.github.io/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
+    <id>https://lichwei.github.io/2026/05/04/csi-isp-axi-memory-lian-lu-fen-xi/</id>
+    <link href="https://lichwei.github.io/2026/05/04/csi-isp-axi-memory-lian-lu-fen-xi/"/>
+    <published>2026-05-04T14:19:58.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="ISP-→-AXI-→-DDR-→-encoder出现偶发丢帧，如何分析？"><a href="#ISP-→-AXI-→-DDR-→-encoder出现偶发丢帧，如何分析？" class="headerlink" title="ISP → AXI → DDR →]]>
+    </summary>
+    <title>CSI_ISP_AXI_Memory链路分析</title>
+    <updated>2026-05-04T14:25:35.462Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
+    <category term="电路设计" scheme="https://lichwei.github.io/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
+    <id>https://lichwei.github.io/2026/05/04/mem2reg-de-tco-yan-shi/</id>
+    <link href="https://lichwei.github.io/2026/05/04/mem2reg-de-tco-yan-shi/"/>
+    <published>2026-05-04T14:18:40.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="mem2reg的Tco延时"><a href="#mem2reg的Tco延时" class="headerlink" title="mem2reg的Tco延时"></a>mem2reg的Tco延时</h2><h3]]>
+    </summary>
+    <title>mem2reg的Tco延时</title>
+    <updated>2026-05-04T14:25:51.187Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
+    <category term="电路设计" scheme="https://lichwei.github.io/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
+    <id>https://lichwei.github.io/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/</id>
+    <link href="https://lichwei.github.io/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/"/>
+    <published>2026-05-04T14:14:35.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="门控对DFF降低功耗的原理"><a href="#门控对DFF降低功耗的原理" class="headerlink" title="门控对DFF降低功耗的原理"></a>门控对DFF降低功耗的原理</h2><p>门控（clock gating）降低 DFF]]>
+    </summary>
+    <title>memory与DFF的时钟门控</title>
+    <updated>2026-05-04T14:25:04.882Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
+    <category term="电路设计" scheme="https://lichwei.github.io/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
+    <id>https://lichwei.github.io/2026/05/04/slice-pipeline-da-pai/</id>
+    <link href="https://lichwei.github.io/2026/05/04/slice-pipeline-da-pai/"/>
+    <published>2026-05-04T14:14:35.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="AXI-register-slice"><a href="#AXI-register-slice" class="headerlink" title="AXI register slice"></a>AXI register]]>
+    </summary>
+    <title>slice_pipeline_打拍</title>
+    <updated>2026-05-04T14:26:03.166Z</updated>
+  </entry>
   <entry>
     <author>
       <name>HELLO WORLD</name>
@@ -258,71 +318,5 @@
     </summary>
     <title>WORD中设置多级列表自动更新</title>
     <updated>2021-08-21T09:20:25.008Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>HELLO WORLD</name>
-    </author>
-    <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
-    <category term="word" scheme="https://lichwei.github.io/tags/word/"/>
-    <id>https://lichwei.github.io/2021/08/18/word-zhong-tu-wen-bian-hao-zi-dong-geng-xin-she-zhi-fang-fa/</id>
-    <link href="https://lichwei.github.io/2021/08/18/word-zhong-tu-wen-bian-hao-zi-dong-geng-xin-she-zhi-fang-fa/"/>
-    <published>2021-08-18T06:56:29.000Z</published>
-    <summary>
-      <![CDATA[<p>如下图，word中有四张图片，并且正文中有与之对应的引用</p>
-<p> 第一步：选中第一张图片，点击【引用】【插入题注】【新建标签】【确定】，此时第一张图片的编号格式已经插入可以自动更新的图号。<br> <img]]>
-    </summary>
-    <title>WORD中图文编号自动更新设置方法</title>
-    <updated>2021-08-21T09:20:35.796Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>HELLO WORLD</name>
-    </author>
-    <category term="FPGA" scheme="https://lichwei.github.io/categories/FPGA/"/>
-    <category term="开发工具" scheme="https://lichwei.github.io/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    <id>https://lichwei.github.io/2021/08/18/post-jie-jue-win10-xi-tong-xia-ise-shan-tui-wen-ti/</id>
-    <link href="https://lichwei.github.io/2021/08/18/post-jie-jue-win10-xi-tong-xia-ise-shan-tui-wen-ti/"/>
-    <published>2021-08-18T01:09:15.000Z</published>
-    <summary>
-      <![CDATA[<p>在 Win10 系统下安装 ISE 开发工具，会出现闪退问题，例如 添加许可证文件……</p>
-<p>解决方法如下：</p>
-<p>找到程序安装路径下的这两个文件夹： </p>
-<p>X:\Xilinx\14.6\ISE_DS\ISE\lib\nt64]]>
-    </summary>
-    <title>解决Win10系统下ISE闪退问题</title>
-    <updated>2021-08-18T01:12:31.548Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>HELLO WORLD</name>
-    </author>
-    <category term="技术支持" scheme="https://lichwei.github.io/categories/%E6%8A%80%E6%9C%AF%E6%94%AF%E6%8C%81/"/>
-    <category term="Github" scheme="https://lichwei.github.io/tags/Github/"/>
-    <id>https://lichwei.github.io/2021/08/12/shi-yong-git-jiang-ben-di-dai-ma-shang-chuan-dao-github-fu-wu-qi/</id>
-    <link href="https://lichwei.github.io/2021/08/12/shi-yong-git-jiang-ben-di-dai-ma-shang-chuan-dao-github-fu-wu-qi/"/>
-    <published>2021-08-12T13:10:50.000Z</published>
-    <summary>
-      <![CDATA[<p>已经很久没有将代码托管在Github服务器上了，之前一直使用的是本地的 TortoiseSVN ,今天花了些时间回顾下将本地项目 通过Git 更新到 Github 服务器（和博客上传使用的同一个Git）</p>
-<p>最核心的内容是：本地文件夹需要和 Github服务器]]>
-    </summary>
-    <title>使用Git将本地代码上传到Github服务器</title>
-    <updated>2021-08-12T13:42:55.108Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>HELLO WORLD</name>
-    </author>
-    <category term="FPGA" scheme="https://lichwei.github.io/categories/FPGA/"/>
-    <category term="开发工具" scheme="https://lichwei.github.io/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    <id>https://lichwei.github.io/2021/08/12/postwin10-xia-ise14-4-wu-fa-da-kai-planahead-jie-jue-fang-an/</id>
-    <link href="https://lichwei.github.io/2021/08/12/postwin10-xia-ise14-4-wu-fa-da-kai-planahead-jie-jue-fang-an/"/>
-    <published>2021-08-12T02:54:19.000Z</published>
-    <summary>
-      <![CDATA[<p>在 win10 系统下安装 ISE14.7, 目前进行代码编译、综合、实现、生成编程文件都没有问题，但是无法为芯片分配引脚，如图所示：</p>
-<p>`<img src="PlanAhead.png" alt=" 无法打开planAhead界面"><br>需要对]]>
-    </summary>
-    <title>win10下ISE14.4无法打开planAhead解决方案</title>
-    <updated>2021-08-12T13:09:29.971Z</updated>
   </entry>
 </feed>

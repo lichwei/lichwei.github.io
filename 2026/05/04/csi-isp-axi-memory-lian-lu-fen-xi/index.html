@@ -4,12 +4,11 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="基于FPGA实现多相滤波, ECNU NLP DeepLearning AntNLP HELLO WORLD HELLO WORLD  FPGA">
+    <meta name="keywords" content="CSI_ISP_AXI_Memory链路分析, ECNU NLP DeepLearning AntNLP HELLO WORLD HELLO WORLD  FPGA">
     <meta name="baidu-site-verification" content="fmlEuI34ir" />
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48" />
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7" />
-    <meta name="description" content="使用ADC083000，量化位数是8bits， 最高采样率3.4GSPS（即3.4GHz），ADC083000配置为 DDR mode，随路时钟为  1/4 采样时钟。采用带通采样，带通采样定理 
-$$f_{S}=\frac{4 f_{0}">
+    <meta name="description" content="ISP → AXI → DDR → encoder出现偶发丢帧，如何分析？出错的环节判断upstream source：ISP输出节拍异常，行场同步异常；carry link: AXI burst 组织不好，反压异常，仲裁抖动等；store">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +16,7 @@ $$f_{S}=\frac{4 f_{0}">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>基于FPGA实现多相滤波 | HELLO WORLD</title>
+    <title>CSI_ISP_AXI_Memory链路分析 | HELLO WORLD</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -331,13 +330,13 @@ $$f_{S}=\frac{4 f_{0}">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        基于FPGA实现多相滤波
+                        CSI_ISP_AXI_Memory链路分析
                     </div>
                 </div>
             </div>
@@ -448,8 +447,8 @@ $$f_{S}=\frac{4 f_{0}">
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/FPGA/" target="_blank">
-                            <span class="chip bg-color">FPGA</span>
+                        <a href="/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/" target="_blank">
+                            <span class="chip bg-color">电路设计</span>
                         </a>
                         
                     </div>
@@ -460,8 +459,8 @@ $$f_{S}=\frac{4 f_{0}">
                     <div class="post-cate">
                         <i class="fa fa-bookmark fa-fw icon-category"></i>
                         
-                        <a href="/categories/FPGA/" class="post-category" target="_blank">
-                            FPGA
+                        <a href="/categories/%E6%95%B0%E5%AD%97IC/" class="post-category" target="_blank">
+                            数字IC
                         </a>
                         
                     </div>
@@ -472,7 +471,7 @@ $$f_{S}=\frac{4 f_{0}">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-08-05
+                    2026-05-04
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -486,7 +485,7 @@ $$f_{S}=\frac{4 f_{0}">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    396
+                    250
                 </div>
                 
 
@@ -509,16 +508,9 @@ $$f_{S}=\frac{4 f_{0}">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>使用ADC083000，量化位数是8bits， 最高采样率3.4GSPS（即3.4GHz），ADC083000配置为 DDR mode，随路时钟为  1/4 采样时钟。采用带通采样，带通采样定理 </p>
-<p>$$<br>f_{S}=\frac{4 f_{0}}{2 M+1}<br>$$<br>其中M取能够满足$ f_{s}&gt;=2B $ 的正整数，则用$f_{s}$等间隔采样得到的信号采样值能准确地确定原信号。<br>将输入信号带宽加入保护带宽之后变换为1.35~2.7GHz，采样率取为2.7GHz，</p>
-<p>抽取相当于对 原始信号 进行重新采样，如果原始信号序列的采样率为fs，那么它的无模糊带宽为fs/2，因此经过 D倍 抽取后得到新序列的采样率为 fs/D，新信号序列的无模糊带宽为 fs / ( 2D )。因此在抽取前，原始信号序列中不能含有带宽超过 fs / ( 2D ) 的信号。否则，新的信号序列将会出现频谱混叠，很难通过新的信号序列完美的恢复出原始信号序列。</p>
-<p>且抽取倍数大，需要的信道数就多。</p>
-<hr>
-<p>Q&amp;A</p>
-<p>1、xilinx 的 时钟管理 IP</p>
-<p>– 时钟向导（ clocking Wizard ），最多可以配置两个时钟输入，选择单端时钟输入，或者选择差分时钟输入，对时钟进行分频，倍频，时钟相位调整。</p>
-<p>2、ISERDESE2 串并转换器</p>
-<p>ISERDESE2 是专用的 串并抓换器，无需过多复杂的时序操作，并且有sdr 与 ddr 两种模式，适合应用到高速源同步应用中。</p>
+                <h2 id="ISP-→-AXI-→-DDR-→-encoder出现偶发丢帧，如何分析？"><a href="#ISP-→-AXI-→-DDR-→-encoder出现偶发丢帧，如何分析？" class="headerlink" title="ISP → AXI → DDR → encoder出现偶发丢帧，如何分析？"></a>ISP → AXI → DDR → encoder出现偶发丢帧，如何分析？</h2><h3 id="出错的环节判断"><a href="#出错的环节判断" class="headerlink" title="出错的环节判断"></a>出错的环节判断</h3><p>upstream source：ISP输出节拍异常，行场同步异常；<br>carry link: AXI burst 组织不好，反压异常，仲裁抖动等；<br>store: DDR带宽瞬时不足，刷新异常，bank conflict ?<br>downstream: encoder取数不及时，FIFO出现上溢或者下溢；</p>
+<h3 id="丢帧类型判断"><a href="#丢帧类型判断" class="headerlink" title="丢帧类型判断"></a>丢帧类型判断</h3><p>整帧丢失：可能frame start/end 检测问题；buffer切换问题；地址管理问题；<br>部分行丢失：可能AXI/DDR、FIFO瞬时拥堵造成的；<br>固定位置出错：可能地址映射，stride问题<br>随机低概率出错：CDC、FIFO边界、仲裁抖动引起的。</p>
+<h3 id="stride"><a href="#stride" class="headerlink" title="stride"></a>stride</h3><p>stride是图像在存储中每一行实际的跨度，通常大于有效像素位宽，用于满足对齐和带宽优化的要求。地址计算时，每一行的起始地址是base+row*stride。如果stride配置错误，会导致行地址计算错误，引起图像错位，花屏，丢帧等问题。</p>
 
             </div>
             <hr />
@@ -677,9 +669,9 @@ $$f_{S}=\frac{4 f_{0}">
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《基于FPGA实现多相滤波》
+                    《CSI_ISP_AXI_Memory链路分析》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2026/05/04/csi-isp-axi-memory-lian-lu-fen-xi/" property="cc:attributionName"
                rel="cc:attributionURL">
                 HELLO WORLD
             </a> 采用
@@ -738,30 +730,30 @@ $$f_{S}=\frac{4 f_{0}">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2026/05/04/slice-pipeline-da-pai/">
+                <a href="/2026/05/04/csi-isp-axi-memory-lian-lu-fen-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="slice_pipeline_打拍">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="CSI_ISP_AXI_Memory链路分析">
                         
-                        <span class="card-title">slice_pipeline_打拍</span>
+                        <span class="card-title">CSI_ISP_AXI_Memory链路分析</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            AXI register slice从Master –&gt; Slaveforward path: data/validbackward path: ready
-light 模式当下游ready时，允许把上游数据打一拍出去；当下游数据不r
+                            ISP → AXI → DDR → encoder出现偶发丢帧，如何分析？出错的环节判断upstream source：ISP输出节拍异常，行场同步异常；carry link: AXI burst 组织不好，反压异常，仲裁抖动等；store
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2026-05-04
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2026-05-04
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -774,6 +766,7 @@ light 模式当下游ready时，允许把上游数据打一拍出去；当下游
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -792,25 +785,24 @@ light 模式当下游ready时，允许把上游数据打一拍出去；当下游
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/07/14/verilog-she-ji-if-else-yu-case-qu-bie-bi-jiao/">
+                <a href="/2026/05/04/mem2reg-de-tco-yan-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/26.jpg" class="responsive-img" alt="verilog设计--if...else与case区别比较">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mem2reg的Tco延时">
                         
-                        <span class="card-title">verilog设计--if...else与case区别比较</span>
+                        <span class="card-title">mem2reg的Tco延时</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Verilog中if … else嵌套与case分支的区别比较在VerilogHDL电路设计中，if语句指定另一个具有优先级的编码逻辑，而case语句生成的逻辑语句是并行的，不具有优先级。
-通常情况下，if … else结构速度比较慢，但是
+                            mem2reg的Tco延时SRAM的Taa， Tco与DFF的Tcq有什么区别？Taa（Access Time）是异步SRAM的地址到数据的延迟(PSRAM)，Tco(Clock to Output)是同步SRAM的时钟到数据的延迟。本质上
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-07-14
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2026-05-04
                             </span>
                         <span class="publish-author">
                             
@@ -827,8 +819,8 @@ light 模式当下游ready时，允许把上游数据打一拍出去；当下游
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/verilogHDL/" target="_blank">
-                        <span class="chip bg-color">verilogHDL</span>
+                    <a href="/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/" target="_blank">
+                        <span class="chip bg-color">电路设计</span>
                     </a>
                     
                 </div>

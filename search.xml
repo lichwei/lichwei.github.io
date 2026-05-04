@@ -4,6 +4,106 @@
   
     
     <entry>
+      <title>CSI_ISP_AXI_Memory链路分析</title>
+      <link href="/2026/05/04/csi-isp-axi-memory-lian-lu-fen-xi/"/>
+      <url>/2026/05/04/csi-isp-axi-memory-lian-lu-fen-xi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="ISP-→-AXI-→-DDR-→-encoder出现偶发丢帧，如何分析？"><a href="#ISP-→-AXI-→-DDR-→-encoder出现偶发丢帧，如何分析？" class="headerlink" title="ISP → AXI → DDR → encoder出现偶发丢帧，如何分析？"></a>ISP → AXI → DDR → encoder出现偶发丢帧，如何分析？</h2><h3 id="出错的环节判断"><a href="#出错的环节判断" class="headerlink" title="出错的环节判断"></a>出错的环节判断</h3><p>upstream source：ISP输出节拍异常，行场同步异常；<br>carry link: AXI burst 组织不好，反压异常，仲裁抖动等；<br>store: DDR带宽瞬时不足，刷新异常，bank conflict ?<br>downstream: encoder取数不及时，FIFO出现上溢或者下溢；</p><h3 id="丢帧类型判断"><a href="#丢帧类型判断" class="headerlink" title="丢帧类型判断"></a>丢帧类型判断</h3><p>整帧丢失：可能frame start/end 检测问题；buffer切换问题；地址管理问题；<br>部分行丢失：可能AXI/DDR、FIFO瞬时拥堵造成的；<br>固定位置出错：可能地址映射，stride问题<br>随机低概率出错：CDC、FIFO边界、仲裁抖动引起的。</p><h3 id="stride"><a href="#stride" class="headerlink" title="stride"></a>stride</h3><p>stride是图像在存储中每一行实际的跨度，通常大于有效像素位宽，用于满足对齐和带宽优化的要求。地址计算时，每一行的起始地址是base+row*stride。如果stride配置错误，会导致行地址计算错误，引起图像错位，花屏，丢帧等问题。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数字IC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电路设计 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mem2reg的Tco延时</title>
+      <link href="/2026/05/04/mem2reg-de-tco-yan-shi/"/>
+      <url>/2026/05/04/mem2reg-de-tco-yan-shi/</url>
+      
+        <content type="html"><![CDATA[<h2 id="mem2reg的Tco延时"><a href="#mem2reg的Tco延时" class="headerlink" title="mem2reg的Tco延时"></a>mem2reg的Tco延时</h2><h3 id="SRAM的Taa，-Tco与DFF的Tcq有什么区别？"><a href="#SRAM的Taa，-Tco与DFF的Tcq有什么区别？" class="headerlink" title="SRAM的Taa， Tco与DFF的Tcq有什么区别？"></a>SRAM的Taa， Tco与DFF的Tcq有什么区别？</h3><p>Taa（Access Time）是异步SRAM的地址到数据的延迟(PSRAM)，Tco(Clock to Output)是同步SRAM的时钟到数据的延迟。本质上，Tco更类似于DFF的Tcq，而Taa更像组合逻辑延迟。</p><h3 id="SRAM建模"><a href="#SRAM建模" class="headerlink" title="SRAM建模"></a>SRAM建模</h3><p>Tclk ≥ Tcq + tCO + Tsetup 与 Tclk ≥ Tcq + memory_delay + Tsetup的差异<br>前者memory被当做DFF进行建模，即SRAM内部是有寄存器的，rdata是被clock推出来的。后者memory被当做组合逻辑进行建模，基于addr的查找表，考虑的是addr到data的组合延迟。<br>PS：实际项目中，即使是同步SRAM，很多时候STA也会将其简化为组合延迟来分析，这样更保守，也更容易做timing closure。</p><p>为什么SRAM Tco=1.8ns, Tclk=2ns（500MHz），仍然可能timing fail?<br>– 因为mem2reg的timing 预算不仅包括SRAM的Tco，还包括launch端DFF的Tcq, SRAM的access</p><p><img src="./assets/image-20260326221653186.png" alt="image-20260326221653186"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数字IC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电路设计 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>memory与DFF的时钟门控</title>
+      <link href="/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/"/>
+      <url>/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/</url>
+      
+        <content type="html"><![CDATA[<h2 id="门控对DFF降低功耗的原理"><a href="#门控对DFF降低功耗的原理" class="headerlink" title="门控对DFF降低功耗的原理"></a>门控对DFF降低功耗的原理</h2><p>门控（clock gating）降低 DFF 功耗的本质，是减少无效翻转，从而降低动态功耗。<br>P = α · C · V² · f<br>其中，α：翻转率（关键！）；C：负载电容；f：时钟频率<img src="./assets/image-20260330221452596.png" alt="image-20260330221452596"></p><h2 id="clock-gating的原理"><a href="#clock-gating的原理" class="headerlink" title="clock gating的原理"></a>clock gating的原理</h2><h3 id="glitch定义"><a href="#glitch定义" class="headerlink" title="glitch定义"></a>glitch定义</h3><p>glitch是gated clock上出现的短暂毛刺信号，通常是因为enable信号在时钟高电平期间发生变化导致的。这种时钟信号的毛刺，会被DFF认为是额外的时钟边沿，从而引起触发错误。由于gated clock是全局敏感信号，glitch的危害远远大于普通数据路径上的危害。解决办法是在clock gating的设计中，使用latch-based clcok gating，在时钟低电平时采样enable信号，保证高电平期间控制信号是稳定的，从而可以避免glitch。</p><p>latch是<strong>时序元件</strong>，使用 “使能透明/保持”来描述它的功能。</p><p><img src="./assets/image-20260330222948571.png" alt="image-20260330222948571"></p><p>如果 clock gating 的 enable 信号来自另一个时钟域，直接使用会导致严重问题。首先，由于 enable 是异步信号，可能在时钟高电平期间变化，从而在 gated clock 上产生 glitch，相当于产生额外的时钟边沿；其次，enable 在跨域时可能引入亚稳态，进一步污染 gated clock。<br>正确做法是先将 enable 信号通过双级同步器同步到目标时钟域，再送入 clock gating 单元进行门控控制。latch 只用于避免 gating 过程中的 glitch，但不能替代 CDC 同步。</p><h2 id="为什么memory做clock-gating-不省功耗"><a href="#为什么memory做clock-gating-不省功耗" class="headerlink" title="为什么memory做clock gating 不省功耗"></a>为什么memory做clock gating 不省功耗</h2><p>对同步SRAM来说，动态功耗主要来自内部读写操作（bitline/wordline的切换），而不是clock网络。<br>因此降低 memory 功耗通常需要从减少访问次数、banking 或 power gating 等角度入手。</p><h3 id="SRAM-的-bitline-设计成-precharge-differential"><a href="#SRAM-的-bitline-设计成-precharge-differential" class="headerlink" title="SRAM 的 bitline 设计成 precharge + differential"></a>SRAM 的 bitline 设计成 precharge + differential</h3><h3 id="SRAM的bitline和wordline"><a href="#SRAM的bitline和wordline" class="headerlink" title="SRAM的bitline和wordline"></a>SRAM的bitline和wordline</h3><p><img src="./assets/image-20260330224948192.png" alt="image-20260330224948192"></p><p>更准确的，bitline具有差分结构。</p><p><img src="./assets/image-20260330225031022.png" alt="image-20260330225031022"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数字IC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电路设计 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>slice_pipeline_打拍</title>
+      <link href="/2026/05/04/slice-pipeline-da-pai/"/>
+      <url>/2026/05/04/slice-pipeline-da-pai/</url>
+      
+        <content type="html"><![CDATA[<h2 id="AXI-register-slice"><a href="#AXI-register-slice" class="headerlink" title="AXI register slice"></a>AXI register slice</h2><p>从Master –&gt; Slave<br>forward path: data/valid<br>backward path: ready</p><h2 id="light-模式"><a href="#light-模式" class="headerlink" title="light 模式"></a>light 模式</h2><p>当下游ready时，允许把上游数据打一拍出去；当下游数据不ready时，保持当前拍数据不丢。</p><h3 id="核心状态"><a href="#核心状态" class="headerlink" title="核心状态"></a>核心状态</h3><ul><li>outvalid 和 out_payload</li></ul><h2 id="full模式-two-deep-FIFO"><a href="#full模式-two-deep-FIFO" class="headerlink" title="full模式 two-deep FIFO"></a>full模式 two-deep FIFO</h2><p>如果想把READY 路径也寄存起来，同时不降低吞吐率，典型做法是：</p><ul><li><p>一个输出寄存器 out_*</p></li><li><p>一个旁路/暂存寄存器skid_*</p></li></ul><p>we can think it’s a 2-entry FIFO, no bubble, which 100% duty cycle usefull.<br>设置两级槽位：main和skid</p><ul><li>main：当前对下游输出的数据</li><li>skid：当下游突然反压时，用来刹车缓存上游刚送来的那一拍数据</li></ul><p>为甚需要skid?</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数字IC </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电路设计 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于FPGA实现多相滤波</title>
       <link href="/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/"/>
       <url>/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/</url>
