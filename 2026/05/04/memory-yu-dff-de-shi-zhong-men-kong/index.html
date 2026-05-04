@@ -486,14 +486,14 @@ clock gating的原理">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    473
+                    526
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -509,16 +509,46 @@ clock gating的原理">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="门控对DFF降低功耗的原理"><a href="#门控对DFF降低功耗的原理" class="headerlink" title="门控对DFF降低功耗的原理"></a>门控对DFF降低功耗的原理</h2><p>门控（clock gating）降低 DFF 功耗的本质，是减少无效翻转，从而降低动态功耗。<br>P = α · C · V² · f<br>其中，α：翻转率（关键！）；C：负载电容；f：时钟频率<img src="./assets/image-20260330221452596.png" alt="image-20260330221452596"></p>
+                <h2 id="门控对DFF降低功耗的原理"><a href="#门控对DFF降低功耗的原理" class="headerlink" title="门控对DFF降低功耗的原理"></a>门控对DFF降低功耗的原理</h2><p>门控（clock gating）降低 DFF 功耗的本质，是减少无效翻转，从而降低动态功耗。<br>P = α · C · V² · f<br>其中，α：翻转率（关键！）；C：负载电容；f：时钟频率</p>
 <h2 id="clock-gating的原理"><a href="#clock-gating的原理" class="headerlink" title="clock gating的原理"></a>clock gating的原理</h2><h3 id="glitch定义"><a href="#glitch定义" class="headerlink" title="glitch定义"></a>glitch定义</h3><p>glitch是gated clock上出现的短暂毛刺信号，通常是因为enable信号在时钟高电平期间发生变化导致的。这种时钟信号的毛刺，会被DFF认为是额外的时钟边沿，从而引起触发错误。由于gated clock是全局敏感信号，glitch的危害远远大于普通数据路径上的危害。解决办法是在clock gating的设计中，使用latch-based clcok gating，在时钟低电平时采样enable信号，保证高电平期间控制信号是稳定的，从而可以避免glitch。</p>
-<p>latch是<strong>时序元件</strong>，使用 “使能透明/保持”来描述它的功能。</p>
-<p><img src="./assets/image-20260330222948571.png" alt="image-20260330222948571"></p>
+<p>latch是<strong>时序元件</strong>，使用 “使能透明/保持”来描述它的功能。EN 有效时 Q 跟随输入，EN 无效时 Q 保持原值</p>
+<table>
+<thead>
+<tr>
+<th>EN</th>
+<th>D</th>
+<th>Q(next)</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>0</td>
+<td>X</td>
+<td>Q</td>
+<td>保持</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>透明传输</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>透明传输</td>
+</tr>
+</tbody></table>
 <p>如果 clock gating 的 enable 信号来自另一个时钟域，直接使用会导致严重问题。首先，由于 enable 是异步信号，可能在时钟高电平期间变化，从而在 gated clock 上产生 glitch，相当于产生额外的时钟边沿；其次，enable 在跨域时可能引入亚稳态，进一步污染 gated clock。<br>正确做法是先将 enable 信号通过双级同步器同步到目标时钟域，再送入 clock gating 单元进行门控控制。latch 只用于避免 gating 过程中的 glitch，但不能替代 CDC 同步。</p>
 <h2 id="为什么memory做clock-gating-不省功耗"><a href="#为什么memory做clock-gating-不省功耗" class="headerlink" title="为什么memory做clock gating 不省功耗"></a>为什么memory做clock gating 不省功耗</h2><p>对同步SRAM来说，动态功耗主要来自内部读写操作（bitline/wordline的切换），而不是clock网络。<br>因此降低 memory 功耗通常需要从减少访问次数、banking 或 power gating 等角度入手。</p>
-<h3 id="SRAM-的-bitline-设计成-precharge-differential"><a href="#SRAM-的-bitline-设计成-precharge-differential" class="headerlink" title="SRAM 的 bitline 设计成 precharge + differential"></a>SRAM 的 bitline 设计成 precharge + differential</h3><h3 id="SRAM的bitline和wordline"><a href="#SRAM的bitline和wordline" class="headerlink" title="SRAM的bitline和wordline"></a>SRAM的bitline和wordline</h3><p><img src="bitline.png" alt=""></p>
+<h3 id="SRAM-的-bitline-设计成-precharge-differential"><a href="#SRAM-的-bitline-设计成-precharge-differential" class="headerlink" title="SRAM 的 bitline 设计成 precharge + differential"></a>SRAM 的 bitline 设计成 precharge + differential</h3><h3 id="SRAM的bitline和wordline"><a href="#SRAM的bitline和wordline" class="headerlink" title="SRAM的bitline和wordline"></a>SRAM的bitline和wordline</h3><p><img src="bitline.png" alt="bitline与wordline示意图"></p>
 <p>更准确的，bitline具有差分结构。</p>
-<p><img src="./assets/image-20260330225031022.png" alt="image-20260330225031022"></p>
-
+<pre><code>BL   ←→   BLB
+ │         │
+[cell][cell][cell]  ← 同一列
+ │         │
+ └──→ Sense Amplifier</code></pre>
             </div>
             <hr />
 

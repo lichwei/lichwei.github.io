@@ -511,7 +511,6 @@
                 <h2 id="mem2reg的Tco延时"><a href="#mem2reg的Tco延时" class="headerlink" title="mem2reg的Tco延时"></a>mem2reg的Tco延时</h2><h3 id="SRAM的Taa，-Tco与DFF的Tcq有什么区别？"><a href="#SRAM的Taa，-Tco与DFF的Tcq有什么区别？" class="headerlink" title="SRAM的Taa， Tco与DFF的Tcq有什么区别？"></a>SRAM的Taa， Tco与DFF的Tcq有什么区别？</h3><p>Taa（Access Time）是异步SRAM的地址到数据的延迟(PSRAM)，Tco(Clock to Output)是同步SRAM的时钟到数据的延迟。本质上，Tco更类似于DFF的Tcq，而Taa更像组合逻辑延迟。</p>
 <h3 id="SRAM建模"><a href="#SRAM建模" class="headerlink" title="SRAM建模"></a>SRAM建模</h3><p>Tclk ≥ Tcq + tCO + Tsetup 与 Tclk ≥ Tcq + memory_delay + Tsetup的差异<br>前者memory被当做DFF进行建模，即SRAM内部是有寄存器的，rdata是被clock推出来的。后者memory被当做组合逻辑进行建模，基于addr的查找表，考虑的是addr到data的组合延迟。<br>PS：实际项目中，即使是同步SRAM，很多时候STA也会将其简化为组合延迟来分析，这样更保守，也更容易做timing closure。</p>
 <p>为什么SRAM Tco=1.8ns, Tclk=2ns（500MHz），仍然可能timing fail?<br>– 因为mem2reg的timing 预算不仅包括SRAM的Tco，还包括launch端DFF的Tcq, SRAM的access</p>
-<p><img src="./assets/image-20260326221653186.png" alt="image-20260326221653186"></p>
 
             </div>
             <hr />

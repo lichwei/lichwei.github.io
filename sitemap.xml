@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lichwei.github.io/2026/05/04/mem2reg-de-tco-yan-shi/</loc>
+    
+    <lastmod>2026-05-04T14:56:42.713Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lichwei.github.io/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/</loc>
     
-    <lastmod>2026-05-04T14:48:12.506Z</lastmod>
+    <lastmod>2026-05-04T14:56:11.035Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>https://lichwei.github.io/2026/05/04/slice-pipeline-da-pai/</loc>
     
     <lastmod>2026-05-04T14:26:03.166Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lichwei.github.io/2026/05/04/mem2reg-de-tco-yan-shi/</loc>
-    
-    <lastmod>2026-05-04T14:25:51.187Z</lastmod>
     
   </url>
   
