@@ -331,7 +331,7 @@ clock gating的原理">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -771,19 +771,20 @@ clock gating的原理">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2026/05/04/mem2reg-de-tco-yan-shi/">
+                <a href="/2026/05/04/slice-pipeline-da-pai/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mem2reg的Tco延时">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="slice_pipeline_打拍">
                         
-                        <span class="card-title">mem2reg的Tco延时</span>
+                        <span class="card-title">slice_pipeline_打拍</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            mem2reg的Tco延时SRAM的Taa， Tco与DFF的Tcq有什么区别？Taa（Access Time）是异步SRAM的地址到数据的延迟(PSRAM)，Tco(Clock to Output)是同步SRAM的时钟到数据的延迟。本质上
+                            AXI register slice从Master –&gt; Slaveforward path: data/validbackward path: ready
+light 模式当下游ready时，允许把上游数据打一拍出去；当下游数据不r
                         
                     </div>
                     <div class="publish-info">
@@ -820,32 +821,32 @@ clock gating的原理">
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2026/05/04/slice-pipeline-da-pai/">
+                <a href="/2022/08/05/ji-yu-fpga-shi-xian-duo-xiang-lu-bo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="slice_pipeline_打拍">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="基于FPGA实现多相滤波">
                         
-                        <span class="card-title">slice_pipeline_打拍</span>
+                        <span class="card-title">基于FPGA实现多相滤波</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            AXI register slice从Master –&gt; Slaveforward path: data/validbackward path: ready
-light 模式当下游ready时，允许把上游数据打一拍出去；当下游数据不r
+                            使用ADC083000，量化位数是8bits， 最高采样率3.4GSPS（即3.4GHz），ADC083000配置为 DDR mode，随路时钟为  1/4 采样时钟。采用带通采样，带通采样定理 
+$$f_{S}=\frac{4 f_{0}
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2026-05-04
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-08-05
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%95%B0%E5%AD%97IC/" class="post-category" target="_blank">
-                                    数字IC
+                            <a href="/categories/FPGA/" class="post-category" target="_blank">
+                                    FPGA
                                 </a>
                             
                             
@@ -855,8 +856,8 @@ light 模式当下游ready时，允许把上游数据打一拍出去；当下游
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/" target="_blank">
-                        <span class="chip bg-color">电路设计</span>
+                    <a href="/tags/FPGA/" target="_blank">
+                        <span class="chip bg-color">FPGA</span>
                     </a>
                     
                 </div>

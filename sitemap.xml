@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://lichwei.github.io/2026/05/04/csi-isp-axi-memory-lian-lu-fen-xi/</loc>
+    
+    <lastmod>2026-05-05T03:44:14.241Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lichwei.github.io/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/</loc>
+    
+    <lastmod>2026-05-04T15:00:59.981Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://lichwei.github.io/2026/05/04/mem2reg-de-tco-yan-shi/</loc>
     
     <lastmod>2026-05-04T14:56:42.713Z</lastmod>
@@ -9,23 +23,9 @@
   </url>
   
   <url>
-    <loc>https://lichwei.github.io/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/</loc>
-    
-    <lastmod>2026-05-04T14:56:11.035Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://lichwei.github.io/2026/05/04/slice-pipeline-da-pai/</loc>
     
     <lastmod>2026-05-04T14:26:03.166Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lichwei.github.io/2026/05/04/csi-isp-axi-memory-lian-lu-fen-xi/</loc>
-    
-    <lastmod>2026-05-04T14:25:35.462Z</lastmod>
     
   </url>
   

@@ -10,7 +10,7 @@
   <rights>All rights reserved 2026, HELLO WORLD</rights>
   <subtitle>Learn like a dog and play like a gentlement</subtitle>
   <title>HELLO WORLD</title>
-  <updated>2026-05-04T14:25:35.462Z</updated>
+  <updated>2026-05-05T03:44:14.241Z</updated>
   <entry>
     <author>
       <name>HELLO WORLD</name>
@@ -24,7 +24,7 @@
       <![CDATA[<h2 id="ISP-→-AXI-→-DDR-→-encoder出现偶发丢帧，如何分析？"><a href="#ISP-→-AXI-→-DDR-→-encoder出现偶发丢帧，如何分析？" class="headerlink" title="ISP → AXI → DDR →]]>
     </summary>
     <title>CSI_ISP_AXI_Memory链路分析</title>
-    <updated>2026-05-04T14:25:35.462Z</updated>
+    <updated>2026-05-05T03:44:14.241Z</updated>
   </entry>
   <entry>
     <author>
@@ -47,21 +47,6 @@
     </author>
     <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
     <category term="电路设计" scheme="https://lichwei.github.io/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
-    <id>https://lichwei.github.io/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/</id>
-    <link href="https://lichwei.github.io/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/"/>
-    <published>2026-05-04T14:14:35.000Z</published>
-    <summary>
-      <![CDATA[<h2 id="门控对DFF降低功耗的原理"><a href="#门控对DFF降低功耗的原理" class="headerlink" title="门控对DFF降低功耗的原理"></a>门控对DFF降低功耗的原理</h2><p>门控（clock gating）降低 DFF]]>
-    </summary>
-    <title>memory与DFF的时钟门控</title>
-    <updated>2026-05-04T14:56:11.035Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>HELLO WORLD</name>
-    </author>
-    <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
-    <category term="电路设计" scheme="https://lichwei.github.io/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
     <id>https://lichwei.github.io/2026/05/04/slice-pipeline-da-pai/</id>
     <link href="https://lichwei.github.io/2026/05/04/slice-pipeline-da-pai/"/>
     <published>2026-05-04T14:14:35.000Z</published>
@@ -70,6 +55,21 @@
     </summary>
     <title>slice_pipeline_打拍</title>
     <updated>2026-05-04T14:26:03.166Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="数字IC" scheme="https://lichwei.github.io/categories/%E6%95%B0%E5%AD%97IC/"/>
+    <category term="电路设计" scheme="https://lichwei.github.io/tags/%E7%94%B5%E8%B7%AF%E8%AE%BE%E8%AE%A1/"/>
+    <id>https://lichwei.github.io/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/</id>
+    <link href="https://lichwei.github.io/2026/05/04/memory-yu-dff-de-shi-zhong-men-kong/"/>
+    <published>2026-05-04T14:14:35.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="门控对DFF降低功耗的原理"><a href="#门控对DFF降低功耗的原理" class="headerlink" title="门控对DFF降低功耗的原理"></a>门控对DFF降低功耗的原理</h2><p>门控（clock gating）降低 DFF]]>
+    </summary>
+    <title>memory与DFF的时钟门控</title>
+    <updated>2026-05-04T15:00:59.981Z</updated>
   </entry>
   <entry>
     <author>

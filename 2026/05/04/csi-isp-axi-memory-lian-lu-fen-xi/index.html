@@ -330,7 +330,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -485,7 +485,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    250
+                    261
                 </div>
                 
 
@@ -511,7 +511,7 @@
                 <h2 id="ISP-→-AXI-→-DDR-→-encoder出现偶发丢帧，如何分析？"><a href="#ISP-→-AXI-→-DDR-→-encoder出现偶发丢帧，如何分析？" class="headerlink" title="ISP → AXI → DDR → encoder出现偶发丢帧，如何分析？"></a>ISP → AXI → DDR → encoder出现偶发丢帧，如何分析？</h2><h3 id="出错的环节判断"><a href="#出错的环节判断" class="headerlink" title="出错的环节判断"></a>出错的环节判断</h3><p>upstream source：ISP输出节拍异常，行场同步异常；<br>carry link: AXI burst 组织不好，反压异常，仲裁抖动等；<br>store: DDR带宽瞬时不足，刷新异常，bank conflict ?<br>downstream: encoder取数不及时，FIFO出现上溢或者下溢；</p>
 <h3 id="丢帧类型判断"><a href="#丢帧类型判断" class="headerlink" title="丢帧类型判断"></a>丢帧类型判断</h3><p>整帧丢失：可能frame start/end 检测问题；buffer切换问题；地址管理问题；<br>部分行丢失：可能AXI/DDR、FIFO瞬时拥堵造成的；<br>固定位置出错：可能地址映射，stride问题<br>随机低概率出错：CDC、FIFO边界、仲裁抖动引起的。</p>
 <h3 id="stride"><a href="#stride" class="headerlink" title="stride"></a>stride</h3><p>stride是图像在存储中每一行实际的跨度，通常大于有效像素位宽，用于满足对齐和带宽优化的要求。地址计算时，每一行的起始地址是base+row*stride。如果stride配置错误，会导致行地址计算错误，引起图像错位，花屏，丢帧等问题。</p>
-
+<h3 id="AXI-MST是否有Error状态，respons怎么回复？"><a href="#AXI-MST是否有Error状态，respons怎么回复？" class="headerlink" title="AXI_MST是否有Error状态，respons怎么回复？"></a>AXI_MST是否有Error状态，respons怎么回复？</h3>
             </div>
             <hr />
 
@@ -739,7 +739,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="CSI_ISP_AXI_Memory链路分析">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="CSI_ISP_AXI_Memory链路分析">
                         
                         <span class="card-title">CSI_ISP_AXI_Memory链路分析</span>
                     </div>
@@ -789,7 +789,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="mem2reg的Tco延时">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="mem2reg的Tco延时">
                         
                         <span class="card-title">mem2reg的Tco延时</span>
                     </div>
