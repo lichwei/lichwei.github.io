@@ -10,7 +10,24 @@
   <rights>All rights reserved 2026, HELLO WORLD</rights>
   <subtitle>Learn like a dog and play like a gentlement</subtitle>
   <title>HELLO WORLD</title>
-  <updated>2026-05-05T03:44:14.241Z</updated>
+  <updated>2026-05-10T15:19:20.675Z</updated>
+  <entry>
+    <author>
+      <name>HELLO WORLD</name>
+    </author>
+    <category term="日志" scheme="https://lichwei.github.io/categories/%E6%97%A5%E5%BF%97/"/>
+    <category term="朝花夕拾" scheme="https://lichwei.github.io/tags/%E6%9C%9D%E8%8A%B1%E5%A4%95%E6%8B%BE/"/>
+    <id>https://lichwei.github.io/2026/05/10/shuo-shi-bi-ye-san-nian-huan-gong-si/</id>
+    <link href="https://lichwei.github.io/2026/05/10/shuo-shi-bi-ye-san-nian-huan-gong-si/"/>
+    <published>2026-05-10T13:13:18.000Z</published>
+    <summary>
+      <![CDATA[<p>今天是五一假期后的单休，也是换公司后的第一个周末。跟研究生时的好朋友葱博约了午饭，和教研室的师弟师妹约了羽毛球，晚上去学校的食堂点了以前读书时我们四个人常点的紫荆小炒干锅（服务明星一下子就认出了我和葱博，还送了我们一份青菜蛋汤）。<br><img]]>
+    </summary>
+    <title>
+      <![CDATA[硕士毕业三年&换公司]]>
+    </title>
+    <updated>2026-05-10T15:19:20.675Z</updated>
+  </entry>
   <entry>
     <author>
       <name>HELLO WORLD</name>
@@ -302,21 +319,5 @@
     </summary>
     <title>WORD中插入题注及交叉引用说明</title>
     <updated>2021-08-21T09:20:14.535Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>HELLO WORLD</name>
-    </author>
-    <category term="知识快充站" scheme="https://lichwei.github.io/categories/%E7%9F%A5%E8%AF%86%E5%BF%AB%E5%85%85%E7%AB%99/"/>
-    <category term="word" scheme="https://lichwei.github.io/tags/word/"/>
-    <id>https://lichwei.github.io/2021/08/19/word-zhong-she-zhi-duo-ji-lie-biao-zi-dong-geng-xin/</id>
-    <link href="https://lichwei.github.io/2021/08/19/word-zhong-she-zhi-duo-ji-lie-biao-zi-dong-geng-xin/"/>
-    <published>2021-08-19T01:15:08.000Z</published>
-    <summary>
-      <![CDATA[<h3 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h3><p>在需要局部调整章节的长文档中，使用自动更新的多级列表是十分必要的，各级标题的页边距等都可统一设置。</p>
-<h3]]>
-    </summary>
-    <title>WORD中设置多级列表自动更新</title>
-    <updated>2021-08-21T09:20:25.008Z</updated>
   </entry>
 </feed>

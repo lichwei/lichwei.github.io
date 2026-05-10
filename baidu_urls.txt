@@ -1,3 +1,4 @@
+https://lichwei.github.io/2026/05/10/shuo-shi-bi-ye-san-nian-huan-gong-si/
 https://lichwei.github.io/2026/05/04/csi-isp-axi-memory-lian-lu-fen-xi/
 https://lichwei.github.io/2026/05/04/mem2reg-de-tco-yan-shi/
 https://lichwei.github.io/2026/05/04/slice-pipeline-da-pai/
